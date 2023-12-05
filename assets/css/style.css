@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+img {
+    width: 100%;
+}
+
+.text-blue {
+    color: #104AF3;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.fs-7 {
+    font-size: 13px !important;
+}
+
+.bg-body-header {
+    background-color: #FFF;
+    filter: drop-shadow(0px 4px 4px #F5F5F5);
+}
+
+.my__logo {
+    width: 35px;
+
+}
+
+.active svg path {
+    fill: #104AF3 !important;
+}
+
+.search_icon {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+
+.my-btn {
+    border: 1px solid #104AF3;
+    background-color: #FFF;
+    color: #104AF3;
+    padding: 5px 15px;
+    border-radius: 100px;
+}
