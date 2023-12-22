@@ -26,152 +26,557 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg  bg-body-header">
-            <div class="container-fluid wrapper">
-                <!-- Logo and Search Bar (First Column) -->
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center">
-                        <a class="navbar-brand" href="#">
-                            <div><img src="./assets/imgaes/logo.png" alt="Your Logo" height="50" class="d-inline-block align-top"></div>
-                        </a>
-                        <div class="w-100">
-                            <form class="d-flex position-relative">
-                                <input class=" form-control me-2 rounded-5" type="search" placeholder="Search people, companies etc. " aria-label="Search">
-                                <button class="btn search_icon" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 7.5C6 5.01472 8.01472 3 10.5 3C12.9853 3 15 5.01472 15 7.5C15 9.98528 12.9853 12 10.5 12C8.01472 12 6 9.98528 6 7.5ZM10.5 1C6.91015 1 4 3.91015 4 7.5C4 11.0899 6.91015 14 10.5 14C11.9341 14 13.2597 13.5356 14.3347 12.7489L18.2929 16.7071L19.7071 15.2929L15.7489 11.3347C16.5356 10.2597 17 8.9341 17 7.5C17 3.91015 14.0899 1 10.5 1Z" fill="#104AF3"/>
-                                  </svg></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Menu Items (Second Column) -->
-                <div class="col-lg-4">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container">
+            <a class="navbar-brand mb-2 mb-lg-0" href="#">
+                <img src="assets/imgaes/logo.png" class="w-50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex position-relative w-lg-25">
+                    <input class="form-control me-2 rounded-5 bg-light-pink" type="search"
+                        placeholder="Search people, companies etc. " aria-label="Search">
+                    <button class="btn search_icon" type="submit">
+                        <img src="assets/imgaes/search.png" class="w-auto" alt="">
                     </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav gap-4">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <!-- Replace with your SVG or image -->
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="34" viewBox="0 0 32 34" fill="none">
-                                            <path d="M17.275 25.7295C17.275 25.1082 16.8069 24.6045 16.2296 24.6045C15.6522 24.6045 15.1842 25.1082 15.1842 25.7295V28.7295C15.1842 29.3508 15.6522 29.8545 16.2296 29.8545C16.8069 29.8545 17.275 29.3508 17.275 28.7295V25.7295Z" fill="#104AF3"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5234 0.880798C16.3276 0.873067 16.1316 0.873067 15.9358 0.880798C14.6431 0.931829 13.4792 1.40485 12.2029 2.19226C10.9592 2.9596 9.52742 4.07912 7.71069 5.49957L7.61194 5.57679C5.79519 6.99723 4.36334 8.11674 3.30087 9.15252C2.21062 10.2154 1.43289 11.2605 0.988348 12.5677C0.921007 12.7658 0.860436 12.9664 0.806758 13.1692C0.452412 14.5079 0.510763 15.8454 0.812268 17.3949C1.10609 18.9049 1.65301 20.7163 2.34696 23.0147L2.38468 23.1396C3.07859 25.4379 3.6255 27.2494 4.21255 28.6568C4.81496 30.1011 5.49827 31.2201 6.51616 32.079C6.67036 32.2091 6.82893 32.3331 6.99157 32.4507C8.01564 33.1913 9.15482 33.5473 10.5284 33.7263C11.9897 33.9168 13.8166 33.9168 16.1596 33.9168H16.2995C18.6425 33.9168 20.4695 33.9168 21.9307 33.7263C23.3043 33.5473 24.4435 33.1913 25.4676 32.4507C25.6302 32.3331 25.7888 32.2091 25.943 32.079C26.9609 31.2201 27.6442 30.1011 28.2466 28.6568C28.8337 27.2493 29.3806 25.4379 30.0745 23.1395L30.1122 23.0146C30.8061 20.7164 31.3531 18.9049 31.6469 17.3949C31.9484 15.8454 32.0067 14.5079 31.6524 13.1692C31.5987 12.9664 31.5382 12.7658 31.4708 12.5677C31.0263 11.2605 30.2485 10.2154 29.1583 9.15252C28.0958 8.11674 26.664 6.99723 24.8472 5.57678L24.7484 5.49955C22.9317 4.0791 21.4999 2.9596 20.2562 2.19226C18.98 1.40485 17.816 0.931829 16.5234 0.880798ZM16.0124 3.12929C16.1571 3.12357 16.302 3.12357 16.4467 3.12929C17.2767 3.16205 18.1033 3.45751 19.2163 4.14421C20.3506 4.84405 21.692 5.89095 23.5689 7.35848C25.4459 8.82602 26.7856 9.87538 27.7546 10.82C28.7054 11.747 29.222 12.5017 29.5074 13.341C29.5572 13.4874 29.6019 13.6356 29.6416 13.7855C29.8691 14.6451 29.8634 15.5824 29.6005 16.9338C29.3325 18.3109 28.8218 20.0073 28.1049 22.3818C27.388 24.7564 26.8746 26.4518 26.3392 27.7355C25.8138 28.9951 25.3064 29.757 24.6529 30.3084C24.5389 30.4046 24.4217 30.4963 24.3015 30.5832C23.8895 30.8811 23.4274 31.1022 22.8504 31.2637V25.7295C22.8504 21.7945 19.8862 18.6045 16.2296 18.6045C12.573 18.6045 9.60877 21.7945 9.60877 25.7295V31.2637C9.03176 31.1022 8.56961 30.8811 8.15767 30.5832C8.03745 30.4963 7.92024 30.4046 7.80628 30.3084C7.15273 29.757 6.64536 28.9951 6.12 27.7355C5.58459 26.4518 5.0712 24.7564 4.35427 22.3818C3.63733 20.0073 3.12664 18.3109 2.85867 16.9338C2.59572 15.5824 2.59005 14.6451 2.81756 13.7855C2.85724 13.6356 2.902 13.4874 2.95178 13.341C3.2372 12.5017 3.75376 11.747 4.70457 10.82C5.67356 9.87538 7.01327 8.82602 8.89023 7.35848C10.7672 5.89094 12.1086 4.84405 13.2428 4.14421C14.3558 3.45751 15.1825 3.16205 16.0124 3.12929ZM16.2296 20.8545C18.7314 20.8545 20.7596 23.0371 20.7596 25.7295V31.5826C19.584 31.6656 18.1298 31.6668 16.2296 31.6668C14.3294 31.6668 12.8751 31.6656 11.6995 31.5826V25.7295C11.6995 23.0371 13.7277 20.8545 16.2296 20.8545Z" fill="#104AF3"/>
-                                          </svg>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <!-- Replace with your SVG or image -->
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="36" viewBox="0 0 34 36" fill="none">
-                                            <path d="M4.18164 24.0001L9.75706 30.0001L15.3325 24.0001" stroke="#828282" stroke-width="2.14925" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M9.75684 30.0001V6.00012" stroke="#828282" stroke-width="2.14925" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M29.271 12.0001L23.6955 6.00012L18.1201 12.0001" stroke="#828282" stroke-width="2.14925" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M23.6953 6.00012V30.0001" stroke="#828282" stroke-width="2.14925" stroke-linecap="round" stroke-linejoin="round"/>
-                                          </svg>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <!-- Replace with your SVG or image -->
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                                            <path d="M18.1979 12.4167C18.1979 11.7781 17.6802 11.2604 17.0417 11.2604C16.4031 11.2604 15.8854 11.7781 15.8854 12.4167V15.8854H12.4167C11.7781 15.8854 11.2604 16.4031 11.2604 17.0417C11.2604 17.6802 11.7781 18.1979 12.4167 18.1979H15.8854V21.6667C15.8854 22.3052 16.4031 22.8229 17.0417 22.8229C17.6802 22.8229 18.1979 22.3052 18.1979 21.6667V18.1979H21.6667C22.3052 18.1979 22.8229 17.6802 22.8229 17.0417C22.8229 16.4031 22.3052 15.8854 21.6667 15.8854H18.1979V12.4167Z" fill="#828282"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8771 2.16174C25.6341 1.25858 24.1781 0.854176 22.3813 0.659498C20.6205 0.468728 18.4011 0.468738 15.5698 0.46875H15.4829C13.6945 0.46875 12.1569 0.46875 10.8354 0.514027C7.94718 0.612981 5.82434 0.92554 4.12286 2.16174C3.37031 2.7085 2.7085 3.37031 2.16173 4.12286C0.925539 5.82434 0.612981 7.94718 0.514027 10.8354C0.46875 12.1569 0.46875 13.6946 0.46875 15.483V15.5698C0.468738 18.4011 0.468728 20.6205 0.659497 22.3813C0.854175 24.1781 1.25858 25.6341 2.16173 26.8771C2.7085 27.6297 3.37031 28.2915 4.12286 28.8383C5.36595 29.7414 6.82186 30.1458 8.61873 30.3405C10.3795 30.5313 12.5988 30.5313 15.4301 30.5312H15.5698C18.401 30.5313 20.6205 30.5313 22.3813 30.3405C24.1781 30.1458 25.6341 29.7414 26.8771 28.8383C27.6297 28.2915 28.2915 27.6297 28.8383 26.8771C29.7414 25.6341 30.1458 24.1781 30.3405 22.3813C30.5313 20.6205 30.5313 18.4012 30.5312 15.5699V15.4302C30.5313 12.599 30.5313 10.3795 30.3405 8.61873C30.1458 6.82186 29.7414 5.36594 28.8383 4.12286C28.2915 3.37031 27.6297 2.7085 26.8771 2.16174ZM15.5 2.78125C18.4162 2.78125 20.5104 2.78284 22.1322 2.95854C23.7323 3.1319 24.7347 3.46358 25.5179 4.03259C26.0741 4.43672 26.5633 4.92588 26.9674 5.48212C27.5364 6.26529 27.8681 7.26771 28.0415 8.86782C28.2172 10.4896 28.2187 12.5838 28.2187 15.5C28.2187 18.4162 28.2172 20.5104 28.0415 22.1322C27.8681 23.7323 27.5364 24.7347 26.9674 25.5179C26.5633 26.0741 26.0741 26.5633 25.5179 26.9674C24.7347 27.5364 23.7323 27.8681 22.1322 28.0415C20.5104 28.2172 18.4162 28.2187 15.5 28.2187C12.5838 28.2187 10.4896 28.2172 8.86782 28.0415C7.26771 27.8681 6.26529 27.5364 5.48212 26.9674C4.92588 26.5633 4.43672 26.0741 4.03259 25.5179C3.46358 24.7347 3.1319 23.7323 2.95854 22.1322C2.78284 20.5104 2.78125 18.4162 2.78125 15.5C2.78125 14.1921 2.78133 13.046 2.79793 12.0284C3.52968 12.0217 4.06838 11.9989 4.5534 11.9221C8.34648 11.3213 11.3213 8.34648 11.9221 4.55339C11.9989 4.06838 12.0217 3.52968 12.0284 2.79792C13.046 2.78133 14.1921 2.78125 15.5 2.78125ZM4.19164 9.63808C3.87555 9.68815 3.50951 9.70724 2.88522 9.71446C3.02979 7.61727 3.36115 6.40627 4.03259 5.48212C4.43671 4.92588 4.92588 4.43672 5.48212 4.03259C6.40627 3.36115 7.61727 3.02979 9.71446 2.88522C9.70725 3.50951 9.68815 3.87555 9.63808 4.19164C9.19404 6.99523 6.99523 9.19404 4.19164 9.63808Z" fill="#828282"/>
-                                          </svg>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <!-- Replace with your SVG or image -->
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
-                                            <path d="M19.3017 10.125C19.8791 10.125 20.3471 9.62132 20.3471 9C20.3471 8.37868 19.8791 7.875 19.3017 7.875H8.1509C7.57355 7.875 7.10551 8.37868 7.10551 9C7.10551 9.62132 7.57355 10.125 8.1509 10.125H19.3017Z" fill="#828282"/>
-                                            <path d="M15.1202 16.125L19.3017 16.125C19.8791 16.125 20.3471 15.6213 20.3471 15C20.3471 14.3787 19.8791 13.875 19.3017 13.875L15.1202 13.875C14.5428 13.875 14.0748 14.3787 14.0748 15C14.0748 15.6213 14.5428 16.125 15.1202 16.125Z" fill="#828282"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9478 0.560592C18.3559 0.374978 16.3493 0.374988 13.7894 0.375H13.6632C11.1034 0.374988 9.09679 0.374978 7.50481 0.560592C5.88022 0.750009 4.56389 1.14349 3.44 2.02223C2.75959 2.55422 2.16124 3.19814 1.6669 3.93035C0.850336 5.13984 0.484703 6.55641 0.30869 8.30471C0.13621 10.0179 0.136219 12.1773 0.136231 14.9321V15.0679C0.136219 17.8227 0.13621 19.9821 0.30869 21.6953C0.484703 23.4436 0.850336 24.8602 1.6669 26.0696C2.16124 26.8019 2.75959 27.4458 3.44 27.9778C4.56389 28.8565 5.88022 29.25 7.50481 29.4394C9.09676 29.625 11.1033 29.625 13.6631 29.625H13.7417C15.3586 29.625 16.7489 29.625 17.9437 29.5809C20.555 29.4847 22.4743 29.1806 24.0126 27.9778C24.693 27.4458 25.2914 26.8019 25.7857 26.0696C26.9034 24.4142 27.186 22.3487 27.2755 19.5385C27.3164 18.2527 27.3164 16.7566 27.3164 15.0165V14.9321C27.3164 12.1774 27.3164 10.0179 27.144 8.30471C26.9679 6.55641 26.6023 5.13984 25.7857 3.93035C25.2914 3.19814 24.693 2.55421 24.0126 2.02223C22.8887 1.14349 21.5724 0.750009 19.9478 0.560592ZM4.66893 3.84252C5.37701 3.28889 6.28332 2.96618 7.73002 2.7975C9.19628 2.62654 11.0897 2.625 13.7263 2.625C16.3629 2.625 18.2564 2.62654 19.7226 2.7975C21.1693 2.96618 22.0756 3.28889 22.7837 3.84252C23.2866 4.23573 23.7289 4.71167 24.0943 5.25287C24.6087 6.01488 24.9086 6.9902 25.0653 8.54707C25.2242 10.125 25.2256 12.1626 25.2256 15C25.2256 16.2725 25.2256 17.3877 25.2106 18.3777C24.549 18.3843 24.0619 18.4064 23.6234 18.4812C20.194 19.0657 17.5043 21.9602 16.9612 25.6508C16.8917 26.1227 16.8711 26.6468 16.865 27.3588C15.945 27.3749 14.9088 27.375 13.7263 27.375C11.0897 27.375 9.19628 27.3735 7.73002 27.2025C6.28332 27.0338 5.37701 26.7111 4.66893 26.1575C4.16602 25.7643 3.72376 25.2883 3.35838 24.7471C2.84392 23.9851 2.54405 23.0098 2.38731 21.4529C2.22845 19.875 2.22701 17.8374 2.22701 15C2.22701 12.1626 2.22845 10.125 2.38731 8.54707C2.54405 6.9902 2.84392 6.01488 3.35838 5.25287C3.72376 4.71167 4.16602 4.23573 4.66893 3.84252ZM23.9505 20.7035C24.2363 20.6548 24.5672 20.6362 25.1316 20.6292C25.0009 22.6697 24.7013 23.848 24.0943 24.7471C23.7289 25.2883 23.2866 25.7643 22.7837 26.1575C21.9482 26.8108 20.8533 27.1332 18.9572 27.2738C18.9637 26.6664 18.9809 26.3103 19.0262 26.0027C19.4277 23.2749 21.4157 21.1355 23.9505 20.7035Z" fill="#828282"/>
-                                          </svg>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <!-- Replace with your SVG or image -->
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <path d="M18 19.5C22.1421 19.5 25.5 16.1421 25.5 12C25.5 7.85786 22.1421 4.5 18 4.5C13.8579 4.5 10.5 7.85786 10.5 12C10.5 16.1421 13.8579 19.5 18 19.5Z" stroke="#828282" stroke-width="2.14925" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M30 31.5C30 28.3174 28.7357 25.2652 26.4853 23.0147C24.2348 20.7643 21.1826 19.5 18 19.5C14.8174 19.5 11.7652 20.7643 9.51472 23.0147C7.26428 25.2652 6 28.3174 6 31.5" stroke="#828282" stroke-width="2.14925" stroke-linecap="round" stroke-linejoin="round"/>
-                                          </svg>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="col-lg-4 d-lg-none d-block">
-                                    <ul class="navbar-nav justify-content-end align-items-center ms-auto">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <!-- Replace with your chat icon SVG or image -->
-                                                <div>
-                                                    <img src="./assets/imgaes/chat-icon.png" alt="">
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <!-- Replace with your bell icon SVG or image -->
-                                                <div>
-                                                    <img src="./assets/imgaes/bell-icon.png" alt="">
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <button class="rou">Sign In</button>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        
-                <!-- Icons and Sign In Button (Third Column) -->
-                <div class="col-lg-4 d-lg-block d-none">
-                    <ul class="navbar-nav justify-content-end align-items-center ms-auto">
+                </form>
+                <div class="d-none d-lg-block">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-lg-5">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <!-- Replace with your chat icon SVG or image -->
-                                <div>
-                                    <img src="./assets/imgaes/chat-icon.png" alt="">
-                                </div>
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <img src="assets/imgaes/nav-link-1.png" class="w-auto me-5" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <!-- Replace with your bell icon SVG or image -->
-                                <div>
-                                    <img src="./assets/imgaes/bell-icon.png" alt="">
-                                </div>
+                                <img src="assets/imgaes/arrow-down-up.png" class="w-auto me-5" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <button class="my-btn">Sign In</button>
+                                <img src="assets/imgaes/Document-Add-3.png" class="w-auto me-5" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/imgaes/doc-align-right.png" class="w-auto me-5" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/imgaes/user-2.png" class="w-auto me-5" alt="">
                             </a>
                         </li>
                     </ul>
                 </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <!-- Replace with your chat icon SVG or image -->
+                            <div>
+                                <img src="assets/imgaes/chat-icon.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <!-- Replace with your chat icon SVG or image -->
+                            <div>
+                                <img src="assets/imgaes/bell-icon.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <!-- Button to trigger first modal -->
+                            <button class="my-btn" data-bs-toggle="modal" data-bs-target="#firstModal">Sign In</button>
+
+                            <!-- First Modal -->
+                            <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#secondModal">Sign In</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Join Tenderely</h2>
+                                                    <p>Create an account and discover thousands of jobs opportunities in
+                                                        every field, experience house rental , vehicle equipment
+                                                        services
+                                                        and more unique and exciting features at one platform.
+                                                    </p>
+                                                    <div class="mt-5">
+                                                        <button
+                                                            class="btn w-100 my-btn-black text-black fw-700 mb-3"><img
+                                                                src="assets/imgaes/apple.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Apple</button>
+                                                        <button
+                                                            class="btn w-100 my-facebook-btn text-white fw-700 mb-3"><img
+                                                                src="assets/imgaes/facebook.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Facebook</button>
+                                                        <button class="btn w-100 my-btn-2 fw-700 mb-3"><img
+                                                                src="assets/imgaes/google.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Google</button>
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3"><img
+                                                                src="assets/imgaes/email.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Email</button>
+                                                    </div>
+                                                    <p class="mt-4">By joining , you agree’s to Tenderely <a href=""
+                                                            class="text-decoration-underline">Terms of service</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Modal -->
+                            <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="secondModalLabel">Second Modal</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#firstModal">Sign up</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Continue to Login</h2>
+                                                    <p>Access your account by entering your credentials.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Email Address</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="email" class="border-0 form-control focus-none"
+                                                                placeholder="username@example.com">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password" class="border-0 form-control focus-none"
+                                                                placeholder="must be 8 digits">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end mb-3">
+                                                        <a href="#" class="fw-700 text-decoration-underline">Forgot Password</a>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn w-100 my-btn-blue text-white fw-700 mb-3">Login to Continue</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    <div class="d-block d-lg-none">
+        <ul class="d-flex list-style-none bottom-adj">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <img src="assets/imgaes/nav-link-1.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/arrow-down-up.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/Document-Add-3.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/doc-align-right.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/user-2.png" class="w-auto" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- buttons and filters start -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h4 class="mb-3">What are you looking for ?</h4>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="d-grid d-md-block gap-2 border border-rad p-3">
+                            <a href="index.html" class="btn btn-primary pt-md-4 pb-md-4 ps-md-5 pe-md-5 border-rad"
+                                type="button"><img src="assets/imgaes/stream-icon.png" class="w-auto me-2" alt="">
+                                Stream</a>
+                            <a href="jobs.html" class="btn pt-md-3 pb-md-3 ps-md-4 pe-md-4" type="button"><img
+                                    src="assets/imgaes/job-icon.png" class="w-auto me-2" alt=""> Jobs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-0 col-md-4 text-end align-items-end mt-auto d-none d-md-block">
+                <button class="btn btn-outline-light text-black fw-600 ps-4 pe-4 pt-3 pb-3 bdr-rad-20"><img
+                        src="assets/imgaes/filter.png" class="w-auto me-2" alt=""> Filter</button>
+            </div>
+        </div>
+    </section>
+    <!-- buttons and filters end -->
+    <!-- navbar end -->
+
+
+    <!-- grid start -->
+    <section class="mt-3 container mb-5">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+
+                <!-- moov start -->
+                <section class="mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="me-3">
+                                            <img src="assets/imgaes/saad-khaliq.png" alt="image">
+                                        </div>
+                                        <div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="fw-700 me-2 mt-2">Saad Khaliq</div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger btn-orange border-rad pt-0 pb-0 ps-4 pe-4 d-none d-lg-block">Level
+                                                        1</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-1 mt-2">Project Resource Manager |</p>
+                                            <a href="#" class=" fs-6 text-decoration-underline">CEE Solutions <img
+                                                    src="assets/imgaes/arrow-up-right.png" class="w-auto" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-1 me-lg-2"
+                                            alt="">
+                                        <div class="text-primary connect-font">Connect</div>
+                                    </a>
+                                </div>
+                                <hr>
+                            </h5>
+                            <p class="card-text pe-5">Prototyping in UX design involves creating simplified versions of
+                                digital products to
+                                mimic how they will work and feel.
+                            </p>
+                            <p class="card-text"><img src="assets/imgaes/languages.png" class="w-auto" alt="image">
+                                <span class="fw-700">See Translation</span>
+                            </p>
+                        </div>
+                        <img src="assets/imgaes/moov.png" class="card-img-bottom" alt="image">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="" class="d-flex justify-content-between">
+                                            <img src="assets/imgaes/Like.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="text-primary fw-500 mb-0 my-auto">Like</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Message.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Comment</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Swap.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Repost</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Send.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Send</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <div class="d-flex justify-content-end text-gray mt-2 mt-lg-0">
+                                        31 Liked
+                                        <img src="assets/imgaes/Ellipse.png" class="w-auto h-25 my-auto mx-2" alt="">
+                                        4 Comments
+                                        <img src="assets/imgaes/Ellipse.png" class="w-auto h-25 my-auto mx-2" alt="">
+                                        2 Repost
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- moov end -->
+
+                <!-- octo-verse start -->
+                <section class="mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="me-3">
+                                            <img src="assets/imgaes/saad-khaliq-2.png" alt="image">
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-700 me-2 mt-2">Saad Khaliq</h5>
+                                            <p class="mb-1">Project Resource Manager |</p>
+                                            <a href="#" class=" fs-6 text-decoration-underline">CEE Solutions <img
+                                                    src="assets/imgaes/arrow-up-right.png" class="w-auto" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-2" alt="">
+                                        <div class="text-primary">Connect</div>
+                                    </a>
+                                </div>
+                                <hr>
+                            </h5>
+                            <p class="card-text pe-5">Prototyping in UX design involves creating simplified versions of
+                                digital products to
+                                mimic how they will work and feel.
+                            </p>
+                            <p class="card-text"><img src="assets/imgaes/languages.png" class="w-auto" alt="image">
+                                <span class="fw-700">See Translation</span>
+                            </p>
+                        </div>
+                        <img src="assets/imgaes/osco-verse.png" class="card-img-bottom" alt="image">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="" class="d-flex justify-content-between">
+                                            <img src="assets/imgaes/Like.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="text-primary fw-500 mb-0 my-auto">Like</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Message.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Comment</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Swap.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Repost</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Send.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Send</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <div class="d-flex justify-content-end text-gray mt-2 mt-lg-0">
+                                        31 Liked
+                                        <img src="assets/imgaes/Ellipse.png" class="w-auto h-25 my-auto mx-2" alt="">
+                                        4 Comments
+                                        <img src="assets/imgaes/Ellipse.png" class="w-auto h-25 my-auto mx-2" alt="">
+                                        2 Repost
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- octo-verse end -->
+
+                <!-- oscar start -->
+                <section class="mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="me-3">
+                                            <img src="assets/imgaes/saad-khaliq.png" alt="image">
+                                        </div>
+                                        <div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="fw-700 me-2 mt-2">Saad Khaliq</div>
+                                                <div class="d-none d-lg-block">
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger btn-orange border-rad pt-0 pb-0 ps-4 pe-4">Level
+                                                        1</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-1 mt-1">Project Resource Manager |</p>
+                                            <a href="#" class=" fs-6 text-decoration-underline">CEE Solutions <img
+                                                    src="assets/imgaes/arrow-up-right.png" class="w-auto" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-1 me-lg-2"
+                                            alt="">
+                                        <div class="text-primary">Connect</div>
+                                    </a>
+                                </div>
+                                <hr>
+                            </h5>
+                            <p class="card-text pe-5">Prototyping in UX design involves creating simplified versions of
+                                digital products to
+                                mimic how they will work and feel.
+                            </p>
+                            <p class="card-text"><img src="assets/imgaes/languages.png" class="w-auto" alt="image">
+                                <span class="fw-700">See Translation</span>
+                            </p>
+                        </div>
+                        <img src="assets/imgaes/oscar.png" class="card-img-bottom" alt="image">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="" class="d-flex justify-content-between">
+                                            <img src="assets/imgaes/Like.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="text-primary fw-500 mb-0 my-auto">Like</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Message.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Comment</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Swap.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Repost</p>
+                                        </a>
+                                        <a href="" class="d-flex justify-content-between text-black">
+                                            <img src="assets/imgaes/Send.png" class="w-auto h-75 my-auto" alt="">
+                                            <p class="mb-1 my-auto">Send</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <div class="d-flex justify-content-end text-gray mt-2 mt-lg-0">
+                                        31 Liked
+                                        <img src="assets/imgaes/Ellipse.png" class="w-auto h-25 my-auto mx-2" alt="">
+                                        4 Comments
+                                        <img src="assets/imgaes/Ellipse.png" class="w-auto h-25 my-auto mx-2" alt="">
+                                        2 Repost
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- oscar end -->
+            </div>
+            <!-- people you may know start -->
+            <div class="col-0 col-sm-0 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <section class="mt-3">
+                    <div class="border rounded p-4">
+                        <h5 class="fw-600">People you may know</h5>
+                        <!-- 1 -->
+                        <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                                <div class="me-3">
+                                    <img src="assets/imgaes/Ahmed-mirza.png" alt="image">
+                                </div>
+                                <div>
+                                    <div class="fw-700 me-2">Ahmed Mirza</div>
+                                    <p class="mb-1 mt-0 fs-sm">Design @BYJU'S (Hiring Product, UI, Motion Designers)</p>
+                                    <button
+                                        class="btn btn-outline-primary border-rad d-flex justify-content-between mt-4">
+                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-2" alt="">
+                                        <div class="text-primary">Connect</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                                <div class="me-3">
+                                    <img src="assets/imgaes/jawed-ali.png" alt="image">
+                                </div>
+                                <div>
+                                    <div class="fw-700 me-2">Jawed Ali</div>
+                                    <p class="mb-1 mt-0 fs-sm">Design @BYJU'S (Hiring Product, UI, Motion Designers)</p>
+                                    <button
+                                        class="btn btn-outline-primary border-rad d-flex justify-content-between mt-4">
+                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-2" alt="">
+                                        <div class="text-primary">Connect</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                                <div class="me-3">
+                                    <img src="assets/imgaes/saba-faisal.png" alt="image">
+                                </div>
+                                <div>
+                                    <div class="fw-700 me-2">Saba Faisal</div>
+                                    <p class="mb-1 mt-0 fs-sm">Design @BYJU'S (Hiring Product, UI, Motion Designers)</p>
+                                    <button
+                                        class="btn btn-outline-primary border-rad d-flex justify-content-between mt-4">
+                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-2" alt="">
+                                        <div class="text-primary">Connect</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- people you may know end -->
+        </div>
+    </section>
+    <!-- grid end -->
 </body>
 
 </html>
