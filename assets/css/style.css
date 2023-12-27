@@ -320,6 +320,29 @@ p {
   color: gray;
 }
 
+.mt-10 {
+  margin-top: 100px;
+}
+
+.my-10 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.border-bottom {
+  border-bottom: 1px solid gray;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 360px;
+}
+
+.verification-code-input input::placeholder {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+
 @media (max-width: 800px) {
   .border {
     border: 0px solid #b2afaf !important;
@@ -328,6 +351,10 @@ p {
   .left-right-adj {
     bottom: 45px;
     left: 35%;
+  }
+
+  .border-bottom {
+    width: 200px;
   }
 }
 
