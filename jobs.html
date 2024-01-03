@@ -25,6 +25,12 @@
     <!-- swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        hr {
+            color: lightblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -733,8 +739,223 @@
                             </ul>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <button class="btn btn-lg btn-outline-secondary hover-bg-white"><img
-                                    src="assets/imgaes/filter.png" class="w-auto" alt=""> Filters</button>
+                            <!-- Button trigger modal -->
+                            <a href="filters.html" class="btn btn-lg btn-outline-secondary hover-bg-white"
+                                data-bs-toggle="modal" data-bs-target="#filter">
+                                <img src="assets/imgaes/filter.png" class="w-auto" alt="">
+                                Filters
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="filter" tabindex="-1" aria-labelledby="filterLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="filterLabel">Filters</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body p-5">
+                                            <h4 class="fw-bold">Select Sub-Category</h4>
+                                            <div class="my-5 container-fluid">
+                                                <div class="btn-group w-100 border" role="group"
+                                                    aria-label="Basic example">
+                                                    <button type="button" class="btn bg-black text-white btn-lg">Jobs
+                                                        Request</button>
+                                                    <button type="button" class="btn bg-white btn-lg">Rental
+                                                        Request</button>
+                                                    <button type="button" class="btn bg-white btn-lg">Purchase
+                                                        Requests</button>
+                                                </div>
+                                            </div>
+                                            <div class="my-5">
+                                                <h4 class="fw-bold">Types of Requests </h4>
+                                                <div class="row my-5">
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault1">
+                                                            <label class="form-check-label" for="flexCheckDefault1">
+                                                                Category 1
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault2">
+                                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                                Category 2
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault3">
+                                                            <label class="form-check-label" for="flexCheckDefault3">
+                                                                Category 3
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault4">
+                                                            <label class="form-check-label" for="flexCheckDefault4">
+                                                                Category 4
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault5">
+                                                            <label class="form-check-label" for="flexCheckDefault5">
+                                                                Category 5
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault6">
+                                                            <label class="form-check-label" for="flexCheckDefault6">
+                                                                Category 6
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault7">
+                                                            <label class="form-check-label" for="flexCheckDefault7">
+                                                                Category 7
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault8">
+                                                            <label class="form-check-label" for="flexCheckDefault8">
+                                                                Category 8
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-5">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <h4 class="fw-bold mb-3">Country</h4>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Select</option>
+                                                            <option value="1">United States</option>
+                                                            <option value="2">Canada</option>
+                                                            <option value="3">Mexico</option>
+                                                            <option value="3">Brazil</option>
+                                                            <option value="3">Argentina</option>
+                                                            <option value="3">Germany</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <h4 class="fw-bold mb-3">City</h4>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Select</option>
+                                                            <option value="1">New York City, USA</option>
+                                                            <option value="2">Tokyo, Japan</option>
+                                                            <option value="3">London, United Kingdom</option>
+                                                            <option value="3">Paris, France</option>
+                                                            <option value="3">Beijing, China</option>
+                                                            <option value="3">Sydney, Australia</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-5">
+                                                <hr>
+                                                <div class="d-flex justify-content-between my-5">
+                                                    <div class="my-auto">
+                                                        <h4 class="fw-bold">Select Date</h4>
+                                                    </div>
+                                                    <div class="my-auto fw-bold">
+                                                        <a class="text-blue text-decoration-underline">Show Calender</a>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                            <div class="my-5">
+                                                <h4 class="fw-bold">Languages to be contacted</h4>
+                                                <div class="row my-5">
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language1">
+                                                            <label class="form-check-label" for="language1">
+                                                                English
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language2">
+                                                            <label class="form-check-label" for="language2">
+                                                                Turkish
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language3">
+                                                            <label class="form-check-label" for="language3">
+                                                                French
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language4">
+                                                            <label class="form-check-label" for="language4">
+                                                                German
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language5">
+                                                            <label class="form-check-label" for="language5">
+                                                                Dutch
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language6">
+                                                            <label class="form-check-label" for="language6">
+                                                                Japanese
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <a href="#" class="text-black text-decoration-underline fw-bold">Show More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <a href="#" class="text-black text-decoration-underline fw-bold">Clear all</a>
+                                            <button type="button" class="btn bg-blue text-white ps-4 pe-4">Apply Filters</button>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1457,7 +1678,8 @@
                                                             <div class="text-blue fw-bold my-auto me-2">Add Contacts
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#addContact2">
                                                             <img src="assets/imgaes/help-circle.png" class="w-auto"
                                                                 alt="">
                                                         </a>
@@ -1529,6 +1751,206 @@
                                         </div>
                                     </div>
                                     <!-- add contacts end -->
+
+                                    <!-- add contacts 2 start -->
+                                    <div class="modal fade" id="addContact2" tabindex="-1"
+                                        aria-labelledby="addContact2Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button class="btn btn-outline-secondary border-rad ps-4 pe-4 me-5"
+                                                        data-bs-toggle="modal" data-bs-target="#michelle">Back</button>
+                                                    <h5 class="modal-title" id="addContact2Label">Add Contacts</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="d-flex border r-15 ps-2 pe-2">
+                                                        <div class="me-4 my-auto">
+                                                            <img src="assets/imgaes/search-black.png" class="w-auto"
+                                                                alt="">
+                                                        </div>
+                                                        <input class="form-control border-0 box-shadow-0 me-2"
+                                                            type="search" placeholder="Search by name"
+                                                            aria-label="Search">
+                                                    </form>
+                                                    <div class="mt-4">
+                                                        <hr>
+                                                        <div
+                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            <div class="d-lg-flex justify-content-between">
+                                                                <div class="me-2">
+                                                                    <img src="assets/imgaes/annette-black.png"
+                                                                        class="w-auto" alt="">
+                                                                </div>
+                                                                <div class="my-auto me-2">
+                                                                    <p class="fw-bold pb-0 pb-lg-2">Annette Black</p>
+                                                                    <small>Pizza Hut</small>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button
+                                                                        class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
+                                                                        1</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="my-auto text-gray mt-2 mt-lg-0 fw-bold">
+                                                                Added
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <hr>
+                                                        <div
+                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            <div class="d-lg-flex justify-content-between">
+                                                                <div class="me-2">
+                                                                    <img src="assets/imgaes/user-prof.png"
+                                                                        class="w-auto" alt="">
+                                                                </div>
+                                                                <div class="my-auto me-2">
+                                                                    <p class="fw-bold pb-0 pb-lg-2">Floyd Miles</p>
+                                                                    <small>Starbucks</small>
+                                                                </div>
+                                                            </div>
+                                                            <button
+                                                                class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                Add
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <hr>
+                                                        <div
+                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            <div class="d-lg-flex justify-content-between">
+                                                                <div class="me-2">
+                                                                    <img src="assets/imgaes/jerome-bell.png"
+                                                                        class="w-auto" alt="">
+                                                                </div>
+                                                                <div class="my-auto me-2">
+                                                                    <p class="fw-bold pb-0 pb-lg-2">Jerome Bell</p>
+                                                                    <small>Louis Vuitton</small>
+                                                                </div>
+                                                            </div>
+                                                            <button
+                                                                class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                Add
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <hr>
+                                                        <div
+                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            <div class="d-lg-flex justify-content-between">
+                                                                <div class="me-2">
+                                                                    <img src="assets/imgaes/jane-copper.png"
+                                                                        class="w-auto" alt="">
+                                                                </div>
+                                                                <div class="my-auto me-2">
+                                                                    <p class="fw-bold pb-0 pb-lg-2">Jane Cooper</p>
+                                                                    <small>Gillette</small>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button
+                                                                        class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
+                                                                        1</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="my-auto text-gray fw-bold mt-2 mt-lg-0">
+                                                                Added
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <hr>
+                                                        <div
+                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            <div class="d-lg-flex justify-content-between">
+                                                                <div class="me-2">
+                                                                    <img src="assets/imgaes/arlene-mccoy.png"
+                                                                        class="w-auto" alt="">
+                                                                </div>
+                                                                <div class="my-auto me-2">
+                                                                    <p class="fw-bold pb-0 pb-lg-2">Arlene McCoy</p>
+                                                                    <small>Louis Vuitton</small>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button
+                                                                        class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
+                                                                        1</button>
+                                                                </div>
+                                                            </div>
+                                                            <button
+                                                                class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                Add
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <hr>
+                                                        <div
+                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            <div class="d-lg-flex justify-content-between">
+                                                                <div class="me-2">
+                                                                    <img src="assets/imgaes/darrel.png" class="w-auto"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="my-auto me-2">
+                                                                    <p class="fw-bold pb-0 pb-lg-2">Darrell Steward</p>
+                                                                    <small>The Walt Disney Company</small>
+                                                                </div>
+                                                            </div>
+                                                            <button
+                                                                class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                Add
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <hr>
+                                                        <div
+                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            <div class="d-lg-flex justify-content-between">
+                                                                <div class="me-2">
+                                                                    <img src="assets/imgaes/courtney.png" class="w-auto"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="my-auto me-2">
+                                                                    <p class="fw-bold pb-0 pb-lg-2">Courtney Henry</p>
+                                                                    <small>eBay</small>
+                                                                </div>
+                                                            </div>
+                                                            <div class="my-auto text-gray fw-bold mt-2 mt-lg-0">
+                                                                Added
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <hr>
+                                                        <div
+                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            <div class="d-lg-flex justify-content-between">
+                                                                <div class="me-2">
+                                                                    <img src="assets/imgaes/kathryn.png" class="w-auto"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="my-auto me-2">
+                                                                    <p class="fw-bold pb-0 pb-lg-2">Kathryn Murphy</p>
+                                                                    <small>IBM</small>
+                                                                </div>
+                                                            </div>
+                                                            <button
+                                                                class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                Add
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- add contacts 2 end -->
 
                                     <!-- tender secure start -->
                                     <div class="modal fade" id="tenderSecure" tabindex="-1"

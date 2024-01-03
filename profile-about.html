@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenderely</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/imgaes/logo.png" type="image/x-icon">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remixefont -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        hr {
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container">
+            <a class="navbar-brand mb-2 mb-lg-0" href="#">
+                <img src="assets/imgaes/logo.png" class="w-50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex position-relative w-lg-25">
+                    <input class="form-control me-2 rounded-5 bg-light-pink" type="search"
+                        placeholder="Search people, companies etc. " aria-label="Search">
+                    <button class="btn search_icon" type="submit">
+                        <img src="assets/imgaes/search.png" class="w-auto" alt="">
+                    </button>
+                </form>
+                <div class="d-none d-lg-block">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <img src="assets/imgaes/nav-link-1-gray.png" class="w-auto me-5" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                <img src="assets/imgaes/arrow-down-up-blue.png" class="w-auto me-5" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/imgaes/Document-Add-3.png" class="w-auto me-5" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/imgaes/doc-align-right.png" class="w-auto me-5" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/imgaes/user-2.png" class="w-auto me-5" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <!-- Replace with your chat icon SVG or image -->
+                            <div>
+                                <img src="assets/imgaes/chat-icon.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <!-- Replace with your chat icon SVG or image -->
+                            <div>
+                                <img src="assets/imgaes/bell-icon.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <!-- Button to trigger first modal -->
+                            <button class="my-btn" data-bs-toggle="modal" data-bs-target="#firstModal">Sign In</button>
+
+                            <!-- First Modal -->
+                            <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#secondModal">Sign In</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Join Tenderely</h2>
+                                                    <p>Create an account and discover thousands of jobs opportunities in
+                                                        every field, experience house rental , vehicle equipment
+                                                        services
+                                                        and more unique and exciting features at one platform.
+                                                    </p>
+                                                    <div class="mt-5">
+                                                        <button
+                                                            class="btn w-100 my-btn-black text-black fw-700 mb-3"><img
+                                                                src="assets/imgaes/apple.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Apple</button>
+                                                        <button
+                                                            class="btn w-100 my-facebook-btn text-white fw-700 mb-3"><img
+                                                                src="assets/imgaes/facebook.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Facebook</button>
+                                                        <button class="btn w-100 my-btn-2 fw-700 mb-3"><img
+                                                                src="assets/imgaes/google.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Google</button>
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3"><img
+                                                                src="assets/imgaes/email.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Email</button>
+                                                    </div>
+                                                    <div class="text-end">
+                                                        <button
+                                                            class="btn outline-none text-primary text-decoration-underline"
+                                                            data-bs-toggle="modal" data-bs-target="#thirdModal">Register
+                                                            an Account ?</button>
+                                                    </div>
+                                                    <p class="mt-4">By joining , you agree’s to Tenderely <a href=""
+                                                            class="text-decoration-underline">Terms of service</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Modal -->
+                            <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#firstModal">Sign up</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Continue to Login</h2>
+                                                    <p>Access your account by entering your credentials.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Email
+                                                            Address</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="email" class="border-0 form-control focus-none"
+                                                                placeholder="username@example.com">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email"
+                                                            class="mb-2 text-black fw-700">Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="must be 8 digits">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end mb-3">
+                                                        <button
+                                                            class="btn outline-none fw-700 text-decoration-underline"
+                                                            data-bs-toggle="modal" data-bs-target="#fourthModal">Forgot
+                                                            Password</button>
+                                                    </div>
+                                                    <div>
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3">Login
+                                                            to Continue</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Third Modal -->
+                            <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#secondModal">Sign In</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Register an Account</h2>
+                                                    <p>Access your account by entering your credentials.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#name" class="mb-2 text-black fw-700">Full
+                                                            Name</label>
+                                                        <input type="text" id="name" class="form-control"
+                                                            placeholder="John Darry">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Email
+                                                            Address</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="email" class="border-0 form-control focus-none"
+                                                                placeholder="username@example.com">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#number" class="mb-2 text-black fw-700">Contact
+                                                            Number</label>
+                                                        <input type="number" id="name" class="form-control"
+                                                            placeholder="+76 6383 673873">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email"
+                                                            class="mb-2 text-black fw-700">Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="**********">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Confirm
+                                                            Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="**********">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3">Register
+                                                            an account</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fourth Modal -->
+                            <div class="modal fade" id="fourthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#secondModal">Back</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Forgot Password</h2>
+                                                    <p>Enter your email to reset the password again.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Email
+                                                            Address</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="email" class="border-0 form-control focus-none"
+                                                                placeholder="username@example.com">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button class="btn w-100 my-btn-blue text-white fw-700 mb-3"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#fifthModal">Send</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fifth Modal -->
+                            <div class="modal fade" id="fifthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#fourthModal">Back</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Verification Code</h2>
+                                                    <p>Enter the 4 digit code which has been sent to your email.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="container mb-5">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-md-6">
+                                                                <form>
+                                                                    <div class="verification-code-input">
+                                                                        <input type="text" class="form-control"
+                                                                            maxlength="1" required>
+                                                                        <input type="text" class="form-control"
+                                                                            maxlength="1" required>
+                                                                        <input type="text" class="form-control"
+                                                                            maxlength="1" required>
+                                                                        <input type="text" class="form-control"
+                                                                            maxlength="1" required>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button class="btn w-100 my-btn-blue text-white fw-700 mb-3"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#sixthModal">Verify</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sixth Modal -->
+                            <div class="modal fade" id="sixthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#fifthModal">Back</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Reset Password</h2>
+                                                    <p>Enter your new password to reset it to access your account.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#email"
+                                                            class="mb-2 text-black fw-700">Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="**********">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Confirm
+                                                            Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="**********">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3">Reset
+                                                            Password</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-block d-lg-none">
+        <ul class="d-flex list-style-none bottom-adj">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                    <img src="assets/imgaes/nav-link-1.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                    <img src="assets/imgaes/arrow-down-up.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/Document-Add-3.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/doc-align-right.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/user-2.png" class="w-auto" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- navbar end -->
+
+    <!-- main container start -->
+    <section>
+        <div class="container my-4">
+            <div class="my-5">
+                <a href="services.html" class="btn btn-outline-secondary btn-lg border-rad ps-5 pe-5">Back</a>
+            </div>
+            <div class="bg-light-pink border-top-r">
+                <div class="card border-top-r rounded-5">
+                    <div>
+                        <img src="assets/imgaes/profile-header-cover.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="mt-5">
+                        <div class="wrapper">
+                            <div class="d-lg-flex justify-content-between">
+                                <div>
+                                    <div class="d-flex">
+                                        <h3 class="fw-bold me-2">Saad Khaliq</h3>
+                                        <button class="btn btn-outline-secondary border-rad pt-0 pb-0 ps-4 pe-4">
+                                            Level 1
+                                        </button>
+                                    </div>
+                                    <p>Project Resource Manager </p>
+                                    <a href="#" class="text-blue text-decoration-underline fw-bold">CEE Solutions</a>
+                                    <p>Karachi, Pakistan • <a href="#"
+                                            class="text-blue text-decoration-underline fw-bold">262,382 followers</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-blue text-blue fw-bold">
+                                        <img src="assets/imgaes/plus.png" class="w-auto" alt=""> Connect
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4 tabs">
+                    <nav class="bg-white my-3">
+                        <div class="d-none d-lg-block">
+                            <div class="nav nav-tabs nav-tabs-2" id="nav-tab" role="tablist" style="display: flex;">
+                                <button class="nav-link nav-link-2 fw-bold text-gray hover-black w-sm-33 active"
+                                    id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                                    role="tab" aria-controls="nav-home" aria-selected="true" style="flex: 1;">
+                                    About</button>
+                                <button class="nav-link nav-link-2 fw-bold text-gray hover-black w-sm-33"
+                                    id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false"
+                                    style="flex: 1;">Posts</button>
+                                <button class="nav-link nav-link-2 fw-bold text-gray hover-black w-sm-33"
+                                    id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-premium"
+                                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false"
+                                    style="flex: 1;">Consultant</button>
+                                <button class="nav-link nav-link-2 fw-bold text-gray hover-black w-sm-33"
+                                    id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-portfolio"
+                                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false"
+                                    style="flex: 1;">Portfolio</button>
+                            </div>
+                        </div>
+                        <div class="d-block d-lg-none">
+                            <button class="btn bg-white dropdown-toggle w-100 fw-bold text-black" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button <img src="assets/imgaes/dropdown-arrow.png" class="w-auto ms-2" alt="">
+                            </button>
+                            <div class="nav nav-tabs-2" id="nav-tab" role="tablist">
+                                <ul class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <button class="nav-link text-gray hover-black active" id="nav-home-tab"
+                                            data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                                            aria-controls="nav-home" aria-selected="true" style="flex: 1;">
+                                            About</button>
+                                    </li>
+                                    <li>
+                                        <button class="nav-link text-gray hover-black" id="nav-profile-tab"
+                                            data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
+                                            aria-controls="nav-profile" aria-selected="false"
+                                            style="flex: 1;">Posts</button>
+                                    </li>
+                                    <li>
+                                        <button class="nav-link text-gray hover-black" id="nav-profile-tab"
+                                            data-bs-toggle="tab" data-bs-target="#nav-premium" type="button" role="tab"
+                                            aria-controls="nav-profile" aria-selected="false"
+                                            style="flex: 1;">Consultant</button>
+                                    </li>
+                                    <li>
+                                        <button class="nav-link text-gray hover-black" id="nav-profile-tab"
+                                            data-bs-toggle="tab" data-bs-target="#nav-portfolio" type="button"
+                                            role="tab" aria-controls="nav-profile" aria-selected="false"
+                                            style="flex: 1;">Portfolio</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="bg-white rounded-5">
+                        <div class="tab-content my-5" id="nav-tabContent">
+                            <!-- tab 1 -->
+                            <div class="tab-pane fade show active py-4" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <div class="wrapper">
+                                    <h4 class="fw-bold">About Me</h4>
+                                    <p class="fw-700">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has <br> <a href="#" class="text-blue">Read More</a></p>
+                                    <a href="#" class="text-gray text-decoration-underline fw-bold">See Translation</a>
+                                </div>
+
+                                <div class="bg-white rounded-5 py-4">
+                                    <div class="wrapper">
+                                        <h4 class="fw-bold mb-5">Experience</h4>
+                                        <div class="d-flex">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/emar.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="mt-3">
+                                                <h5 class="fw-bold mb-0">Property Advisor </h5>
+                                                <small class="fw-bold">Emaar Pakistan · Full-time</small> <br>
+                                                <div class="mt-3">
+                                                    <span class="text-gray">Jan 2021 - Present · 2 yrs 9 mos <br>
+                                                        Karāchi, Sindh, Pakistan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/graana.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="mt-3">
+                                                <h5 class="fw-bold mb-0">Assistant Manager </h5>
+                                                <small class="fw-bold">Grana.com · Full-time</small> <br>
+                                                <div class="mt-3">
+                                                    <span class="text-gray">Feb 2022 - Aug 2022 · 6 mos
+                                                        <br>
+                                                        Karāchi, Sindh, Pakistan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/vinncorp.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="mt-3">
+                                                <h5 class="fw-bold mb-0">Associate Manager </h5>
+                                                <small class="fw-bold">Vinncorp · Full-time</small> <br>
+                                                <div class="mt-3">
+                                                    <span class="text-gray">Jan 2021 - Feb 2022 · 1 yrs 1 mos
+                                                        <br>
+                                                        Karāchi, Sindh, Pakistan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white rounded-5 py-4 my-4">
+                                    <div class="wrapper">
+                                        <h4 class="fw-bold mb-5">Experience</h4>
+                                        <div class="d-flex">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/greenwich.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="mt-3">
+                                                <h5 class="fw-bold mb-0">Greenwich University </h5>
+                                                <small class="fw-bold">Master, Bachelors in Management Science</small>
+                                                <br>
+                                                <div class="mt-3">
+                                                    <span class="text-gray">2014 - 2018</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border-top-r">
+                                    <div class="border rounded-5 py-4 my-4">
+                                        <div class="wrapper">
+                                            <h4 class="fw-bold mb-5">Talents</h4>
+                                            <div class="d-flex my-5">
+                                                <div class="me-2">
+                                                    <img src="assets/imgaes/vinncorp-sales.png" class="w-auto" alt="">
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h5 class="fw-bold mb-0">International Sales </h5>
+                                                    <small class="fw-bold">Sales Lead at Vinncorp</small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex my-5">
+                                                <div class="me-2">
+                                                    <img src="assets/imgaes/graana-project.png" class="w-auto" alt="">
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h5 class="fw-bold mb-0">Project Management </h5>
+                                                    <small class="fw-bold">Project Owner at Granna.com</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-3">
+                                        <a href="#" class="text-blue fw-bold"><img
+                                                src="assets/imgaes/flag-triangle-right.png" class="w-auto" alt="">
+                                            Report</a>
+                                    </div>
+                                    <div class="my-4">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <h3 class="fw-bold">People you may know</h3>
+                                            <div class="mt-3 mt-lg-0 d-flex">
+                                                <button class="btn box-shadow-none focus-none">
+                                                    <img src="assets/imgaes/arrow-left-circle.png" class="w-auto"
+                                                        alt="">
+                                                </button>
+                                                <button class="btn box-shadow-none focus-none">
+                                                    <img src="assets/imgaes/arrow-right-circle.png" class="w-auto"
+                                                        alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-4">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4 text-center">
+                                                <div class="card border rounded-5 py-4 p-3">
+                                                    <div class="d-flex text-start">
+                                                        <div class="me-2">
+                                                            <img src="assets/imgaes/paff.png" class="w-auto" alt="">
+                                                        </div>
+                                                        <div class="my-auto">
+                                                            <h5 class="fw-bold mb-0">Paff Evara </h5>
+                                                            <small>Black, queer, speaker consultant, <br> @ Take up
+                                                                space</small><br>
+                                                            <div class="py-4">
+                                                                <button
+                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                        src="assets/imgaes/plus-white.png"
+                                                                        class="w-auto" alt=""> Follow</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 text-center">
+                                                <div class="card border rounded-5 py-4 p-3">
+                                                    <div class="d-flex text-start">
+                                                        <div class="me-2">
+                                                            <img src="assets/imgaes/shinnon.png" class="w-auto" alt="">
+                                                        </div>
+                                                        <div class="my-auto">
+                                                            <h5 class="fw-bold mb-0">Shinnon Diana</h5>
+                                                            <small>Multi- Head Sales Person ,
+                                                                <br> co-founder @ Graana.com</small><br>
+                                                            <div class="py-4">
+                                                                <button
+                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                        src="assets/imgaes/plus-white.png"
+                                                                        class="w-auto" alt=""> Follow</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 text-center">
+                                                <div class="card border rounded-5 py-4 p-3">
+                                                    <div class="d-flex text-start">
+                                                        <div class="me-2">
+                                                            <img src="assets/imgaes/shinnon-2.png" class="w-auto"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="my-auto">
+                                                            <h5 class="fw-bold mb-0">Shinnon Diana</h5>
+                                                            <small>Multi- Head Sales Person ,
+                                                                <br> co-founder @ Graana.com</small><br>
+                                                            <div class="py-4">
+                                                                <button
+                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                        src="assets/imgaes/plus-white.png"
+                                                                        class="w-auto" alt=""> Follow</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- tab 2 -->
+                            <div class="tab-pane fade py-4" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                <div class="wrapper">
+                                    <section class="mt-3">
+                                        <div class="card my-4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="me-3">
+                                                                <img src="assets/imgaes/saad-khaliq-4.png" alt="image">
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="fw-700 me-2 mt-2">Saad Khaliq</div>
+                                                                </div>
+                                                                <p class="mb-1 mt-2">Project Resource Manager |
+                                                                    Technical Recruiter | HR Operations Head </p>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="text-gray">2 months ago</h5>
+                                                    </div>
+                                                    <hr>
+                                                </h5>
+                                                <p class="card-text pe-5">Prototyping in UX design involves creating
+                                                    simplified versions of digital products to mimic how they will work
+                                                    and feel.
+                                                </p>
+                                                <p class="card-text"><img src="assets/imgaes/languages.png"
+                                                        class="w-auto" alt="image">
+                                                    <span class="fw-700">See Translation</span>
+                                                </p>
+                                            </div>
+                                            <img src="assets/imgaes/global-scale.png" class="card-img-bottom"
+                                                alt="image">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                                        <div class="d-flex justify-content-between">
+                                                            <a href="" class="d-flex justify-content-between">
+                                                                <img src="assets/imgaes/Like.png"
+                                                                    class="w-auto h-75 my-auto" alt="">
+                                                                <p class="text-primary fw-500 mb-0 my-auto">Like</p>
+                                                            </a>
+                                                            <a href=""
+                                                                class="d-flex justify-content-between text-black">
+                                                                <img src="assets/imgaes/Message.png"
+                                                                    class="w-auto h-75 my-auto" alt="">
+                                                                <p class="mb-1 my-auto">Comment</p>
+                                                            </a>
+                                                            <a href=""
+                                                                class="d-flex justify-content-between text-black">
+                                                                <img src="assets/imgaes/Swap.png"
+                                                                    class="w-auto h-75 my-auto" alt="">
+                                                                <p class="mb-1 my-auto">Repost</p>
+                                                            </a>
+                                                            <a href=""
+                                                                class="d-flex justify-content-between text-black">
+                                                                <img src="assets/imgaes/Send.png"
+                                                                    class="w-auto h-75 my-auto" alt="">
+                                                                <p class="mb-1 my-auto">Send</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                                        <div class="d-flex justify-content-end text-gray mt-2 mt-lg-0">
+                                                            31 Liked
+                                                            <img src="assets/imgaes/Ellipse.png"
+                                                                class="w-auto h-25 my-auto mx-2" alt="">
+                                                            4 Comments
+                                                            <img src="assets/imgaes/Ellipse.png"
+                                                                class="w-auto h-25 my-auto mx-2" alt="">
+                                                            2 Repost
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card my-4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="me-3">
+                                                                <img src="assets/imgaes/saad-khaliq-4.png" alt="image">
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="fw-700 me-2 mt-2">Saad Khaliq</div>
+                                                                </div>
+                                                                <p class="mb-1 mt-2">Project Resource Manager |
+                                                                    Technical Recruiter | HR Operations Head </p>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="text-gray">2 months ago</h5>
+                                                    </div>
+                                                    <hr>
+                                                </h5>
+                                                <p class="card-text pe-5">Prototyping in UX design involves creating
+                                                    simplified versions of digital products to mimic how they will work
+                                                    and feel.
+                                                </p>
+                                                <p class="card-text"><img src="assets/imgaes/languages.png"
+                                                        class="w-auto" alt="image">
+                                                    <span class="fw-700">See Translation</span>
+                                                </p>
+                                            </div>
+                                            <img src="assets/imgaes/women.png" class="card-img-bottom" alt="image">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                                        <div class="d-flex justify-content-between">
+                                                            <a href="" class="d-flex justify-content-between">
+                                                                <img src="assets/imgaes/Like.png"
+                                                                    class="w-auto h-75 my-auto" alt="">
+                                                                <p class="text-primary fw-500 mb-0 my-auto">Like</p>
+                                                            </a>
+                                                            <a href=""
+                                                                class="d-flex justify-content-between text-black">
+                                                                <img src="assets/imgaes/Message.png"
+                                                                    class="w-auto h-75 my-auto" alt="">
+                                                                <p class="mb-1 my-auto">Comment</p>
+                                                            </a>
+                                                            <a href=""
+                                                                class="d-flex justify-content-between text-black">
+                                                                <img src="assets/imgaes/Swap.png"
+                                                                    class="w-auto h-75 my-auto" alt="">
+                                                                <p class="mb-1 my-auto">Repost</p>
+                                                            </a>
+                                                            <a href=""
+                                                                class="d-flex justify-content-between text-black">
+                                                                <img src="assets/imgaes/Send.png"
+                                                                    class="w-auto h-75 my-auto" alt="">
+                                                                <p class="mb-1 my-auto">Send</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                                        <div class="d-flex justify-content-end text-gray mt-2 mt-lg-0">
+                                                            31 Liked
+                                                            <img src="assets/imgaes/Ellipse.png"
+                                                                class="w-auto h-25 my-auto mx-2" alt="">
+                                                            4 Comments
+                                                            <img src="assets/imgaes/Ellipse.png"
+                                                                class="w-auto h-25 my-auto mx-2" alt="">
+                                                            2 Repost
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                            </div>
+
+                            <!-- tab3 -->
+                            <div class="tab-pane fade py-4 p-4" id="nav-premium" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                <h4 class="fw-bold">Consultancy Service</h4>
+                                <div class="wrapper">
+                                    <div class="rounded-5 shadow p-3 my-3">
+                                        <div class="d-lg-flex">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/house.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="flex-col-adj my-3">
+                                                <div>
+                                                    <small class="text-gray">Service Title</small>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">I will provide
+                                                        you Real state Agency </h4>
+                                                    <small>Lorem Ipsum is simply dummy text of the printing and
+                                                        typesetting industry. Lorem Ipsum has been the industry's
+                                                        standard dummy text .</small>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-between">
+                                                    <div><img src="assets/imgaes/black-star.png" class="w-auto" alt="">
+                                                        <strong class="fw-bold my-auto">5.0 (13)</strong>
+                                                    </div>
+                                                    <div class="mt-3 mt-lg-0">
+                                                        <div class="d-flex align-items-end">
+                                                            <h3 class="text-blue fw-bold mb-0">From $ 56.46 </h3>/ per
+                                                            month
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-5 shadow p-3 my-3">
+                                        <div class="d-lg-flex">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/women-handshaking.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="flex-col-adj my-3">
+                                                <div>
+                                                    <small class="text-gray">Service Title</small>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">I will provide
+                                                        you Real state Agency </h4>
+                                                    <small>Lorem Ipsum is simply dummy text of the printing and
+                                                        typesetting industry. Lorem Ipsum has been the industry's
+                                                        standard dummy text .</small>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-between">
+                                                    <div><img src="assets/imgaes/black-star.png" class="w-auto" alt="">
+                                                        <strong class="fw-bold my-auto">5.0 (13)</strong>
+                                                    </div>
+                                                    <div class="mt-3 mt-lg-0">
+                                                        <div class="d-flex align-items-end">
+                                                            <h3 class="text-blue fw-bold mb-0">From $ 56.46 </h3>/ per
+                                                            month
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-5 shadow p-3 my-3">
+                                        <div class="d-lg-flex">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/lock-blue.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="flex-col-adj my-3">
+                                                <div>
+                                                    <small class="text-gray">Service Title</small>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">I will provide
+                                                        you Real state Agency </h4>
+                                                    <small>Lorem Ipsum is simply dummy text of the printing and
+                                                        typesetting industry. Lorem Ipsum has been the industry's
+                                                        standard dummy text .</small>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-between">
+                                                    <div><img src="assets/imgaes/black-star.png" class="w-auto" alt="">
+                                                        <strong class="fw-bold my-auto">5.0 (13)</strong>
+                                                    </div>
+                                                    <div class="mt-3 mt-lg-0">
+                                                        <div class="d-flex align-items-end">
+                                                            <h3 class="text-blue fw-bold mb-0">From $ 56.46 </h3>/ per
+                                                            month
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reviews start -->
+                                    <section class="mt-5">
+                                        <div class="container">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <img src="assets/imgaes/star.png" class="w-auto me-2" alt="">
+                                                </div>
+                                                <h2 class="my-auto fw-bold">4.94 . 17 Reviews</h2>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="mt-5 mb-4">
+                                                        <div class="d-flex">
+                                                            <div class="me-2">
+                                                                <img src="assets/imgaes/person-1.png"
+                                                                    class="w-auto me-3" alt="">
+                                                            </div>
+                                                            <div class="my-auto">
+                                                                <small class="fw-bold">Jose</small> <br>
+                                                                <small class="text-gray">December 2021</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-3">Sed ut perspiciatis unde omnis iste natus
+                                                            error
+                                                            sit voluptatem accusantium
+                                                            doloremque laudantium, to</div>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <div class="d-flex">
+                                                            <div class="me-2">
+                                                                <img src="assets/imgaes/person-3.png"
+                                                                    class="w-auto me-3" alt="">
+                                                            </div>
+                                                            <div class="my-auto">
+                                                                <small class="fw-bold">Shayna</small> <br>
+                                                                <small class="text-gray">December 2021</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-3">Neque porro quisquam est, qui dolorem ipsum
+                                                            quia
+                                                            dolor sit amet, consectetur,
+                                                            adipisci velit, sed qu</div>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <div class="d-flex">
+                                                            <div class="me-2">
+                                                                <img src="assets/imgaes/person-5.png"
+                                                                    class="w-auto me-3" alt="">
+                                                            </div>
+                                                            <div class="my-auto">
+                                                                <small class="fw-bold">Vladko</small> <br>
+                                                                <small class="text-gray">Novembar 2020</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-3">Ut enim ad minima veniam, quis nostrum
+                                                            exercitationem ullam corporis suscipit
+                                                            laboriosam, nisi ut al</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="mt-5 mb-4">
+                                                        <div class="d-flex">
+                                                            <div class="me-2">
+                                                                <img src="assets/imgaes/person-2.png"
+                                                                    class="w-auto me-3" alt="">
+                                                            </div>
+                                                            <div class="my-auto">
+                                                                <small class="fw-bold">Luke</small> <br>
+                                                                <small class="text-gray">December 2021</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-3">Quis autem vel eum iure reprehenderit qui in
+                                                            ea
+                                                            voluptate velit esse quam
+                                                            nihil molestiae consequatu</div>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <div class="d-flex">
+                                                            <div class="me-2">
+                                                                <img src="assets/imgaes/person-4.png"
+                                                                    class="w-auto me-3" alt="">
+                                                            </div>
+                                                            <div class="my-auto">
+                                                                <small class="fw-bold">Josh</small> <br>
+                                                                <small class="text-gray">November 2021</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-3">Sed ut perspiciatis unde omnis iste natus
+                                                            error
+                                                            sit voluptatem accusantium
+                                                            doloremque laudantium, to</div>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <div class="d-flex">
+                                                            <div class="me-2">
+                                                                <img src="assets/imgaes/person-6.png"
+                                                                    class="w-auto me-3" alt="">
+                                                            </div>
+                                                            <div class="my-auto">
+                                                                <small class="fw-bold">Jennifer</small> <br>
+                                                                <small class="text-gray">Janruary 2022</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-3">Ut enim ad minim veniam, quis nostrud
+                                                            exercitation
+                                                            ullamco laboris nisi ut
+                                                            aliquip ex ea commodo con</div>
+                                                        <div class="mt-4">
+                                                            <a href="" class="text-black text-decoration-underline">Show
+                                                                more <img src="assets/imgaes/right-arrorw.png"
+                                                                    class="w-auto ms-2" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <button class="btn btn-lg btn-outline-primary fw-bold">Show all 12
+                                                    reviews</button>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                    </section>
+                                    <!-- Reviews end -->
+                                </div>
+                            </div>
+
+                            <!-- tab4 -->
+                            <div class="tab-pane fade py-4 p-4" id="nav-portfolio" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+
+                                <h4 class="fw-bold">Consultancy Service</h4>
+                                <div class="wrapper">
+                                    <div class="rounded-5 shadow p-3 my-3">
+                                        <div class="d-lg-flex">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/project-name.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="flex-col-adj my-3">
+                                                <div>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Project Name</h4>
+                                                    <p class="text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                                        typesetting industry. Lorem Ipsum has been the industry's
+                                                        standard dummy text ever since the 1500s, when an unknown
+                                                        printer took a galley of type and scrambled it to make a type
+                                                        specimen book.</p>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-between">
+                                                    <div>
+                                                        <a href="#" class="text-blue text-decoration-underline fw-bold">Dubai,UAE </a>
+                                                    </div>
+                                                    <div class="mt-3 mt-lg-0">
+                                                        <a href="#" class="text-gray text-decoration-underline">See Translation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-5 shadow p-3 my-3">
+                                        <div class="d-lg-flex">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/project-name.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="flex-col-adj my-3">
+                                                <div>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Project Name</h4>
+                                                    <p class="text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                                        typesetting industry. Lorem Ipsum has been the industry's
+                                                        standard dummy text ever since the 1500s, when an unknown
+                                                        printer took a galley of type and scrambled it to make a type
+                                                        specimen book.</p>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-between">
+                                                    <div>
+                                                        <a href="#" class="text-blue text-decoration-underline fw-bold">Dubai,UAE </a>
+                                                    </div>
+                                                    <div class="mt-3 mt-lg-0">
+                                                        <a href="#" class="text-gray text-decoration-underline">See Translation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-5 shadow p-3 my-3">
+                                        <div class="d-lg-flex">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/project-name.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="flex-col-adj my-3">
+                                                <div>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Project Name</h4>
+                                                    <p class="text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                                        typesetting industry. Lorem Ipsum has been the industry's
+                                                        standard dummy text ever since the 1500s, when an unknown
+                                                        printer took a galley of type and scrambled it to make a type
+                                                        specimen book.</p>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-between">
+                                                    <div>
+                                                        <a href="#" class="text-blue text-decoration-underline fw-bold">Dubai,UAE </a>
+                                                    </div>
+                                                    <div class="mt-3 mt-lg-0">
+                                                        <a href="#" class="text-gray text-decoration-underline">See Translation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main container end -->
+
+
+</body>
+
+</html>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JS -->
+<script src="./assets/js/script.js"></script>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

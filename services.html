@@ -25,6 +25,12 @@
     <!-- swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        hr {
+            color: lightblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -730,8 +736,260 @@
                             </ul>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <button class="btn btn-lg btn-outline-secondary hover-bg-white"><img
-                                    src="assets/imgaes/filter.png" class="w-auto" alt=""> Filters</button>
+
+                            <!-- modal trigger button -->
+                            <button class="btn btn-lg btn-outline-secondary hover-bg-white" data-bs-toggle="modal" data-bs-target="#filter"><img
+                                    src="assets/imgaes/filter.png" class="w-auto" alt=""> 
+                                    Filters
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="filter" tabindex="-1" aria-labelledby="filterLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="filterLabel">Filters</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body p-5">
+                                            <h4 class="fw-bold">Select Sub-Category</h4>
+                                            <div class="my-5 container-fluid">
+                                                <div class="btn-group w-100 border" role="group"
+                                                    aria-label="Basic example">
+                                                    <button type="button" class="btn bg-black text-white btn-lg pt-4 pb-4 fw-bold">Jobs
+                                                        Request</button>
+                                                    <button type="button" class="btn bg-white btn-lg pt-4 pb-4 fw-bold">Rental
+                                                        Request</button>
+                                                    <button type="button" class="btn bg-white btn-lg pt-4 pb-4 fw-bold">Purchase
+                                                        Requests</button>
+                                                </div>
+                                            </div>
+                                            <div class="my-5">
+                                                <h4 class="fw-bold">Types of Requests </h4>
+                                                <div class="row my-5">
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault1">
+                                                            <label class="form-check-label" for="flexCheckDefault1">
+                                                                Category 1
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault2">
+                                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                                Category 2
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault3">
+                                                            <label class="form-check-label" for="flexCheckDefault3">
+                                                                Category 3
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault4">
+                                                            <label class="form-check-label" for="flexCheckDefault4">
+                                                                Category 4
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault5">
+                                                            <label class="form-check-label" for="flexCheckDefault5">
+                                                                Category 5
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault6">
+                                                            <label class="form-check-label" for="flexCheckDefault6">
+                                                                Category 6
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault7">
+                                                            <label class="form-check-label" for="flexCheckDefault7">
+                                                                Category 7
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault8">
+                                                            <label class="form-check-label" for="flexCheckDefault8">
+                                                                Category 8
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-5">
+                                                <hr>
+                                                <div class="my-4">
+                                                    <h4 class="fw-bold">Price Range</h4>
+                                                    <div class="my-5">
+                                                        <img src="assets/imgaes/bar-graph.png" class="w-auto" alt="">
+                                                    </div>
+                                                    <div class="mx-auto">
+                                                        <div class="d-flex justify-content-evenly">
+                                                            <div class="border rounder p-2 ps-4 my-auto">
+                                                                <span class="text-gray mb-2">Minimum</span><br>
+                                                                <h5 class="fw-bold">$ 670.00</h5>
+                                                            </div>
+                                                            <div class=" my-auto">
+                                                                <img src="assets/imgaes/line-sm.png" class="w-auto" alt="">
+                                                            </div>
+                                                            <div class="border rounder p-2 ps-4 my-auto">
+                                                                <span class="text-gray mb-2">Maximum</span><br>
+                                                                <h5 class="fw-bold">$ 2810.00</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                            <div class="my-5">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <h4 class="fw-bold mb-3">Country</h4>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Select</option>
+                                                            <option value="1">United States</option>
+                                                            <option value="2">Canada</option>
+                                                            <option value="3">Mexico</option>
+                                                            <option value="3">Brazil</option>
+                                                            <option value="3">Argentina</option>
+                                                            <option value="3">Germany</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <h4 class="fw-bold mb-3">City</h4>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Select</option>
+                                                            <option value="1">New York City, USA</option>
+                                                            <option value="2">Tokyo, Japan</option>
+                                                            <option value="3">London, United Kingdom</option>
+                                                            <option value="3">Paris, France</option>
+                                                            <option value="3">Beijing, China</option>
+                                                            <option value="3">Sydney, Australia</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-5">
+                                                <hr>
+                                                <div class="d-flex justify-content-between my-5">
+                                                    <div class="my-auto">
+                                                        <h4 class="fw-bold">Select Date</h4>
+                                                    </div>
+                                                    <div class="my-auto fw-bold">
+                                                        <a class="text-blue text-decoration-underline">Show Calender</a>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                            <div class="my-5">
+                                                <h4 class="fw-bold">Languages to be contacted</h4>
+                                                <div class="row my-5">
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language1">
+                                                            <label class="form-check-label" for="language1">
+                                                                English
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language2">
+                                                            <label class="form-check-label" for="language2">
+                                                                Turkish
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language3">
+                                                            <label class="form-check-label" for="language3">
+                                                                French
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language4">
+                                                            <label class="form-check-label" for="language4">
+                                                                German
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language5">
+                                                            <label class="form-check-label" for="language5">
+                                                                Dutch
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <div class="form-check mb-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="language6">
+                                                            <label class="form-check-label" for="language6">
+                                                                Japanese
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-3">
+                                                        <a href="#" class="text-black text-decoration-underline fw-bold">Show More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <hr>
+                                                <div class="mt-5">
+                                                    <h4 class="fw-bold mb-5">Availability</h4>
+                                                    <div class="d-flex justify-content-between">
+                                                        <h5>Show online profiles</h5>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input switch focus-none" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <a href="#" class="text-black text-decoration-underline fw-bold">Clear all</a>
+                                            <button type="button" class="btn bg-blue text-white ps-4 pe-4">Apply Filters</button>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -757,7 +1015,7 @@
                                     <img src="assets/imgaes/saad-khaliq-3.png" alt="">
                                 </div>
                                 <div>
-                                    <span class="fw-700">Saad Khaliq</span> <br>
+                                    <a href="profile-about.html" class="fw-700 text-black">Saad Khaliq</a> <br>
                                     <span>
                                         <img src="assets/imgaes/blue-star.png" class="w-auto" alt="">
                                         <img src="assets/imgaes/blue-star.png" class="w-auto" alt="">
