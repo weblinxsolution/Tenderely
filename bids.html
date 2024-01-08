@@ -21,15 +21,11 @@
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- Input Telephone -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Tenderely</title>
 </head>
 
 <body>
+
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container">
@@ -42,64 +38,46 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex position-relative w-lg-25">
-                    <input class="form-control me-2 rounded-5 bg-light-pink" type="search"
-                        placeholder="Search people, companies etc. " aria-label="Search">
-                    <button class="btn search_icon" type="submit">
-                        <img src="assets/imgaes/search.png" class="w-auto" alt="">
-                    </button>
-                </form>
-                <div class="d-none d-lg-block">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">
-                                <img src="assets/imgaes/nav-link-1.png" class="w-auto me-5" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">
-                                <img src="assets/imgaes/arrow-down-up.png" class="w-auto me-5" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/imgaes/Document-Add-3.png" class="w-auto me-5" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/imgaes/doc-align-right.png" class="w-auto me-5" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/imgaes/user-2.png" class="w-auto me-5" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <!-- Replace with your chat icon SVG or image -->
                             <div>
-                                <img src="assets/imgaes/chat-icon.png" class="w-auto" alt="">
+                                <img src="assets/imgaes/Group 365.png" class="w-auto" alt="">
                             </div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <!-- Replace with your chat icon SVG or image -->
                             <div>
-                                <img src="assets/imgaes/bell-icon.png" class="w-auto" alt="">
+                                <img src="assets/imgaes/Group 364.png" class="w-auto" alt="">
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pt-0" href="#">
+                            <div class="mt-0">
+                                <a class="btn border border-rad w-max focus-none outline-none d-flex dropdown-toggle"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <div class="my-auto me-3">
+                                        <img src="assets/imgaes/align-justify.png" class="w-auto" alt="">
+                                    </div>
+                                    <div class="my-auto">
+                                        <img src="assets/imgaes/Group 366.png" class="w-auto" alt="">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                             <!-- Button to trigger first modal -->
-                            <button class="my-btn" data-bs-toggle="modal" data-bs-target="#firstModal">Sign In</button>
+                            <!-- <button class="my-btn" data-bs-toggle="modal" data-bs-target="#firstModal">Sign In</button> -->
 
                             <!-- First Modal -->
                             <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel"
@@ -540,197 +518,242 @@
     </div>
     <!-- navbar end -->
 
-
-    <!-- make an offer start -->
-    <section class="my-5">
+    <!-- main content start -->
+    <section class="my-5 mt-10">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-7">
-                    <!-- Main content start -->
-                    <div class="d-flex">
-                        <div>
-                            <a href="details.html"> <img src="assets/imgaes/left-arrow.png" class="w-auto me-3"
-                                    alt=""></a>
-                        </div>
-                        <div class="my-auto">
-                            <h4 class="fw-bold">Rent a Product</h4>
-                        </div>
-                    </div>
-                    <div class="my-4">
-                        <div class="card r-15 border p-3">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <img src="assets/imgaes/square.png" class="w-auto" alt="">
+            <div class="d-lg-flex justify-content-between">
+                <div class="align-items-end">
+                    <h3 class="fw-bold">My Job Posting</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-lg btn-outline-secondary ps-5 pe-5 pt-3 pb-3 border-rad">
+                        <small>Back</small>
+                    </button>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-lg-4">
+                    <div class="border my-3 r-15 p-3">
+                        <a href="#" class="text-black">
+                            <div class="d-lg-flex gap-2 align-items-center mb-3">
+                                <div class="mb-2 mb-lg-0">
+                                    <img src="assets/imgaes/house-3.png" class="w-auto" alt="">
                                 </div>
-                                <div class="col-12 col-lg-8 my-auto">
-                                    <div class="">
-                                        <div>
-                                            <small class="text-gray mb-3">Service Title</small>
-                                            <h4 class="fw-bold">Rental Product Title</h4>
-                                        </div>
-                                        <div class="mt-lg-5 mt-2">
-                                            <span class="fw-700 d-flex align-items-end">Price <span
-                                                    class="text-blue d-flex align-items-end ms-3">
-                                                    <h2 class="fw-bold mb-0">$ 450</h2> / per week
-                                                </span></span>
-                                        </div>
-                                    </div>
+                                <div>
+                                    <p class="fw-bold">Looking for account manager</p>
+                                    <small class="text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry.</small>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="my-5">
-                        <h5 class="fw-bold mb-3">Select Date</h5>
-                        <div class="my-4">
-                            <img src="assets/imgaes/calender-image.PNG" class="w-auto" alt="">
-                        </div>
-                        <h5 class="fw-bold mb-3">Select Time</h5>
-                        <div class="my-4">
-                            <img src="assets/imgaes/time-image.PNG" class="w-auto" alt="">
-                        </div>
-                        <div class="my-5">
-                            <hr>
-                            <div class="my-5">
-                                <h4 class="fw-bold mb-3">Pay With</h4>
-                                <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle w-100-imp text-left-imp bg-white hover-black" type="button"
-                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="assets/imgaes/credit-card.png" class="w-auto" alt=""> Credit or Debit Card
-                                    </button>
-                                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton2">
-                                        <li class="dropdown-item">Debit</li>
-                                        <li class="dropdown-item">Credit</li>
-                                    </ul>
+                            <div class="d-lg-flex justify-content-between align-items-center">
+                                <div class="mb-2 mb-lg-0">
+                                    <p><span class="fw-bold">Location: </span> Dubai, UAE</p>
                                 </div>
-                                <div class="row my-4">
-                                    <div class="col-12 col-lg-12">
-                                        <div class="border p-2 rounded">
-                                            <label for="card-number" class="ps-2 fw-600">Card Number</label>
-                                            <input type="number" class="form-control border-0 focus-none" placeholder="0000 0000 0000 0000">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-4">
-                                    <div class="col-12 col-lg-6">
-                                        <div class="border p-2 rounded">
-                                            <label for="card-number" class="ps-2 fw-600">Expiration</label>
-                                            <input type="text" class="form-control border-0 focus-none" placeholder="MM/YY">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <div class="border p-2 rounded">
-                                            <label for="card-number" class="ps-2 fw-600">CVV</label>
-                                            <input type="number" class="form-control border-0 focus-none" placeholder="123">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-4">
-                                    <div class="col-12 col-lg-12">
-                                        <div class="border p-2 rounded">
-                                            <label for="card-number" class="ps-2 fw-600">Post Code</label>
-                                            <input type="number" class="form-control border-0 focus-none" placeholder="Enter Code">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-4">
-                                    <div class="col-12 col-lg-12">
-                                        <div class="border p-2 rounded">
-                                            <label for="card-number" class="ps-2 fw-600">Country / region</label>
-                                            <input type="text" class="form-control border-0 focus-none" placeholder="Pakistan">
-                                        </div>
-                                    </div>
+                                <div>
+                                    <p><span class="fw-bold">Last Date: </span> 10-15 Sep,23</p>
                                 </div>
                             </div>
-                            <hr>
-                        </div>
-                        <div class="my-10">
-                            <!-- Button to trigger first modal -->
-                            <button class="bg-blue text-white btn btn-lg w-50" data-bs-toggle="modal"
-                                data-bs-target="#offerSent">Confirm and Pay</button>
-
-                            <!--  Modal -->
-                            <div class="modal fade" id="offerSent" tabindex="-1" aria-labelledby="offerSentLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content mt-10">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="container">
-                                                <div class="text-center my-5">
-                                                    <div class="my-5">
-                                                        <img src="assets/imgaes/offer-semt.png" class="w-auto" alt="">
-                                                    </div>
-                                                    <div class="my-5">
-                                                        <h4 class="fw-bold mb-3">Request sent successfully</h4>
-                                                        <p class="text-dark-gray">Your request for rent this product has
-                                                            been sent successfully.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="my-5">
-                            <a href="rental-detail.html"class="btn btn-outline-secondary btn-lg border-rad ps-5 pe-5">Back</a>
-                        </div>
-                        <!-- Main content end -->
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="d-lg-flex justify-content-between align-items-centermt-5">
+                <div class="mb-3 mb-lg-0">
+                    <p class="fw-bold">Bids Received (13)</p>
+                </div>
+                <div class="d-flex align-items-center gap-3 mb-3 mb-lg-0">
+                    Sort by :
+                    <div class="border border-rad p-2">
+                        <select class="form-select border-0 box-shadow-none focus-none"
+                            aria-label="Default select example">
+                            <option selected>Sort by Date</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="border border-rad p-2">
+                        <select class="form-select border-0 box-shadow-none focus-none"
+                            aria-label="Default select example">
+                            <option selected>Sort by Bid Price</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-width: 2px; border-color: black;">
+            <div class="my-5">
+                <div class="col-12 col-lg-6">
+                    <div class="border r-15 p-3 mb-3">
+                        <div class="d-lg-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex gap-2">
+                                <div>
+                                    <img src="assets/imgaes/alyana.png" class="w-auto" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold">Alyana Malik</p>
+                                    <small>Finance Manager</small>
+                                    <div class="my-4">
+                                        <small class="fw-bold">Bid Date : 04/9/22</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="fw-bold text-blue">$ 44.99</h3>
+                                <div class="mt-5">
+                                    <button class="btn border rounded " data-bs-toggle="modal"
+                                    data-bs-target="#pinned">Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border r-15 p-3 mb-3">
+                        <div class="d-lg-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex gap-2">
+                                <div>
+                                    <img src="assets/imgaes/alyana.png" class="w-auto" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold">Muhammad Shoaib</p>
+                                    <small>CEO</small>
+                                    <div class="my-4">
+                                        <small class="fw-bold">Bid Date : 04/9/22</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="fw-bold text-blue">$ 102.99</h3>
+                                <div class="mt-5">
+                                    <button class="btn border rounded " data-bs-toggle="modal"
+                                    data-bs-target="#unPublish">Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border r-15 p-3 mb-3">
+                        <div class="d-lg-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex gap-2">
+                                <div>
+                                    <img src="assets/imgaes/alyana.png" class="w-auto" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold">Hammas Ali</p>
+                                    <small>Marketing Director</small>
+                                    <div class="my-4">
+                                        <small class="fw-bold">Bid Date : 04/9/22</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="fw-bold text-blue">$ 36.99</h3>
+                                <div class="mt-5">
+                                    <button class="btn border rounded ">Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border r-15 p-3 mb-3">
+                        <div class="d-lg-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex gap-2">
+                                <div>
+                                    <img src="assets/imgaes/alyana.png" class="w-auto" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold">Zainab Khalid</p>
+                                    <small>Vice President</small>
+                                    <div class="my-4">
+                                        <small class="fw-bold">Bid Date : 04/9/22</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="fw-bold text-blue">$ 73.99</h3>
+                                <div class="mt-5">
+                                    <button class="btn border rounded ">Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal start -->
+                <div class="modal fade" id="unPublish" tabindex="-1" aria-labelledby="unPublishLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="unPublishLabel">Un publish Offer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="my-4 text-center">
+                                    <div class="mb-4">
+                                        <img src="assets/imgaes/paper-plane.png" class="w-auto" alt="">
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="text-gray">Are you sure you want to un publish this offer?</p>
+                                    </div>
+                                    <div class="mb-4 d-lg-flex gap-2 justify-content-center">
+                                        <button class="btn rounded border ps-5 pe-5 pt-3 pb-3 w-25">
+                                            <small>No</small>
+                                        </button>
+                                        <button class="btn bg-blue rounded text-white ps-5 pe-5 pt-3 pb-3 w-25">
+                                            <small>Yes</small>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal end -->
+
+                <!-- Modal start -->
+                <div class="modal fade" id="pinned" tabindex="-1" aria-labelledby="pinnedLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="pinnedLabel">Un publish Offer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="my-4 text-center">
+                                    <div class="mb-4">
+                                        <img src="assets/imgaes/office-push-pin.png" class="w-auto" alt="">
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="text-gray">Do you want to pinned this offer?</p>
+                                    </div>
+                                    <div class="mb-4 d-lg-flex gap-2 justify-content-center">
+                                        <button class="btn rounded border ps-5 pe-5 pt-3 pb-3 w-25">
+                                            <small>No</small>
+                                        </button>
+                                        <button class="btn bg-blue rounded text-white ps-5 pe-5 pt-3 pb-3 w-25">
+                                            <small>Yes</small>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal end -->
+            </div>
+        </div>
     </section>
-    <!-- make an offer end -->
+    <!-- main content end -->
 
-
-
-
-
-
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 5,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 10
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
-            }
-        });
-
-        const phoneInputField = document.querySelector("#phone");
-        const phoneInput = window.intlTelInput(phoneInputField, {
-            utilsScript:
-                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        });
-    </script>
 </body>
 
 </html>
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <!-- JS -->
 <script src="./assets/js/script.js"></script>
 <!-- JS -->

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/imgaes/logo.png" type="image/x-icon">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remixefont -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Tenderely</title>
+
+    <style>
+        .nav-pills .nav-link.active {
+            background-color: transparent;
+        }
+
+        .border-0 {
+            border: none !important;
+        }
+
+        /* Remove borders from accordion */
+        .accordion-item {
+            border: none;
+        }
+
+        /* Optional: Remove border-radius to make it completely borderless */
+        .accordion-item {
+            border-radius: 0;
+        }
+
+        /* Optional: Adjust margin to remove space between accordion items */
+        .accordion-item+.accordion-item {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container">
+            <a class="navbar-brand mb-2 mb-lg-0" href="#">
+                <img src="assets/imgaes/logo.png" class="w-50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <!-- Replace with your chat icon SVG or image -->
+                            <div>
+                                <img src="assets/imgaes/Group 365.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <img src="assets/imgaes/Group 364.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pt-0" href="#">
+                            <div class="mt-0">
+                                <a class="btn border border-rad w-max focus-none outline-none d-flex dropdown-toggle"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <div class="my-auto me-3">
+                                        <img src="assets/imgaes/align-justify.png" class="w-auto" alt="">
+                                    </div>
+                                    <div class="my-auto">
+                                        <img src="assets/imgaes/Group 366.png" class="w-auto" alt="">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-block d-lg-none">
+        <ul class="d-flex list-style-none bottom-adj">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                    <img src="assets/imgaes/nav-link-1.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                    <img src="assets/imgaes/arrow-down-up.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/Document-Add-3.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/doc-align-right.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/user-2.png" class="w-auto" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- navbar end -->
+
+    <!-- main content start -->
+    <section class="my-5 mt-10">
+        <div class="container">
+            <div class="d-lg-flex justify-content-between">
+                <div class="align-items-end">
+                    <h3 class="fw-bold">Project Status</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-lg btn-outline-secondary ps-5 pe-5 pt-3 pb-3 border-rad">
+                        <small>Back</small>
+                    </button>
+                </div>
+            </div>
+            <div class="my-4 tabs">
+                <nav>
+                    <div class="nav nav-tabs nav-tabs-2 bg-light-brown" id="nav-tab" role="tablist">
+                        <button class="nav-link nav-link-2 text-gray hover-black w-50 active" id="nav-home-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                            aria-controls="nav-home" aria-selected="true">
+                            <h4>Timeline</h4>
+                        </button>
+                        <button class="nav-link nav-link-2 text-gray hover-black w-50" id="nav-profile-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
+                            aria-controls="nav-profile" aria-selected="false">
+                            <h4>Chat</h4>
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content mt-5" id="nav-tabContent">
+                    <!-- 1 -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="border r-15 d-flex">
+                            <div>
+                                <img src="assets/imgaes/empty-image-square.png" class="w-auto" alt="">
+                            </div>
+                            <div class="p-3 w-100 d-flex justify-content-between">
+                                <div>
+                                    <h4>Offer Title</h4>
+                                    <div class="mt-5">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                                        Lorem Ipsum has been the industry's standard dummy text ever.
+                                    </div>
+                                </div>
+                                <div>
+                                    <strong class="text-blue">
+                                        <h4 class="fw-bold">$ 569.00</h4>
+                                    </strong>
+                                    <div class="mt-5">
+                                        <button class="p-2 rounded bg-white border-2-blue text-blue">In
+                                            Progress</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-4">
+                            <div class="card-title d-lg-flex justify-content-between align-items-center p-3">
+                                <h4 class="fw-bold">Milestones</h4>
+                                <button class="p-2 rounded bg-white border-2-blue text-blue ps-4 pe-4">Edit</button>
+                            </div>
+                            <div class="card-body bg-light-brown">
+                                <ul class="list-group border-0 bg-light-brown">
+                                    <li
+                                        class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                        <div>
+                                            <p class="fw-bold mb-0">1st Milestone</p>
+                                            <small class="text-gray">Date :20/07/2023</small>
+                                        </div>
+                                        <div>
+                                            <button
+                                                class="bg-black text-white ps-5 pe-5 pt-3 pb-3 rounded" data-bs-toggle="modal" data-bs-target="#completed">Completed</button>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                        <div>
+                                            <p class="fw-bold mb-0">2nd Milestone</p>
+                                            <small class="text-gray">Date :20/07/2023</small>
+                                        </div>
+                                        <div>
+                                            <button class="bg-white ps-5 pe-5 pt-3 pb-3 rounded" data-bs-toggle="modal" data-bs-target="#inProgress">In Progress</button>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                        <div>
+                                            <p class="fw-bold mb-0">3rd Milestone</p>
+                                            <small class="text-gray">Date :20/07/2023</small>
+                                        </div>
+                                        <div>
+                                            <button class="bg-light-gray border-0 ps-5 pe-5 pt-3 pb-3 rounded">In
+                                                complete</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <button class="btn box-shadow-none focus-none text-blue fw-bold"><img
+                                    src="assets/imgaes/plus-circle.png" class="w-auto" alt=""> Add a Milestone</button>
+                        </div>
+                        <div class="my-4">
+                            <div class="alert alert-primary gap-3 fw-bold" role="alert">
+                                Your Delivery date is expected to be after 10-15 days. <br>
+                                Date: 02/8/2023
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button box-shadow-none focus-none text-blue fw-bold"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <img src="assets/imgaes/life-buoy.png" class="w-auto" alt=""> Resolution
+                                            Accepted
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button
+                                            class="accordion-button box-shadow-none focus-none text-blue fw-bold collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <img src="assets/imgaes/life-buoy.png" class="w-auto" alt=""> Resolution
+                                            Accepted
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <hr>
+                            <div class="d-flex gap-2">
+                                <div>
+                                    <img src="assets/imgaes/scroll-text.png" class="w-auto" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold mb-0">Order Started</p>
+                                    <small class="text-gray">14/07/2023</small>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="text-blue text-decoration-underline fw-bold">Get Support</a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="border r-15 d-flex">
+                            <div>
+                                <img src="assets/imgaes/empty-image-square.png" class="w-auto" alt="">
+                            </div>
+                            <div class="p-3 w-100 d-flex justify-content-between">
+                                <div>
+                                    <h4>Offer Title</h4>
+                                    <div class="mt-5">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                                        Lorem Ipsum has been the industry's standard dummy text ever.
+                                    </div>
+                                </div>
+                                <div>
+                                    <strong class="text-blue">
+                                        <h4 class="fw-bold">$ 569.00</h4>
+                                    </strong>
+                                    <div class="mt-5">
+                                        <button class="p-2 rounded bg-white border-2-blue text-blue">In
+                                            Progress</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border r-15 p-5 mt-4">
+                            <div class="my-4 text-center">
+                                June 12, 2023
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div>
+                                    <img src="assets/imgaes/danial-radcliff.png" class="w-auto" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <h4>Danial Redcliff</h4>
+                                        <small>12:44 pm</small>
+                                    </div>
+                                    <p class="text-gray mt-3">It is a long established fact that a reader will be
+                                        distracted
+                                        by the readable content of a page when looking at its layout. The point of using
+                                        Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 mt-5">
+                                <div>
+                                    <img src="assets/imgaes/danial-radcliff-2.png" class="w-auto" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <h4>Danial Redcliff</h4>
+                                        <small>12:44 pm</small>
+                                    </div>
+                                    <p class="text-gray mt-3">It is a long established fact that a reader will be
+                                        distracted by the readable content .
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 mt-5 justify-content-end">
+                                <div class="mt-2">
+                                    <div class="d-flex gap-3 align-items-center justify-content-end">
+                                        <small>12:44 pm</small>
+                                        <h4>You</h4>
+                                    </div>
+                                    <p class="text-gray mt-3">It is a long established fact that a reader will be
+                                        distracted by the readable content .
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/imgaes/j.png" class="w-auto" alt="">
+                                </div>
+                            </div>
+                            <div class="mt-10 my-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div>
+                                        <img src="assets/imgaes/snd-doc.png" class="w-auto" alt="">
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="d-flex justify-content-between border border-rad p-3">
+                                            <input type="number"
+                                                class="form-control focus-none box-shadow-none outline-none border-0"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Write a message">
+                                            <button
+                                                class="btn focus-none box-shadow-none outline-none text-blue fw-bold text-decoration-underline">
+                                                <img src="assets/imgaes/send-2.png" class="w-auto" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal start -->
+                    <div class="modal fade" id="inProgress" tabindex="-1" aria-labelledby="inProgressLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="inProgressLabel">In Progress</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="border r-15 p-3 pt-4 pb-4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <img src="assets/imgaes/milestone.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <p class="fw-bold mb-0">2nd Milestone</p>
+                                                    <small class="text-gray">Date :20/07/2023</small>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="border rounded p-2 bg-white ps-4 pe-4">In progress</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-4">
+                                        <div class="d-flex gap-2 mb-5">
+                                            <div>
+                                                <img src="assets/imgaes/start-date.png" class="w-auto" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-0">2nd Milestone</p>
+                                                <small class="text-gray">Date :20/07/2023</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 mb-5">
+                                            <div>
+                                                <img src="assets/imgaes/calendar-check.png" class="w-auto" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-0">2nd Milestone</p>
+                                                <small class="text-gray">Date :20/07/2023</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 mb-5">
+                                            <div>
+                                                <img src="assets/imgaes/calendar-clock.png" class="w-auto" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-0">2nd Milestone</p>
+                                                <small class="text-gray">Date :20/07/2023</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 mb-5">
+                                            <div>
+                                                <img src="assets/imgaes/calendar-clock.png" class="w-auto" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-0">2nd Milestone</p>
+                                                <small class="text-gray">Date :20/07/2023</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 mb-5">
+                                            <div>
+                                                <img src="assets/imgaes/circle-dollar-sign.png" class="w-auto" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-0">2nd Milestone</p>
+                                                <small class="text-gray">Date :20/07/2023</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal end -->
+
+                    <!-- modal start -->
+                    <div class="modal fade" id="completed" tabindex="-1" aria-labelledby="completedLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="completedLabel">In Progress</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="my-4">
+                                        <div class="text-center">
+                                            <div class="mb-4">
+                                                <img src="assets/imgaes/project-completed.png" class="w-auto" alt="">
+                                            </div>
+                                            <h4 class="fw-bold">Your Project is Delivered</h4>
+                                        </div>
+                                        <div class="my-5">
+                                            <p>Was the communication from the service provider clear and timely?</p>
+                                            <div class="my-5 d-flex gap-3 align-items-center">
+                                                <div>
+                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                            </div>
+                                            <p>Did the service you received match the description provided by the service provider?</p>
+                                            <div class="my-5 d-flex gap-3 align-items-center">
+                                                <div>
+                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                            </div>
+                                            <p>Would you recommend this service to others?</p>
+                                            <div class="my-5 d-flex gap-3 align-items-center">
+                                                <div>
+                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="form-label fw-bold">Any Additional comments</label>
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                                    style="height: 150px"></textarea>
+                                                <label for="floatingTextarea2">Write your review here.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content end -->
+
+</body>
+
+</html>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="./assets/js/script.js"></script>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

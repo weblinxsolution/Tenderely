@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/imgaes/logo.png" type="image/x-icon">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remixefont -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Tenderely</title>
+
+    <style>
+        .nav-pills .nav-link.active {
+            background-color: transparent;
+        }
+
+        .border-0 {
+            border: none !important;
+        }
+
+        /* Remove borders from accordion */
+        .accordion-item {
+            border: none;
+        }
+
+        /* Optional: Remove border-radius to make it completely borderless */
+        .accordion-item {
+            border-radius: 0;
+        }
+
+        /* Optional: Adjust margin to remove space between accordion items */
+        .accordion-item+.accordion-item {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container">
+            <a class="navbar-brand mb-2 mb-lg-0" href="#">
+                <img src="assets/imgaes/logo.png" class="w-50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <!-- Replace with your chat icon SVG or image -->
+                            <div>
+                                <img src="assets/imgaes/Group 365.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <img src="assets/imgaes/Group 364.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pt-0" href="#">
+                            <div class="mt-0">
+                                <a class="btn border border-rad w-max focus-none outline-none d-flex dropdown-toggle"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <div class="my-auto me-3">
+                                        <img src="assets/imgaes/align-justify.png" class="w-auto" alt="">
+                                    </div>
+                                    <div class="my-auto">
+                                        <img src="assets/imgaes/Group 366.png" class="w-auto" alt="">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-block d-lg-none">
+        <ul class="d-flex list-style-none bottom-adj">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                    <img src="assets/imgaes/nav-link-1.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                    <img src="assets/imgaes/arrow-down-up.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/Document-Add-3.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/doc-align-right.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/user-2.png" class="w-auto" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- navbar end -->
+
+    <!-- main content start -->
+    <section class="my-5 mt-10">
+        <div class="container">
+            <div class="d-lg-flex justify-content-between">
+                <div class="align-items-end">
+                    <h3 class="fw-bold">Project Status</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-lg btn-outline-secondary ps-5 pe-5 pt-3 pb-3 border-rad">
+                        <small>Back</small>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto">
+                    <div class="border r-15 p-4">
+                        <div class="my-4">
+                            <div class="my-5">
+                                <p class="fw-bold">1. How is the communication of the lessor?
+                                </p>
+                                <div class="my-5 d-flex gap-3 align-items-center justify-content-center">
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                                <p class="fw-bold">2. Is the property easily accessible?</p>
+                                <div class="my-5 d-flex gap-3 align-items-center justify-content-center">
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                                <p class="fw-bold">3. How is the cleanliness of the place?</p>
+                                <div class="my-5 d-flex gap-3 align-items-center justify-content-center">
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                                <p class="fw-bold">4. Does the property need maintenance?</p>
+                                <div class="my-5 d-flex gap-3 align-items-center justify-content-center">
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                                <p class="fw-bold">5. Do you think it's worth the price?
+                                </p>
+                                <div class="my-5 d-flex gap-3 align-items-center justify-content-center">
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                                <p class="fw-bold">6. Would you recommend this place to others?</p>
+                                <div class="my-5 d-flex gap-3 align-items-center justify-content-center">
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mb-5">
+                                <div class="mb-4">
+                                    <h2 class="fw-bold mb-4">Write a Review that will be shown to everyone.</h2>
+                                    <small>We will show your feedback for the consultant to other members of our
+                                        community. In this way, you will guide other community members regarding the
+                                        service provided by the consultant.
+                                    </small>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 150px"></textarea>
+                                        <label for="floatingTextarea2">Write your review here.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="mb-4">
+                                    <h2 class="fw-bold mb-4">Tell us about the service provider</h2>
+                                    <small>If you would like to share something specifically about the consultant,
+                                        please tell us. We will not share what you write on any digital media and we
+                                        will not inform the consultant.
+                                    </small>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 150px"></textarea>
+                                        <label for="floatingTextarea2">Write your review here.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3 text-end">
+                        <button class="bg-black text-white ps-5 pe-5 pt-3 pb-3 rounded" data-bs-toggle="modal"
+                            data-bs-target="#feedback">Send</button>
+                    </div>
+                    <!-- modal start -->
+                    <div class="modal fade" id="feedback" tabindex="-1" aria-labelledby="feedbackLabel"
+                        aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="my-5 mx-auto text-center">
+                                        <div class="mb-4">
+                                            <img src="assets/imgaes/offer-semt.png" class="w-auto" alt="">
+                                        </div>
+                                        <div class="mb-4">
+                                            <h3 class="fw-bold mb-5">Thank you very much for <br>
+                                                your evaluation of Host.</h3>
+                                            <div>
+                                                After it is reviewed, we will publish it as soon as possible <br> and inform you.Thank you for joining our community.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content end -->
+
+</body>
+
+</html>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="./assets/js/script.js"></script>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
