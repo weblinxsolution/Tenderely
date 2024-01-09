@@ -22,6 +22,31 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Tenderely</title>
+
+    <style>
+        .nav-pills .nav-link.active {
+            background-color: transparent;
+        }
+
+        .border-0 {
+            border: none !important;
+        }
+
+        /* Remove borders from accordion */
+        .accordion-item {
+            border: none;
+        }
+
+        /* Optional: Remove border-radius to make it completely borderless */
+        .accordion-item {
+            border-radius: 0;
+        }
+
+        /* Optional: Adjust margin to remove space between accordion items */
+        .accordion-item+.accordion-item {
+            margin-top: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -116,59 +141,27 @@
     <!-- main content start -->
     <section class="my-5 mt-10">
         <div class="container">
-            <div class="my-5 text-center">
-                <h2 class="fw-bold fs-60 text-blue">Tenderely it</h2>
-                <h2 class="fw-bold fs-60">You could earn</h2>
-                <div class="my-5">
-                    <h1 class="fw-bold fs-72"><span class="text-blue">$</span> 288</h1>
+            <div class="d-lg-flex justify-content-between">
+                <div class="align-items-end">
+                    <h3 class="fw-bold">Wish list</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
                 </div>
-                <div class="my-3 text-center">
-                    <img src="assets/imgaes/progress-black.png" class="w-auto" alt="">
-                </div>
-                <div class="my-5">
-                    <button class="btn btn-lg bg-blue text-white ps-5 pe-5 pt-3 pb-3">Get Started</button>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-lg btn-outline-secondary ps-5 pe-5 pt-3 pb-3 border-rad">
+                        <small>Back</small>
+                    </button>
                 </div>
             </div>
-        </div>
-        <div class="bg-black w-100 text-white text-center py-5">
-            <h1 class="fs-60 mb-5 mt-10">Providing an Unforgettable Experience</h1>
-            <div class="my-4">
-                <img src="assets/imgaes/tenderely-white.png" class="w-auto" alt="">
-            </div>
-        </div>
-        <div class="w-100">
-            <img src="assets/imgaes/mobile-full.png" class="w-100" alt="">
-        </div>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
+            <div class="my-10 text-center">
+                <div class="my-4">
+                    <img src="assets/imgaes/bell.png" class="w-auto" alt="">
                 </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
+                <div class="my-3">
+                    <p class="fw-bold">Create your first wishlist</p>
                 </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
+                <div class="my-3">
+                    <small>As you search, click the heart icon to save your <br> favorite services and Experiences to a wish list.</small>
                 </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
-                </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
-                </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
-                </div>
-            </div>
-
-            <div class="my-5">
-                <a href="#" class="btn btn-outline-secondary btn-lg rounded ps-5 pe-5">Back</a>
             </div>
         </div>
     </section>

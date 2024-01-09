@@ -22,6 +22,18 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Tenderely</title>
+
+    <style>
+        .tabs .nav-tabs .active {
+            border-bottom: 10px solid #104af3 !important;
+            background-color: transparent !important;
+            margin-bottom: -9px;
+        }
+
+        .nav-tabs-2 {
+            border-bottom: 10px solid #ececec;
+        }
+    </style>
 </head>
 
 <body>
@@ -116,59 +128,49 @@
     <!-- main content start -->
     <section class="my-5 mt-10">
         <div class="container">
-            <div class="my-5 text-center">
-                <h2 class="fw-bold fs-60 text-blue">Tenderely it</h2>
-                <h2 class="fw-bold fs-60">You could earn</h2>
+            <div class="my-5 d-lg-flex justify-content-between">
+                <div class="mb-3">
+                    <h2 class="fw-bold">Set the price of your <span class="text-blue">Rental Product</span></h2>
+                    <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                </div>                
+                <div class="mb-3">
+                    <button class="border border-rad bg-white ps-5 pe-5 pt-3 pb-3 fw-bold">Save & Exit</button>
+                </div>
+            </div>
+            <div class="my-10">
+                <div class="col-12 col-lg-6">
+                    <h4 class="fw-bold">Availability (24 hours)</h4>
+                    <small>If there is a day and time you do not want to provide consultancy services, please select it. 
+                        You can make changes later from the Providing Service section on your profile page.</small>
+                </div>
                 <div class="my-5">
-                    <h1 class="fw-bold fs-72"><span class="text-blue">$</span> 288</h1>
+                    <img src="assets/imgaes/calender-image.PNG" class="w-auto" alt="">
                 </div>
-                <div class="my-3 text-center">
-                    <img src="assets/imgaes/progress-black.png" class="w-auto" alt="">
+                <div class="col-12 col-lg-6 my-4">
+                    <h4 class="fw-bold">Select Time</h4>
+                    <small>Lorem ipsum is the dummy text for printing & type setting purpose.</small>
                 </div>
-                <div class="my-5">
-                    <button class="btn btn-lg bg-blue text-white ps-5 pe-5 pt-3 pb-3">Get Started</button>
-                </div>
-            </div>
-        </div>
-        <div class="bg-black w-100 text-white text-center py-5">
-            <h1 class="fs-60 mb-5 mt-10">Providing an Unforgettable Experience</h1>
-            <div class="my-4">
-                <img src="assets/imgaes/tenderely-white.png" class="w-auto" alt="">
-            </div>
-        </div>
-        <div class="w-100">
-            <img src="assets/imgaes/mobile-full.png" class="w-100" alt="">
-        </div>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
-                </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
-                </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
-                </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
-                </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
-                </div>
-                <div class="col-12 col-lg-4 my-5">
-                    <h3 class="mb-4">Lorem Ipsum Dolor Sit Amet :</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor felis in dui consequat, eget auctor justo iaculis. </p>
+                <div class="my-4 d-flex align-items-center gap-3">
+                    <div class="border border-rad w-max p-4">
+                        9:00 - 22:00
+                    </div>
+                    <button class="btn text-blue fw-bold box-shadow-none focus-none"><img src="assets/imgaes/pencil.png" class="w-auto" alt=""> Edit</button>
                 </div>
             </div>
-
+            <div class="my-5 grid-7-cols gap-2 mt-10">
+                <div class="bg-blue" style="height: 5px;"></div>
+                <div class="bg-blue" style="height: 5px;"></div>
+                <div class="bg-light-gray" style="height: 5px;"></div>
+                <div class="bg-light-gray" style="height: 5px;"></div>
+                <div class="bg-light-gray" style="height: 5px;"></div>
+                <div class="bg-light-gray" style="height: 5px;"></div>
+                <div class="bg-light-gray" style="height: 5px;"></div>
+            </div>
             <div class="my-5">
-                <a href="#" class="btn btn-outline-secondary btn-lg rounded ps-5 pe-5">Back</a>
+                <div class="d-flex justify-content-between my-3" style="border-width: 2px !important;">
+                    <button class="bg-white border rounded ps-5 pe-5 pt-3 pb-3">Back</button>
+                    <a href="operator-fee.html" class="bg-black text-white border rounded ps-5 pe-5 pt-3 pb-3">Next</a>
+                </div>
             </div>
         </div>
     </section>

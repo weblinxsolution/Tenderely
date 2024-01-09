@@ -454,7 +454,7 @@ input:checked + label {
 }
 
 #flexSwitchCheckDefault {
-  transform: scale(2.0); /* Adjust the scale factor as needed */
+  transform: scale(2); /* Adjust the scale factor as needed */
 }
 
 .border-bottom-2 {
@@ -494,7 +494,8 @@ input:checked + label {
   transform: scale(1.5);
 }
 
-#flexRadioDefault1, #flexRadioDefault2 {
+#flexRadioDefault1,
+#flexRadioDefault2 {
   transform: scale(1.5);
 }
 
@@ -511,10 +512,15 @@ input:checked + label {
   grid-template-columns: repeat(6, 1fr);
 }
 
+.grid-7-cols {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
 .pricing-before::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   width: 133px;
   height: 6px;
   top: 28px;
@@ -522,9 +528,9 @@ input:checked + label {
 }
 
 .schedule-before::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   width: 133px;
   height: 6px;
   top: 28px;
@@ -532,9 +538,9 @@ input:checked + label {
 }
 
 .location-before::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   width: 133px;
   height: 6px;
   top: 28px;
@@ -542,9 +548,9 @@ input:checked + label {
 }
 
 .portfolio-before::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   width: 133px;
   height: 6px;
   top: 28px;
@@ -552,9 +558,9 @@ input:checked + label {
 }
 
 .verify-before::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   width: 133px;
   height: 6px;
   top: 28px;
@@ -597,7 +603,7 @@ input:checked + label {
 
 .switch-black:checked {
   background-color: black;
-    border-color: black;
+  border-color: black;
 }
 
 .flag-adj {
@@ -615,12 +621,54 @@ input:checked + label {
 }
 
 .bg-light-brown {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .my-10 {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.bg-light-gray-2 {
+  background-color: #f7f7f7;
+}
+
+.border-2 {
+  border: 2px solid black;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.progress-adj {
+  top: 50px;
+  left: 25%;
+}
+
+.badge-adj {
+  top: 10px;
+  left: 24%;
+}
+
+.h-7 {
+  height: 7px;
+}
+
+.progress-adj-2 {
+  top: -14px;
+  left: 25%;
+}
+
+.badge-adj-2 {
+  left: 25%;
+  top: -44px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 @media (max-width: 800px) {
@@ -689,11 +737,26 @@ input:checked + label {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .pricing-before::before, .schedule-before::before, .location-before::before, .portfolio-before::before, .verify-before::before {
+  .pricing-before::before,
+  .schedule-before::before,
+  .location-before::before,
+  .portfolio-before::before,
+  .verify-before::before {
     display: none;
   }
 
   .grid-2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-7-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-3 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
