@@ -6,7 +6,12 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
 }
-
+@media (min-width: 1200px)
+{
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1245px;    
+  }
+}
 .wrapper {
   max-width: 1400px;
   margin: auto;
@@ -678,8 +683,9 @@ input:checked + label {
 
   .left-right-adj {
     bottom: 45px;
-    left: 35%;
-  }
+    left: 0;
+    text-align: center;
+}
 
   .border-bottom {
     width: 200px;
