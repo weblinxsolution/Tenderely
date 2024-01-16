@@ -6,12 +6,27 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
 }
-@media (min-width: 1200px)
-{
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1245px;    
+
+@media (min-width: 1200px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1245px;
   }
 }
+
+@media (max-width: 991px) {
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 850px;
+  }
+}
+
 .wrapper {
   max-width: 1400px;
   margin: auto;
@@ -91,8 +106,21 @@ p {
 
 .search_icon {
   position: absolute;
-  right: 5px;
-  top: 0px;
+  right: 20px;
+}
+
+.search_icon:active {
+  border-color: transparent !important;
+  outline: 0;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+textarea:focus {
+  box-shadow: none !important;
 }
 
 .my-btn {
@@ -101,6 +129,10 @@ p {
   color: #104af3;
   padding: 10px 25px;
   border-radius: 100px;
+}
+
+.custom_tabs {
+  width: max-content;
 }
 
 .my-btn-2 {
@@ -230,7 +262,8 @@ p {
 }
 
 .swiper-container {
-  width: 100%; /* Adjust as needed */
+  width: 100%;
+  /* Adjust as needed */
   margin: 0 auto;
 }
 
@@ -334,6 +367,7 @@ p {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .border-bottom {
   border-bottom: 1px solid gray;
   border-top: none;
@@ -416,7 +450,7 @@ p {
   border: none;
 }
 
-input:checked + label {
+input:checked+label {
   color: #415792;
 }
 
@@ -459,7 +493,8 @@ input:checked + label {
 }
 
 #flexSwitchCheckDefault {
-  transform: scale(2); /* Adjust the scale factor as needed */
+  transform: scale(2);
+  /* Adjust the scale factor as needed */
 }
 
 .border-bottom-2 {
@@ -478,7 +513,8 @@ input:checked + label {
 /* Remove borders from accordion buttons */
 .accordion-button-2 {
   border: none;
-  border-bottom: 1px solid #dee2e6; /* Add this line if you want to keep a border between items */
+  border-bottom: 1px solid #dee2e6;
+  /* Add this line if you want to keep a border between items */
 }
 
 /* Optional: Remove border from the active accordion button */
@@ -685,7 +721,7 @@ input:checked + label {
     bottom: 45px;
     left: 0;
     text-align: center;
-}
+  }
 
   .border-bottom {
     width: 200px;
@@ -709,6 +745,14 @@ input:checked + label {
 }
 
 @media (max-width: 600px) {
+  .custom_tabs {
+    width: 100%;
+  }
+
+  .custom_tabs a {
+    flex: auto;
+  }
+
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -762,7 +806,12 @@ input:checked + label {
   .grid-7-cols {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .grid-3 {
     grid-template-columns: repeat(1, 1fr);
   }
+  .steps_{
+    grid-template-columns: repeat(7, 1fr);    
+  }
+
 }

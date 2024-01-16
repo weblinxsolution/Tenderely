@@ -38,44 +38,44 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex position-relative w-lg-25">
+                <form class="d-flex align-items-center position-relative w-lg-25">
                     <input class="form-control me-2 rounded-5 bg-light-pink" type="search"
                         placeholder="Search people, companies etc. " aria-label="Search">
-                    <button class="btn search_icon" type="submit">
+                    <button class="btn search_icon p-0 d-flex algin-items-center" type="submit">
                         <img src="assets/imgaes/search.png" class="w-auto" alt="">
                     </button>
                 </form>
-                <div class="d-none d-lg-block">                    
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-lg-5">                        
+                <div class="d-none d-lg-block w-100">
+                    <ul class="navbar-nav mx-auto mb-2 justify-content-evenly">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">
-                                <img src="assets/imgaes/nav-link-1.png" class="w-auto me-5" alt="">
+                                <img src="assets/imgaes/nav-link-1.png" class="img-fluid" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">
-                                <img src="assets/imgaes/arrow-down-up.png" class="w-auto me-5" alt="">
+                                <img src="assets/imgaes/arrow-down-up.png" class="img-fluid" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#postModal">
+                                <img src="assets/imgaes/Document-Add-3.png" class="img-fluid" data-bs-toggle="modal"
+                                    data-bs-target="#postModal" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img src="assets/imgaes/Document-Add-3.png" class="w-auto me-5" data-bs-toggle="modal"
-                                data-bs-target="#postModal" alt="">
+                                <img src="assets/imgaes/doc-align-right.png" class="img-fluid" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img src="assets/imgaes/doc-align-right.png" class="w-auto me-5" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="assets/imgaes/user-2.png" class="w-auto me-5" alt="">
+                                <img src="assets/imgaes/user-2.png" class="img-fluid" alt="">
                             </a>
                         </li>
                     </ul>
                 </div>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 align-items-lg-center w-50 justify-content-lg-end">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <!-- Replace with your chat icon SVG or image -->
@@ -96,7 +96,8 @@
                         <a class="nav-link" href="#">
 
                             <!-- Button to trigger first modal -->
-                            <button class="my-btn" data-bs-toggle="modal" data-bs-target="#firstModal">Sign In</button>
+                            <button class="my-btn px-4" data-bs-toggle="modal" data-bs-target="#firstModal">Sign
+                                In</button>
 
                             <!-- First Modal -->
                             <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel"
@@ -519,7 +520,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#postModal">
                     <img src="assets/imgaes/Document-Add-3.png" class="w-auto" alt="">
                 </a>
             </li>
@@ -542,13 +543,13 @@
             <div class="col-12 col-md-8">
                 <h4 class="mb-3">What are you looking for ?</h4>
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                        <div class="d-grid d-md-flex justify-content-evenly gap-2 border border-rad p-3">
-                            <a href="index.html" class="btn btn-primary pt-md-4 pb-md-4 ps-md-5 pe-md-5 border-rad"
-                                type="button"><img src="assets/imgaes/stream-icon.png" class="w-auto me-2" alt="">
+                    <div class="custom_tabs">
+                        <div class="d-flex justify-content-evenly gap-2 border border-rad p-2">
+                            <a href="index.html" class="btn btn-primary  border-rad p-3 px-4" type="button"><img
+                                    src="assets/imgaes/stream-icon.png" class="w-auto me-2" alt="">
                                 Stream</a>
-                            <a href="jobs.html" class="btn pt-md-3 pb-md-3 ps-md-4 pe-md-4" type="button"><img
-                                    src="assets/imgaes/job-icon.png" class="w-auto me-2" alt=""> Jobs</a>
+                            <a href="jobs.html" class="btn p-3 px-4" type="button"><img src="assets/imgaes/job-icon.png"
+                                    class="w-auto me-2" alt=""> Jobs</a>
                         </div>
                     </div>
                 </div>
@@ -593,8 +594,10 @@
                                         </div>
                                     </div>
                                     <a href="#" class="d-flex justify-content-between">
-                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-1 me-lg-2"
-                                            alt="">
+                                        <div>
+                                            <img src="assets/imgaes/Profile-Add-1.png" class="me-1 me-lg-2"
+                                                style="width: 25px;" alt="">
+                                        </div>
                                         <div class="text-primary connect-font">Connect</div>
                                     </a>
                                 </div>
@@ -664,7 +667,10 @@
                                         </div>
                                     </div>
                                     <a href="#" class="d-flex justify-content-between">
-                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-2" alt="">
+                                        <div>
+                                            <img src="assets/imgaes/Profile-Add-1.png" class="me-1 me-lg-2"
+                                                style="width: 25px;" alt="">
+                                        </div>
                                         <div class="text-primary">Connect</div>
                                     </a>
                                 </div>
@@ -741,8 +747,10 @@
                                         </div>
                                     </div>
                                     <a href="#" class="d-flex justify-content-between">
-                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-1 me-lg-2"
-                                            alt="">
+                                        <div>
+                                            <img src="assets/imgaes/Profile-Add-1.png" class="me-1 me-lg-2"
+                                                style="width: 25px;" alt="">
+                                        </div>
                                         <div class="text-primary">Connect</div>
                                     </a>
                                 </div>
@@ -810,7 +818,10 @@
                                     <p class="mb-1 mt-0 fs-sm">Design @BYJU'S (Hiring Product, UI, Motion Designers)</p>
                                     <button
                                         class="btn btn-outline-primary border-rad d-flex justify-content-between mt-4">
-                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-2" alt="">
+                                        <div>
+                                            <img src="assets/imgaes/Profile-Add-1.png" class="me-1 me-lg-2"
+                                                style="width: 25px;" alt="">
+                                        </div>
                                         <div class="text-primary">Connect</div>
                                     </button>
                                 </div>
@@ -828,7 +839,10 @@
                                     <p class="mb-1 mt-0 fs-sm">Design @BYJU'S (Hiring Product, UI, Motion Designers)</p>
                                     <button
                                         class="btn btn-outline-primary border-rad d-flex justify-content-between mt-4">
-                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-2" alt="">
+                                        <div>
+                                            <img src="assets/imgaes/Profile-Add-1.png" class="me-1 me-lg-2"
+                                                style="width: 25px;" alt="">
+                                        </div>
                                         <div class="text-primary">Connect</div>
                                     </button>
                                 </div>
@@ -846,7 +860,10 @@
                                     <p class="mb-1 mt-0 fs-sm">Design @BYJU'S (Hiring Product, UI, Motion Designers)</p>
                                     <button
                                         class="btn btn-outline-primary border-rad d-flex justify-content-between mt-4">
-                                        <img src="assets/imgaes/Profile-Add-1.png" class="w-auto h-25 me-2" alt="">
+                                        <div>
+                                            <img src="assets/imgaes/Profile-Add-1.png" class="me-1 me-lg-2"
+                                                style="width: 25px;" alt="">
+                                        </div>
                                         <div class="text-primary">Connect</div>
                                     </button>
                                 </div>
@@ -860,6 +877,82 @@
     </section>
     <!-- grid end -->
 </body>
+
+
+<!-- Main Modal start -->
+<div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content p-3">
+            <div class="modal-header border-0">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <img src="assets/imgaes/post-image.png" class="w-auto" alt="">
+                    </div>
+                    <div class="my-auto">
+                        <h4 class="fw-bold mb-0">
+                            Michelle Clark
+                        </h4>
+                        <small><a href="#" class="text-blue text-decoration-underline">View my
+                                profile</a></small>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body  post-modal-body p-0">
+                <div>
+                    <textarea rows="3" class="form-control border-0 px-0"
+                        placeholder="What do you want to post with us?"></textarea>
+                </div>
+                <div class="d-flex flex-wrap justify-content-lg-between justify-content-center">
+                    <div>
+                        <button class="btn box-shadow-none" data-bs-toggle="modal" data-bs-target="#cameraModal">
+                            <div>
+                                <img src="assets/imgaes/camera.png" class="w-75" alt="">
+                            </div>
+                            <small class="fs-12">Photo / Video</small>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btn box-shadow-none" data-bs-toggle="modal" data-bs-target="#jobPosting">
+                            <div>
+                                <img src="assets/imgaes/job-posting.png" class="w-75" alt="">
+                            </div>
+                            <small class="fs-12">Job Posting</small>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btn box-shadow-none">
+                            <div>
+                                <img src="assets/imgaes/polls.png" class="w-75" alt="">
+                            </div>
+                            <small class="fs-12">Polls</small>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btn box-shadow-none">
+                            <div>
+                                <img src="assets/imgaes/document-gray.png" class="w-75" alt="">
+                            </div>
+                            <small class="fs-12">Document</small>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btn box-shadow-none">
+                            <div>
+                                <img src="assets/imgaes/events.png" class="w-75" alt="">
+                            </div>
+                            <small class="fs-12">Events</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary border-rad ps-4 pe-4">Post</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Modal end -->
 
 </html>
 <!-- Bootstrap -->
