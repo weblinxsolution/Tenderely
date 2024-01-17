@@ -552,10 +552,49 @@
             </div>
             <div class="border-top-r">
                 <div class="card border-top-r rounded-5">
-                    <div>
-                        <img src="assets/imgaes/empowering-founders.png" class="img-fluid" alt="">
+                    <div class="profile-box position-relative">
+                        <div class="profile-cover">
+                            <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZWJvb2slMjBjb3ZlcnxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="image">
+                        </div>
+                        <div class="profile-image">
+                            <img src="https://lh3.googleusercontent.com/F4QbSg0kDOrjta9sYI5OHP2YrJ7Z2_AoUkCoQti7pnr6fbMpqpDI5LsBxEek2oaSpkZ-i8kGpIJqXSMUljLmfwb1nnv3qld3E9E=h200-rw"
+                                alt="image">
+                        </div>
                     </div>
-                    <div class="mt-5">
+                    <style>
+                        .profile-cover {
+                            width: 100%;
+                        }
+
+                        .profile-cover img {
+                            width: 100%;
+                            min-height: 200px;
+                            max-height: 48vh;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+
+                        .profile-image {
+                            width: max-content;
+                            padding: 5px 5%;
+                            margin-top: -8%;
+                        }
+
+                        .profile-image img {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        @media(max-width:768px) {
+                            .profile-image {
+                                margin-top: -30%;
+                            }
+                        }
+                    </style>
+                    <div class="my-5">
                         <div class="wrapper">
                             <div class="d-lg-flex justify-content-between">
                                 <div>
@@ -662,7 +701,7 @@
                                     <div class="wrapper my-4">
                                         <div class="d-lg-flex">
                                             <div class="me-3">
-                                                <img src="assets/imgaes/xpress.png" class="w-auto" alt="">
+                                                <img src="assets/imgaes/xpress.png" class="w-auto  img-fluid" alt="">
                                             </div>
                                             <div class="flex-col-adj my-1">
                                                 <div>
@@ -673,7 +712,9 @@
                                                 <div class="text-gray">
                                                     Lorem Ipsum is simply dummy text of the printing and typesetting
                                                     industry. Lorem Ipsum has been the industry's standard dummy text
-                                                    ever since <a href="#" class="text-blue text-decoration-underline fw-bold">Read More</a>
+                                                    ever since <a href="#"
+                                                        class="text-blue text-decoration-underline fw-bold">Read
+                                                        More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -718,22 +759,23 @@
                                         </div>
                                     </div>
                                     <div class="my-4">
-                                        <div class="row">
+                                        <div class="row gap-lg-0 gap-4">
                                             <div class="col-12 col-lg-4 text-center">
                                                 <div class="card border rounded-5 py-4 p-3">
                                                     <div class="d-flex text-start">
                                                         <div class="me-2">
-                                                            <img src="assets/imgaes/cyber-code.png" class="w-auto" alt="">
+                                                            <img src="assets/imgaes/cyber-code.png" class="w-auto"
+                                                                alt="">
                                                         </div>
                                                         <div class="my-auto">
                                                             <h5 class="fw-bold mb-0">Cyber Code</h5>
-                                                            <small>Software Development & 
-                                                                 <br> Cyber Security Company</small><br>
+                                                            <small>Software Development &
+                                                                <br> Cyber Security Company</small><br>
                                                             <div class="py-4">
                                                                 <button
-                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                    class="btn border-rad bg-blue text-white d-flex align-items-center gap-1 fw-bold pt-0 pb-0 ps-3 pe-3"><img
                                                                         src="assets/imgaes/plus-white.png"
-                                                                        class="w-auto" alt=""> Follow</button>
+                                                                        class="" style="width: 20px; height: 20px;" alt=""> Follow</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -747,13 +789,13 @@
                                                         </div>
                                                         <div class="my-auto">
                                                             <h5 class="fw-bold mb-0">Zappiar Solutions</h5>
-                                                            <small>IT Services & IT Consulting                                                                
+                                                            <small>IT Services & IT Consulting
                                                                 <br> Company</small><br>
                                                             <div class="py-4">
                                                                 <button
-                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                    class="btn border-rad bg-blue text-white d-flex align-items-center gap-1 fw-bold pt-0 pb-0 ps-3 pe-3"><img
                                                                         src="assets/imgaes/plus-white.png"
-                                                                        class="w-auto" alt=""> Follow</button>
+                                                                        class="" style="width: 20px; height: 20px;" alt=""> Follow</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -763,19 +805,18 @@
                                                 <div class="card border rounded-5 py-4 p-3">
                                                     <div class="d-flex text-start">
                                                         <div class="me-2">
-                                                            <img src="assets/imgaes/telecom.png" class="w-auto"
-                                                                alt="">
+                                                            <img src="assets/imgaes/telecom.png" class="w-auto" alt="">
                                                         </div>
                                                         <div class="my-auto">
                                                             <h5 class="fw-bold mb-0">Telecom TLC</h5>
                                                             <small>Telecommunication & Network
-                                                                
+
                                                                 <br> Company</small><br>
                                                             <div class="py-4">
                                                                 <button
-                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                    class="btn border-rad bg-blue text-white d-flex align-items-center gap-1 fw-bold pt-0 pb-0 ps-3 pe-3"><img
                                                                         src="assets/imgaes/plus-white.png"
-                                                                        class="w-auto" alt=""> Follow</button>
+                                                                        class="" style="width: 20px; height: 20px;" alt=""> Follow</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -801,7 +842,8 @@
                                                             </div>
                                                             <div>
                                                                 <div class="d-flex justify-content-between">
-                                                                    <div class="fw-700 me-2 mt-2">Zayn vc Solutions</div>
+                                                                    <div class="fw-700 me-2 mt-2">Zayn vc Solutions
+                                                                    </div>
                                                                 </div>
                                                                 <p class="mb-1 mt-2">IT Service & IT Consulting</p>
                                                             </div>
@@ -819,8 +861,7 @@
                                                     <span class="fw-700">See Translation</span>
                                                 </p>
                                             </div>
-                                            <img src="assets/imgaes/paklaunch.png" class="card-img-bottom"
-                                                alt="image">
+                                            <img src="assets/imgaes/paklaunch.png" class="card-img-bottom" alt="image">
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -874,7 +915,8 @@
                                                             </div>
                                                             <div>
                                                                 <div class="d-flex justify-content-between">
-                                                                    <div class="fw-700 me-2 mt-2">Zayn vc Solutions</div>
+                                                                    <div class="fw-700 me-2 mt-2">Zayn vc Solutions
+                                                                    </div>
                                                                 </div>
                                                                 <p class="mb-1 mt-2">IT Service & IT Consulting</p>
                                                             </div>
@@ -954,7 +996,8 @@
                                             <div class="flex-col-adj my-3">
                                                 <div>
                                                     <small class="text-gray">Service Title</small>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Cyber Security Solutions</h4>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Cyber Security
+                                                        Solutions</h4>
                                                     <small>Lorem Ipsum is simply dummy text of the printing and
                                                         typesetting industry. Lorem Ipsum has been the industry's
                                                         standard dummy text .</small>
@@ -981,7 +1024,8 @@
                                             <div class="flex-col-adj my-3">
                                                 <div>
                                                     <small class="text-gray">Service Title</small>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Fix your coding bugs</h4>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Fix your coding
+                                                        bugs</h4>
                                                     <small>Lorem Ipsum is simply dummy text of the printing and
                                                         typesetting industry. Lorem Ipsum has been the industry's
                                                         standard dummy text .</small>
@@ -1008,7 +1052,8 @@
                                             <div class="flex-col-adj my-3">
                                                 <div>
                                                     <small class="text-gray">Service Title</small>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">iOS + Android Mobile apps design</h4>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">iOS + Android
+                                                        Mobile apps design</h4>
                                                     <small>Lorem Ipsum is simply dummy text of the printing and
                                                         typesetting industry. Lorem Ipsum has been the industry's
                                                         standard dummy text .</small>
@@ -1169,7 +1214,8 @@
                                             </div>
                                             <div class="flex-col-adj my-3">
                                                 <div>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Rent a Pent House for ! Month</h4>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Rent a Pent House
+                                                        for ! Month</h4>
                                                     <p class="text-gray">Lorem Ipsum is simply dummy text of the
                                                         printing and
                                                         typesetting industry. Lorem Ipsum has been the industry's
@@ -1198,7 +1244,8 @@
                                             </div>
                                             <div class="flex-col-adj my-3">
                                                 <div>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Rent a Dell Laptop core i7 windows 11</h4>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Rent a Dell
+                                                        Laptop core i7 windows 11</h4>
                                                     <p class="text-gray">Lorem Ipsum is simply dummy text of the
                                                         printing and
                                                         typesetting industry. Lorem Ipsum has been the industry's

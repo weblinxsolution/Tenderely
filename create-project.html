@@ -544,17 +544,11 @@
             </div>
             <div class="my-5 row">
                 <h4 class="fw-bold mb-3">Add Media/ Photos</h4>
-                <div class="grid-2 d-flex align-items-center">
-                    <div>
-                        <div>
-                            <img src="assets/imgaes/empty-image-2.png" class="w-auto" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <button class="btn box-shadow-none focus-none">
-                            <img src="assets/imgaes/add-image.png" class="w-auto" alt="">
-                        </button>
-                    </div>
+                <div class="grid-2 d-flex flex-lg-nowrap gap-3 col-lg-6 flex-wrap align-items-center">
+                    <img src="assets/imgaes/empty-image-2.png" class="w-100 img-fluid" alt="">
+                    <button class="btn box-shadow-none focus-none w-100 px-0">
+                        <img src="assets/imgaes/add-image.png" class="w-100 img-fluid" alt="">
+                    </button>
                 </div>
             </div>
             <div class="mb-4">
@@ -576,7 +570,7 @@
                     placeholder="Add your offer title">
             </div>
             <div class="my-5">
-                <div class="alert alert-primary d-flex align-items-center gap-3 fw-bold" role="alert">
+                <div class="alert alert-primary d-flex align-items-center gap-3 fw-bold flex-wrap" role="alert">
                     <div class="w-max ps-5 pe-5 pt-3 pb-3 text-white rounded bg-black">Note</div>
                     Delivery once with “One delivery” or use “Milestones“ to delivery steps for more complex offers.
                 </div>
@@ -779,208 +773,187 @@
                 </div>
             </div>
             <div class="my-4">
-                <button class="bg-white border-rad text-blue fw-bold ps-5 pe-5 pt-3 pb-3 border-2-blue" data-bs-toggle="modal" data-bs-target="#addContact"><img
-                        src="assets/imgaes/user-plus-2.png" class="w-auto" alt="">
+                <button class="bg-white border-rad text-blue fw-bold ps-5 pe-5 pt-3 pb-3 border-2-blue"
+                    data-bs-toggle="modal" data-bs-target="#addContact"><img src="assets/imgaes/user-plus-2.png"
+                        class="w-auto" alt="">
                     Add Job Owner
                 </button>
 
                 <!-- add contacts start -->
-                <div class="modal fade" id="addContact" tabindex="-1"
-                aria-labelledby="addContactLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="addContactLabel">Add Contacts</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="d-flex shadow border-rad ps-2 pe-2 p-3">
-                                <div class="me-4 my-auto">
-                                    <img src="assets/imgaes/search-black.png" class="w-auto"
-                                        alt="">
-                                </div>
-                                <input class="form-control border-0 box-shadow-0 me-2"
-                                    type="search" placeholder="Search by name"
-                                    aria-label="Search">
-                            </form>
-                            <div class="mt-4">
-                                <hr>
-                                <div
-                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
-                                    <div class="d-lg-flex justify-content-between">
-                                        <div class="me-2">
-                                            <img src="assets/imgaes/annette-black.png"
-                                                class="w-auto" alt="">
-                                        </div>
-                                        <div class="my-auto me-2">
-                                            <p class="fw-bold pb-0 pb-lg-2">Annette Black</p>
-                                            <small>Pizza Hut</small>
-                                        </div>
-                                        <div class="mt-2">
-                                            <button class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">
-                                                Level 1
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="my-auto text-gray mt-2 mt-lg-0 fw-bold">
-                                        Added
-                                    </div>
-                                </div>
+                <div class="modal fade" id="addContact" tabindex="-1" aria-labelledby="addContactLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="addContactLabel">Add Contacts</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                            <div>
-                                <hr>
-                                <div
-                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
-                                    <div class="d-lg-flex justify-content-between">
-                                        <div class="me-2">
-                                            <img src="assets/imgaes/user-prof.png"
-                                                class="w-auto" alt="">
-                                        </div>
-                                        <div class="my-auto me-2">
-                                            <p class="fw-bold pb-0 pb-lg-2">Floyd Miles</p>
-                                            <small>Starbucks</small>
-                                        </div>
+                            <div class="modal-body">
+                                <form class="d-flex shadow border-rad ps-2 pe-2 p-3">
+                                    <div class="me-4 my-auto">
+                                        <img src="assets/imgaes/search-black.png" class="w-auto" alt="">
                                     </div>
-                                    <button
-                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                            <div>
-                                <hr>
-                                <div
-                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
-                                    <div class="d-lg-flex justify-content-between">
-                                        <div class="me-2">
-                                            <img src="assets/imgaes/jerome-bell.png"
-                                                class="w-auto" alt="">
+                                    <input class="form-control border-0 box-shadow-0 me-2" type="search"
+                                        placeholder="Search by name" aria-label="Search">
+                                </form>
+                                <div class="mt-4">
+                                    <hr>
+                                    <div class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/annette-black.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="my-auto me-2">
+                                                <p class="fw-bold pb-0 pb-lg-2">Annette Black</p>
+                                                <small>Pizza Hut</small>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button
+                                                    class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">
+                                                    Level 1
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="my-auto me-2">
-                                            <p class="fw-bold pb-0 pb-lg-2">Jerome Bell</p>
-                                            <small>Louis Vuitton</small>
+                                        <div class="my-auto text-gray mt-2 mt-lg-0 fw-bold">
+                                            Added
                                         </div>
-                                    </div>
-                                    <button
-                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                            <div>
-                                <hr>
-                                <div
-                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
-                                    <div class="d-lg-flex justify-content-between">
-                                        <div class="me-2">
-                                            <img src="assets/imgaes/jane-copper.png"
-                                                class="w-auto" alt="">
-                                        </div>
-                                        <div class="my-auto me-2">
-                                            <p class="fw-bold pb-0 pb-lg-2">Jane Cooper</p>
-                                            <small>Gillette</small>
-                                        </div>
-                                        <div class="mt-2">
-                                            <button
-                                                class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
-                                                1</button>
-                                        </div>
-                                    </div>
-                                    <div class="my-auto text-gray fw-bold mt-2 mt-lg-0">
-                                        Added
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <hr>
-                                <div
-                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
-                                    <div class="d-lg-flex justify-content-between">
-                                        <div class="me-2">
-                                            <img src="assets/imgaes/arlene-mccoy.png"
-                                                class="w-auto" alt="">
+                                <div>
+                                    <hr>
+                                    <div class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/user-prof.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="my-auto me-2">
+                                                <p class="fw-bold pb-0 pb-lg-2">Floyd Miles</p>
+                                                <small>Starbucks</small>
+                                            </div>
                                         </div>
-                                        <div class="my-auto me-2">
-                                            <p class="fw-bold pb-0 pb-lg-2">Arlene McCoy</p>
-                                            <small>Louis Vuitton</small>
-                                        </div>
-                                        <div class="mt-2">
-                                            <button
-                                                class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
-                                                1</button>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                            <div>
-                                <hr>
-                                <div
-                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
-                                    <div class="d-lg-flex justify-content-between">
-                                        <div class="me-2">
-                                            <img src="assets/imgaes/darrel.png" class="w-auto"
-                                                alt="">
-                                        </div>
-                                        <div class="my-auto me-2">
-                                            <p class="fw-bold pb-0 pb-lg-2">Darrell Steward</p>
-                                            <small>The Walt Disney Company</small>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                            <div>
-                                <hr>
-                                <div
-                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
-                                    <div class="d-lg-flex justify-content-between">
-                                        <div class="me-2">
-                                            <img src="assets/imgaes/courtney.png" class="w-auto"
-                                                alt="">
-                                        </div>
-                                        <div class="my-auto me-2">
-                                            <p class="fw-bold pb-0 pb-lg-2">Courtney Henry</p>
-                                            <small>eBay</small>
-                                        </div>
-                                    </div>
-                                    <div class="my-auto text-gray fw-bold mt-2 mt-lg-0">
-                                        Added
+                                        <button class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                            Add
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <hr>
-                                <div
-                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
-                                    <div class="d-lg-flex justify-content-between">
-                                        <div class="me-2">
-                                            <img src="assets/imgaes/kathryn.png" class="w-auto"
-                                                alt="">
+                                <div>
+                                    <hr>
+                                    <div class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/jerome-bell.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="my-auto me-2">
+                                                <p class="fw-bold pb-0 pb-lg-2">Jerome Bell</p>
+                                                <small>Louis Vuitton</small>
+                                            </div>
                                         </div>
-                                        <div class="my-auto me-2">
-                                            <p class="fw-bold pb-0 pb-lg-2">Kathryn Murphy</p>
-                                            <small>IBM</small>
+                                        <button class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr>
+                                    <div class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/jane-copper.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="my-auto me-2">
+                                                <p class="fw-bold pb-0 pb-lg-2">Jane Cooper</p>
+                                                <small>Gillette</small>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button
+                                                    class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
+                                                    1</button>
+                                            </div>
+                                        </div>
+                                        <div class="my-auto text-gray fw-bold mt-2 mt-lg-0">
+                                            Added
                                         </div>
                                     </div>
-                                    <button
-                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                        Add
-                                    </button>
+                                </div>
+                                <div>
+                                    <hr>
+                                    <div class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/arlene-mccoy.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="my-auto me-2">
+                                                <p class="fw-bold pb-0 pb-lg-2">Arlene McCoy</p>
+                                                <small>Louis Vuitton</small>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button
+                                                    class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
+                                                    1</button>
+                                            </div>
+                                        </div>
+                                        <button class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr>
+                                    <div class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/darrel.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="my-auto me-2">
+                                                <p class="fw-bold pb-0 pb-lg-2">Darrell Steward</p>
+                                                <small>The Walt Disney Company</small>
+                                            </div>
+                                        </div>
+                                        <button class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr>
+                                    <div class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/courtney.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="my-auto me-2">
+                                                <p class="fw-bold pb-0 pb-lg-2">Courtney Henry</p>
+                                                <small>eBay</small>
+                                            </div>
+                                        </div>
+                                        <div class="my-auto text-gray fw-bold mt-2 mt-lg-0">
+                                            Added
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr>
+                                    <div class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                        <div class="d-lg-flex justify-content-between">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/kathryn.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="my-auto me-2">
+                                                <p class="fw-bold pb-0 pb-lg-2">Kathryn Murphy</p>
+                                                <small>IBM</small>
+                                            </div>
+                                        </div>
+                                        <button class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                            Add
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- add contacts end -->
+                <!-- add contacts end -->
 
 
             </div>

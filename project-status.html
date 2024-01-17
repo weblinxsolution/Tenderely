@@ -46,6 +46,20 @@
         .accordion-item+.accordion-item {
             margin-top: 0;
         }
+
+        .status_img {
+            width: 50%;
+        }
+
+        .star_img {
+            width: 30px;
+        }
+
+        @media(max-width:768px) {
+            .status_img {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -170,23 +184,24 @@
                 <div class="tab-content mt-5" id="nav-tabContent">
                     <!-- 1 -->
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="border r-15 d-flex">
-                            <div>
-                                <img src="assets/imgaes/empty-image-square.png" class="w-auto" alt="">
+                        <div class="border r-15 d-flex flex-lg-nowrap flex-wrap">
+                            <div class="status_img">
+                                <img src="assets/imgaes/empty-image-square.png" class="w-100" alt="">
                             </div>
-                            <div class="p-3 w-100 d-flex justify-content-between">
+                            <div
+                                class="p-3 w-100 d-flex justify-content-between flex-lg-nowrap flex-wrap align-items-center">
                                 <div>
                                     <h4>Offer Title</h4>
-                                    <div class="mt-5">
+                                    <div class="mt-lg-5">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
                                         Lorem Ipsum has been the industry's standard dummy text ever.
                                     </div>
                                 </div>
-                                <div>
-                                    <strong class="text-blue">
+                                <div class="mt-lg-0 mt-3">
+                                    <strong class="text-blue ">
                                         <h4 class="fw-bold">$ 569.00</h4>
                                     </strong>
-                                    <div class="mt-5">
+                                    <div class="mt-lg-5 mt-3">
                                         <button class="p-2 rounded bg-white border-2-blue text-blue">In
                                             Progress</button>
                                     </div>
@@ -207,8 +222,8 @@
                                             <small class="text-gray">Date :20/07/2023</small>
                                         </div>
                                         <div>
-                                            <button
-                                                class="bg-black text-white ps-5 pe-5 pt-3 pb-3 rounded" data-bs-toggle="modal" data-bs-target="#completed">Completed</button>
+                                            <button class="bg-black text-white ps-5 pe-5 w-max pt-3 pb-3 rounded"
+                                                data-bs-toggle="modal" data-bs-target="#completed">Completed</button>
                                         </div>
                                     </li>
                                     <li
@@ -218,7 +233,8 @@
                                             <small class="text-gray">Date :20/07/2023</small>
                                         </div>
                                         <div>
-                                            <button class="bg-white ps-5 pe-5 pt-3 pb-3 rounded" data-bs-toggle="modal" data-bs-target="#inProgress">In Progress</button>
+                                            <button class="bg-white ps-5 pe-5 pt-3 pb-3 rounded w-max"
+                                                data-bs-toggle="modal" data-bs-target="#inProgress">In Progress</button>
                                         </div>
                                     </li>
                                     <li
@@ -228,7 +244,7 @@
                                             <small class="text-gray">Date :20/07/2023</small>
                                         </div>
                                         <div>
-                                            <button class="bg-light-gray border-0 ps-5 pe-5 pt-3 pb-3 rounded">In
+                                            <button class="bg-light-gray border-0 ps-5 w-max pe-5 pt-3 pb-3 rounded">In
                                                 complete</button>
                                         </div>
                                     </li>
@@ -313,30 +329,31 @@
                     </div>
                     <!-- 2 -->
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="border r-15 d-flex">
-                            <div>
-                                <img src="assets/imgaes/empty-image-square.png" class="w-auto" alt="">
+                        <div class="border r-15 d-flex flex-lg-nowrap flex-wrap">
+                            <div class="status_img">
+                                <img src="assets/imgaes/empty-image-square.png" class="w-100" alt="">
                             </div>
-                            <div class="p-3 w-100 d-flex justify-content-between">
+                            <div
+                                class="p-3 w-100 d-flex justify-content-between flex-lg-nowrap flex-wrap align-items-center">
                                 <div>
                                     <h4>Offer Title</h4>
-                                    <div class="mt-5">
+                                    <div class="mt-lg-5">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
                                         Lorem Ipsum has been the industry's standard dummy text ever.
                                     </div>
                                 </div>
-                                <div>
-                                    <strong class="text-blue">
+                                <div class="mt-lg-0 mt-3">
+                                    <strong class="text-blue ">
                                         <h4 class="fw-bold">$ 569.00</h4>
                                     </strong>
-                                    <div class="mt-5">
+                                    <div class="mt-lg-5 mt-3">
                                         <button class="p-2 rounded bg-white border-2-blue text-blue">In
                                             Progress</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="border r-15 p-5 mt-4">
+                        <div class="border r-15 p-lg-5 p-3 mt-4">
                             <div class="my-4 text-center">
                                 June 12, 2023
                             </div>
@@ -391,7 +408,7 @@
                                     </div>
                                     <div class="w-100">
                                         <div class="d-flex justify-content-between border border-rad p-3">
-                                            <input type="number"
+                                            <input type="text"
                                                 class="form-control focus-none box-shadow-none outline-none border-0"
                                                 id="exampleInputEmail1" aria-describedby="emailHelp"
                                                 placeholder="Write a message">
@@ -429,7 +446,8 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                <button class="border rounded p-2 bg-white ps-4 pe-4">In progress</button>
+                                                <button class="border rounded p-2 bg-white ps-4 pe-4">In
+                                                    progress</button>
                                             </div>
                                         </div>
                                     </div>
@@ -506,65 +524,66 @@
                                         </div>
                                         <div class="my-5">
                                             <p>Was the communication from the service provider clear and timely?</p>
-                                            <div class="my-5 d-flex gap-3 align-items-center">
+                                            <div class="my-5 d-flex gap-3 justify-content-center align-items-center">
                                                 <div>
-                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                             </div>
-                                            <p>Did the service you received match the description provided by the service provider?</p>
-                                            <div class="my-5 d-flex gap-3 align-items-center">
+                                            <p>Did the service you received match the description provided by the
+                                                service provider?</p>
+                                            <div class="my-5 d-flex gap-3 justify-content-center align-items-center">
                                                 <div>
-                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                             </div>
                                             <p>Would you recommend this service to others?</p>
-                                            <div class="my-5 d-flex gap-3 align-items-center">
+                                            <div class="my-5 d-flex gap-3 justify-content-center align-items-center">
                                                 <div>
-                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-blue.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="w-auto" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="mb-4">
                                             <label class="form-label fw-bold">Any Additional comments</label>
                                             <div class="form-floating">
-                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                                    style="height: 150px"></textarea>
+                                                <textarea class="form-control" placeholder="Leave a comment here"
+                                                    id="floatingTextarea2" style="height: 150px"></textarea>
                                                 <label for="floatingTextarea2">Write your review here.</label>
                                             </div>
                                         </div>
