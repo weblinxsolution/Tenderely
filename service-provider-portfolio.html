@@ -120,44 +120,112 @@
                 <h3 class="fw-bold">Become a Service Provider</h3>
                 <small>Lorem ipsum is the dummy text for printing & type setting purpose.</small>
             </div>
-            <div class="my-5 grid-7">
-                <div class="mb-4">
-                    <div class="mb-3">
-                        <img src="assets/imgaes/overview.png" class="w-auto" alt="">
-                    </div>
-                    <div>Overview</div>
+            <div class="my-5 steps_box">
+                <div class="steps_item active">
+                    <div class="step_cirlce"><i class="fa fa-check"></i></div>
+                    <p class="mb-0">Overview</p>
                 </div>
-                <div class="mb-4">
-                    <div class="w-max mb-3 pricing-before position-relative">
-                        <img src="assets/imgaes/overview.png" class="w-auto" alt="">
-                    </div>
-                    <div>Pricing</div>
+                <div class="steps_item active">
+                    <div class="step_cirlce">2</div>
+                    <p class="mb-0">Pricing</p>
                 </div>
-                <div class="mb-4">
-                    <div class="w-max mb-3 schedule-before position-relative">
-                        <img src="assets/imgaes/overview.png" class="w-auto" alt="">
-                    </div>
-                    <div>Schedule</div>
+                <div class="steps_item active">
+                    <div class="step_cirlce">3</div>
+                    <p class="mb-0">Schedule</p>
                 </div>
-                <div class="mb-4">
-                    <div class="w-max mb-3 location-before position-relative">
-                        <img src="assets/imgaes/overview.png" class="w-auto" alt="">
-                    </div>
-                    <div>Location</div>
+                <div class="steps_item active">
+                    <div class="step_cirlce">4</div>
+                    <p class="mb-0">Location</p>
                 </div>
-                <div class="mb-4">
-                    <div class="w-max mb-3 portfolio-before position-relative">
-                        <img src="assets/imgaes/overview.png" class="w-auto" alt="">
-                    </div>
-                    <div>Portfolio</div>
+                <div class="steps_item active">
+                    <div class="step_cirlce">5</div>
+                    <p class="mb-0">Portfolio</p>
                 </div>
-                <div class="mb-4">
-                    <div class="w-max mb-3 verify-before position-relative">
-                        <img src="assets/imgaes/verify.png" class="w-auto" alt="">
-                    </div>
-                    <div>Verify</div>
+                <div class="steps_item">
+                    <div class="step_cirlce">6</div>
+                    <p class="mb-0">Verify</p>
                 </div>
             </div>
+            <style>
+                .steps_box {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    align-items: center;
+                }
+
+                .steps_item:nth-child(6)::after {
+                    display: none;
+                }
+
+                .steps_item {
+                    text-align: center;
+                    position: relative;
+                }
+
+                .steps_item p {
+                    margin-top: 20px;
+                    font-weight: 600;
+                }
+
+                .steps_item::after {
+                    content: "";
+                    position: absolute;
+                    top: 27%;
+                    left: 70%;
+                    width: 60%;
+                    height: 2px;
+                    background-color: #D9D9D9;
+                }
+
+                .step_cirlce {
+                    background-color: #D9D9D9;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #828282;
+                    font-size: 28.444px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 45.51px;
+                    margin: auto;
+                }
+
+                .steps_item.active .step_cirlce {
+                    background-color: #104AF3;
+                    color: #fff;
+                }
+
+
+
+                @media (max-width:768px) {
+                    .step_cirlce {
+                        background-color: #D9D9D9;
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                    }
+
+                    .steps_item::after {
+                        content: "";
+                        position: absolute;
+                        top: 25%;
+                        left: 70%;
+                        width: 60%;
+                        height: 2px;
+                        z-index: -1;
+                        background-color: #D9D9D9;
+                    }
+
+                    .steps_item p {
+                        margin-top: 10px;
+                        font-weight: 600;
+                        font-size: 12px;
+                    }
+                }
+            </style>
             <div class="r-15 shadow my-5 p-5">
                 <h4>Upload Service Image</h4>
                 <div class="border-dotted r-15 my-5">

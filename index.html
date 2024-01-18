@@ -45,8 +45,8 @@
                         <img src="assets/imgaes/search.png" class="w-auto" alt="">
                     </button>
                 </form>
-                <div class="d-none d-lg-block">                    
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-lg-5">                        
+                <div class="d-none d-lg-block">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-lg-5">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">
                                 <img src="assets/imgaes/nav-link-1.png" class="w-auto me-5" alt="">
@@ -60,7 +60,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <img src="assets/imgaes/Document-Add-3.png" class="w-auto me-5" data-bs-toggle="modal"
-                                data-bs-target="#postModal" alt="">
+                                    data-bs-target="#postModal" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
@@ -541,24 +541,38 @@
         <div class="row">
             <div class="col-12 col-md-8">
                 <h4 class="mb-3">What are you looking for ?</h4>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                        <div class="d-flex justify-content-evenly gap-2 border border-rad p-2">
-                            <a href="index.html" class="btn btn-primary pt-md-4 pb-md-4 ps-md-5 pe-md-5 border-rad p-3 px-4"
-                                type="button"><img src="assets/imgaes/stream-icon.png" class="w-auto me-2" alt="">
-                                Stream</a>
-                            <a href="jobs.html" class="btn pt-md-3 pb-md-3 ps-md-4 pe-md-4 p-3 px-4" type="button"><img
-                                    src="assets/imgaes/job-icon.png" class="w-auto me-2" alt=""> Jobs</a>
-                        </div>
+                <div class="row mx-0">
+                    <div class="d-flex border border-rad filter_tabs w-max">
+                        <a href="index.html" class="btn btn-primary  border-rad" type="button"><img
+                                src="assets/imgaes/stream-icon.png" class="w-auto me-2" alt="">
+                            Stream</a>
+                        <a href="jobs.html" class="btn" type="button"><img src="assets/imgaes/job-icon.png"
+                                class="w-auto me-2" alt=""> Jobs</a>
                     </div>
                 </div>
             </div>
             <div class="col-0 col-md-4 text-end align-items-end mt-auto d-none d-md-block">
-                <button class="btn btn-outline-light text-black fw-600 ps-4 pe-4 pt-3 pb-3 bdr-rad-20"><img
-                        src="assets/imgaes/filter.png" class="w-auto me-2" alt=""> Filter</button>
+                <button class="btn btn-outline-light text-black fw-600 px-5 py-3" style="border-radius: 14.75px;"><img
+                        src="assets/imgaes/filter.png" class="w-auto me-2" alt=""> Filters  </button>
             </div>
         </div>
     </section>
+    <style>
+        .filter_tabs {
+            padding: 10px;
+            /* gap: 25px; */
+        }
+
+        .filter_tabs a {
+            padding: 15px 20px;
+            width: 180px;
+        }
+        .btn:active{
+            outline: 0 !important;
+            border-color: transparent !important;
+        }
+
+    </style>
     <!-- buttons and filters end -->
     <!-- navbar end -->
 
