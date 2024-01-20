@@ -594,7 +594,7 @@
                                 <div class="col-12 col-lg-8 mb-2 fw-700">
                                     Submit Deadline
                                 </div>
-                                <div class="col-12 col-lg-4 text-gray text-decoration-underline">
+                                <div class="col-12 col-lg-4 text-gray text-decoration-underline text-end">
                                     01 - 05 Sep
                                 </div>
                             </div>
@@ -617,7 +617,7 @@
                         <div class="my-5">
                             <div class="form-floating">
                                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                    style="height: 150px"></textarea>
+                                    style="height: 150px; border: 1px solid black;"></textarea>
                                 <label for="floatingTextarea2">Type something here</label>
                             </div>
                         </div>
@@ -633,7 +633,7 @@
                     </div>
                     <div class="">
                         <!-- Button to trigger first modal -->
-                        <button class="bg-blue text-white btn btn-lg w-50 mb-4" data-bs-toggle="modal"
+                        <button class="bg-blue text-white pt-3 pb-3 rounded border-0 w-50 mb-4" data-bs-toggle="modal"
                             data-bs-target="#Verification">Make an offer</button>
 
                         <!-- First Modal -->
@@ -654,7 +654,8 @@
                                                 <p class="text-gray">For notifications , reminders, and help logging in
                                                 </p>
                                                 <div class="my-5">
-                                                    <input class="border-bottom" id="phone" type="tel" name="phone" />
+                                                    <input class="border-bottom focus-none outline-none" id="phone"
+                                                        type="tel" name="phone" />
                                                 </div>
                                                 <div class="mt-10">
                                                     <button class="btn bg-black btn-lg text-white w-25"
@@ -692,23 +693,30 @@
                                                         <div class="border rounded">
                                                             <form>
                                                                 <div class="verification-code-input ps-4 pe-4">
-                                                                    <input type="text" class="form-control border-0 focus-none fw-bold"
+                                                                    <input type="text"
+                                                                        class="form-control border-0 focus-none fw-bold"
                                                                         maxlength="1" placeholder="-" required>
-                                                                    <input type="text" class="form-control border-0 focus-none fw-bold"
+                                                                    <input type="text"
+                                                                        class="form-control border-0 focus-none fw-bold"
                                                                         maxlength="1" placeholder="-" required>
-                                                                    <input type="text" class="form-control border-0 focus-none fw-bold"
+                                                                    <input type="text"
+                                                                        class="form-control border-0 focus-none fw-bold"
                                                                         maxlength="1" placeholder="-" required>
-                                                                    <input type="text" class="form-control border-0 focus-none fw-bold"
+                                                                    <input type="text"
+                                                                        class="form-control border-0 focus-none fw-bold"
                                                                         maxlength="1" placeholder="-" required>
                                                                 </div>
                                                             </form>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="my-5 text-gray">Didn’t get an SMS? <a href="" class="text-dark-gray text-decoration-underline fw-bold">Send again</a></p>
+                                                <p class="my-5 text-gray">Didn’t get an SMS? <a href=""
+                                                        class="text-dark-gray text-decoration-underline fw-bold">Send
+                                                        again</a></p>
                                                 <div class="mt-10">
-                                                    <button class="btn bg-blue btn-lg text-white w-25" data-bs-toggle="modal"
-                                                    data-bs-target="#offerSent">Continue</button>
+                                                    <button class="btn bg-blue btn-lg text-white w-25"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#offerSent">Continue</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -718,8 +726,8 @@
                         </div>
 
                         <!-- Third Modal -->
-                        <div class="modal fade" id="offerSent" tabindex="-1"
-                            aria-labelledby="offerSentLabel" aria-hidden="true">
+                        <div class="modal fade" id="offerSent" tabindex="-1" aria-labelledby="offerSentLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content mt-10">
                                     <div class="modal-header">
@@ -734,7 +742,8 @@
                                                 </div>
                                                 <div class="my-5">
                                                     <h4 class="fw-bold mb-3">Offer Sent</h4>
-                                                    <p class="text-dark-gray">Your offer has been sent to the business owner.</p>
+                                                    <p class="text-dark-gray">Your offer has been sent to the business
+                                                        owner.</p>
                                                 </div>
                                             </div>
                                         </div>

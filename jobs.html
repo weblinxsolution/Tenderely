@@ -46,7 +46,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex align-items-center position-relative w-50">
+                <form class="d-flex align-items-center position-relative w-lg-50">
                     <input class="form-control me-2 rounded-5 bg-light-pink" type="search"
                         placeholder="Search people, companies etc. " aria-label="Search">
                     <button class="btn search_icon p-0 d-flex algin-items-center" type="submit">
@@ -56,9 +56,9 @@
                 <div class="d-none d-lg-block w-100">
                     <ul class="navbar-nav mx-auto mb-2 justify-content-evenly">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">
+                            <a class="nav-link active position-relative blue-underline" aria-current="page"
+                                href="index.html">
                                 <img src="assets/imgaes/nav-link-1.png" class="img-fluid" alt="">
-                                
                             </a>
                         </li>
                         <li class="nav-item">
@@ -529,7 +529,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#postModal">
                     <img src="assets/imgaes/Document-Add-3.png" class="w-auto" alt="">
                 </a>
             </li>
@@ -705,7 +705,7 @@
                                         <div class="d-flex justify-content-between mb-4">
                                             <div>Sub-Category 3</div>
                                             <div>
-                                                <button 
+                                                <button
                                                     class="btn-outline-secondary border-rad btn-100 bg-white"><small>Follow
                                                     </small></button>
                                             </div>
@@ -1081,11 +1081,10 @@
                                                         <textarea rows="3" class="form-control border-0 px-0"
                                                             placeholder="What do you want to post with us?"></textarea>
                                                     </div>
-                                                    <div
-                                                        class="d-flex flex-wrap justify-content-lg-between justify-content-center">
+                                                    <div class="d-flex flex-wrap grid-3-cols">
                                                         <div>
-                                                            <button class="btn box-shadow-none w-100"
-                                                                data-bs-toggle="modal" data-bs-target="#cameraModal">
+                                                            <button class="btn box-shadow-none" data-bs-toggle="modal"
+                                                                data-bs-target="#cameraModal">
                                                                 <div>
                                                                     <img src="assets/imgaes/camera.png" class="w-75"
                                                                         alt="">
@@ -1094,8 +1093,8 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="btn box-shadow-none w-100"
-                                                                data-bs-toggle="modal" data-bs-target="#jobPosting">
+                                                            <button class="btn box-shadow-none" data-bs-toggle="modal"
+                                                                data-bs-target="#jobPosting">
                                                                 <div>
                                                                     <img src="assets/imgaes/job-posting.png"
                                                                         class="w-75" alt="">
@@ -1104,7 +1103,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="btn box-shadow-none w-100">
+                                                            <button class="btn box-shadow-none">
                                                                 <div>
                                                                     <img src="assets/imgaes/polls.png" class="w-75"
                                                                         alt="">
@@ -1113,7 +1112,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="btn box-shadow-none w-100">
+                                                            <button class="btn box-shadow-none">
                                                                 <div>
                                                                     <img src="assets/imgaes/document-gray.png"
                                                                         class="w-75" alt="">
@@ -1122,7 +1121,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="btn box-shadow-none w-100">
+                                                            <button class="btn box-shadow-none">
                                                                 <div>
                                                                     <img src="assets/imgaes/events.png" class="w-75"
                                                                         alt="">
@@ -1172,9 +1171,10 @@
                                                                 class="w-auto img-fluid" alt="">
                                                         </div>
                                                     </div>
-                                                    <div class="grid">
-                                                        <div class="w-100">
-                                                            <button class="btn box-shadow-none w-100">
+                                                    <div class="d-flex flex-wrap grid-3-cols">
+                                                        <div>
+                                                            <button class="btn box-shadow-none w-100"
+                                                                data-bs-toggle="modal" data-bs-target="#cameraModal">
                                                                 <div>
                                                                     <img src="assets/imgaes/blue-camera.png"
                                                                         class="w-75" alt="">
@@ -1183,7 +1183,7 @@
                                                                     Video</small>
                                                             </button>
                                                         </div>
-                                                        <div class="w-100">
+                                                        <div>
                                                             <button class="btn box-shadow-none w-100"
                                                                 data-bs-toggle="modal" data-bs-target="#jobPosting">
                                                                 <div>
@@ -1193,7 +1193,7 @@
                                                                 <small class="fs-12">Job Posting</small>
                                                             </button>
                                                         </div>
-                                                        <div class="w-100">
+                                                        <div>
                                                             <button class="btn box-shadow-none w-100">
                                                                 <div>
                                                                     <img src="assets/imgaes/polls.png" class="w-75"
@@ -1857,7 +1857,7 @@
                                                 <div class="modal-header">
                                                     <button class="btn btn-outline-secondary border-rad ps-4 pe-4 me-5"
                                                         data-bs-toggle="modal" data-bs-target="#michelle">Back</button>
-                                                    <h5 class="modal-title" id="addContact2Label">Add Contacts</h5>
+                                                    <h5 class="modal-title ms-auto  " id="addContact2Label">Add Contacts</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
@@ -1874,7 +1874,7 @@
                                                     <div class="mt-4">
                                                         <hr>
                                                         <div
-                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            class="py-2 d-lg-flex justify-content-between px-3 text-center text-lg-start">
                                                             <div class="d-lg-flex justify-content-between">
                                                                 <div class="me-2">
                                                                     <img src="assets/imgaes/annette-black.png"
@@ -1898,7 +1898,7 @@
                                                     <div>
                                                         <hr>
                                                         <div
-                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            class="py-2 d-lg-flex justify-content-between px-3 text-center text-lg-start">
                                                             <div class="d-lg-flex justify-content-between">
                                                                 <div class="me-2">
                                                                     <img src="assets/imgaes/user-prof.png"
@@ -1909,16 +1909,18 @@
                                                                     <small>Starbucks</small>
                                                                 </div>
                                                             </div>
-                                                            <button
-                                                                class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                                                Add
-                                                            </button>
+                                                            <div>
+                                                                <button
+                                                                    class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                    Add
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <hr>
                                                         <div
-                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            class="py-2 d-lg-flex justify-content-between px-3 text-center text-lg-start">
                                                             <div class="d-lg-flex justify-content-between">
                                                                 <div class="me-2">
                                                                     <img src="assets/imgaes/jerome-bell.png"
@@ -1929,16 +1931,18 @@
                                                                     <small>Louis Vuitton</small>
                                                                 </div>
                                                             </div>
-                                                            <button
-                                                                class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                                                Add
-                                                            </button>
+                                                            <div>
+                                                                <button
+                                                                    class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                    Add
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <hr>
                                                         <div
-                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            class="py-2 d-lg-flex justify-content-between px-3 text-center text-lg-start">
                                                             <div class="d-lg-flex justify-content-between">
                                                                 <div class="me-2">
                                                                     <img src="assets/imgaes/jane-copper.png"
@@ -1962,7 +1966,7 @@
                                                     <div>
                                                         <hr>
                                                         <div
-                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            class="py-2 d-lg-flex justify-content-between px-3 text-center text-lg-start">
                                                             <div class="d-lg-flex justify-content-between">
                                                                 <div class="me-2">
                                                                     <img src="assets/imgaes/arlene-mccoy.png"
@@ -1978,16 +1982,18 @@
                                                                         1</button>
                                                                 </div>
                                                             </div>
-                                                            <button
-                                                                class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                                                Add
-                                                            </button>
+                                                            <div>
+                                                                <button
+                                                                    class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                    Add
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <hr>
                                                         <div
-                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            class="py-2 d-lg-flex justify-content-between px-3 text-center text-lg-start">
                                                             <div class="d-lg-flex justify-content-between">
                                                                 <div class="me-2">
                                                                     <img src="assets/imgaes/darrel.png" class="w-auto"
@@ -1998,16 +2004,18 @@
                                                                     <small>The Walt Disney Company</small>
                                                                 </div>
                                                             </div>
-                                                            <button
-                                                                class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                                                Add
-                                                            </button>
+                                                            <div>
+                                                                <button
+                                                                    class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                    Add
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <hr>
                                                         <div
-                                                            class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                                            class="py-2 d-lg-flex justify-content-between px-3 text-center text-lg-start">
                                                             <div class="d-lg-flex justify-content-between">
                                                                 <div class="me-2">
                                                                     <img src="assets/imgaes/courtney.png" class="w-auto"
@@ -2037,10 +2045,12 @@
                                                                     <small>IBM</small>
                                                                 </div>
                                                             </div>
-                                                            <button
-                                                                class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
-                                                                Add
-                                                            </button>
+                                                            <div>
+                                                                <button
+                                                                    class="btn box-shadow-none w-100 my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                                                    Add
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
