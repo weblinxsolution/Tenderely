@@ -34,8 +34,8 @@
 </head>
 
 <body>
-     <!-- navbar start -->
-     <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container">
             <a class="navbar-brand mb-2 mb-lg-0" href="#">
                 <img src="assets/imgaes/logo.png" class="w-50" alt="">
@@ -57,12 +57,12 @@
                     <ul class="navbar-nav mx-auto mb-2 justify-content-evenly">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">
-                                <img src="assets/imgaes/nav-link-1.png" class="img-fluid" alt="">
+                                <img src="assets/imgaes/nav-link-1-gray.png" class="img-fluid" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">
-                                <img src="assets/imgaes/arrow-down-up.png" class="img-fluid" alt="">
+                                <img src="assets/imgaes/arrow-down-up-blue.png" class="img-fluid" alt="">
                             </a>
                         </li>
                         <li class="nav-item">
@@ -556,17 +556,45 @@
     <section class="container mt-5">
         <div class="row">
             <div class="col-12 col-md-8">
-                <div class="my-5 d-flex flex-wrap gap-lg-0 gap-4 justify-content-between">
+                <div class="my-lg-5 my-3 d-flex flex-wrap gap-lg-0 gap-4 justify-content-between">
                     <div class="border rounded w-max p-4 rounded-4">
-                        <div class="form-check form-switch d-flex align-items-center gap-4 ps-1" >
+                        <div class="form-check form-switch d-flex align-items-center gap-4 ps-1">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Show online profiles</label>
                             <input class="form-check-input ms-2" type="checkbox" id="flexSwitchCheckDefault">
                         </div>
                     </div>
                     <div class="my-auto">
-                        <h3 class="fw-bold">Service Categories</h3>
+                        <h3 class="fw-bold mb-0">Service Categories</h3>
                     </div>
                 </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="mt-3 border py-2 px-4 ms-2 border-rad d-flex justify-content-between">
+                    <div class="text-center mt-3">
+                        <a href="services.html" class="text-blue">
+                            <img src="assets/imgaes/consultants-blue.png" class="w-auto" alt="">
+                            <p class="text-blue fw-bold mb-0 pb-0">Consultants</p>
+                        </a>
+                        <img src="assets/imgaes/underline.png" class="w-auto" alt="">
+                    </div>
+                    <div class="text-center mt-2">
+                        <a href="services-serve.html" class="text-black">
+                            <img src="assets/imgaes/arrow-down-up.png" class="w-auto" alt="">
+                            <p class="mb-0 pb-0">Services</p>
+                        </a>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="services-rental.html" class="text-black">
+                            <img src="assets/imgaes/car.png" class="w-auto" alt="">
+                            <p class="mb-0 pb-0">Rental</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 col-md-8">
                 <div class="border p-4 border-rad position-relative overflow-hidden">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -697,34 +725,13 @@
                         <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-
             </div>
             <div class="col-12 col-md-4">
-                <div class="mt-3 border py-2 px-4 ms-2 border-rad d-flex justify-content-between">
-                    <div class="text-center mt-3">
-                        <a href="services.html" class="text-black">
-                            <img src="assets/imgaes/consultants-gray.png" class="w-auto" alt="">
-                            <p class="mb-0 pb-0">Consultants</p>                            
-                        </a>
-                    </div>
-                    <div class="text-center mt-2">
-                        <a href="services-serve.html" class="text-black">
-                            <img src="assets/imgaes/arrow-down-up-blue.png" class="w-auto" alt="">
-                            <p class="text-blue fw-bold mb-0 pb-0">Services</p>
-                            <img src="assets/imgaes/underline.png" class="w-auto" alt="">
-                        </a>
-                    </div>
-                    <div class="text-center mt-3">
-                        <a href="services-rental.html" class="text-black">
-                            <img src="assets/imgaes/car.png" class="w-auto" alt="">
-                            <p class="mb-0 pb-0">Rental</p>
-                        </a>
-                    </div>
-                </div>
                 <div class="mt-4">
                     <div class="row">
                         <div class="col-12 col-lg-8">
-                            <button class="btn btn-lg btn-outline-secondary hover-bg-white dropdown-toggle mt-2"
+                            <button
+                                class="btn btn-lg btn-outline-secondary hover-bg-white dropdown-toggle mt-2 mb-3 mb-lg-0"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose Sub
                                 Category</button>
                             <ul class="dropdown-menu">
@@ -740,9 +747,9 @@
                         <div class="col-12 col-lg-4">
 
                             <!-- modal trigger button -->
-                            <button class="btn btn-lg btn-outline-secondary hover-bg-white mt-2" data-bs-toggle="modal" data-bs-target="#filter"><img
-                                    src="assets/imgaes/filter.png" class="w-auto" alt=""> 
-                                    Filters
+                            <button class="btn btn-lg btn-outline-secondary hover-bg-white mt-2" data-bs-toggle="modal"
+                                data-bs-target="#filter"><img src="assets/imgaes/filter.png" class="w-auto" alt="">
+                                Filters
                             </button>
 
                             <!-- Modal -->
@@ -755,26 +762,29 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body p-5">
-                                            <h4 class="fw-bold">Select Sub-Category</h4>
+                                        <div class="modal-body p-lg-5">
+                                            <h4 class="fw-bold">Types of Requests</h4>
                                             <div class="my-5 container-fluid">
                                                 <div class="btn-group w-100 border" role="group"
                                                     aria-label="Basic example">
-                                                    <button type="button" class="btn bg-black text-white btn-lg pt-4 pb-4 fw-bold">Jobs
+                                                    <button type="button"
+                                                        class="btn bg-black text-white pt-4 pb-4 fw-bold">Jobs
                                                         Request</button>
-                                                    <button type="button" class="btn bg-white btn-lg pt-4 pb-4 fw-bold">Rental
+                                                    <button type="button" class="btn bg-white pt-4 pb-4 fw-bold">Rental
                                                         Request</button>
-                                                    <button type="button" class="btn bg-white btn-lg pt-4 pb-4 fw-bold">Purchase
+                                                    <button type="button"
+                                                        class="btn bg-white pt-4 pb-4 fw-bold">Purchase
                                                         Requests</button>
                                                 </div>
                                             </div>
                                             <div class="my-5">
-                                                <h4 class="fw-bold">Types of Requests </h4>
+                                                <hr>
+                                                <h4 class="fw-bold mt-5">Select Sub Category </h4>
                                                 <div class="row my-5">
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault1">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="flexCheckDefault1">
                                                             <label class="form-check-label" for="flexCheckDefault1">
                                                                 Category 1
                                                             </label>
@@ -782,63 +792,70 @@
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault2">
-                                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="flexCheckDefault2">
+                                                            <label class="form-check-label ms-3"
+                                                                for="flexCheckDefault2">
                                                                 Category 2
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault3">
-                                                            <label class="form-check-label" for="flexCheckDefault3">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="flexCheckDefault3">
+                                                            <label class="form-check-label ms-3"
+                                                                for="flexCheckDefault3">
                                                                 Category 3
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault4">
-                                                            <label class="form-check-label" for="flexCheckDefault4">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="flexCheckDefault4">
+                                                            <label class="form-check-label ms-3"
+                                                                for="flexCheckDefault4">
                                                                 Category 4
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault5">
-                                                            <label class="form-check-label" for="flexCheckDefault5">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="flexCheckDefault5">
+                                                            <label class="form-check-label ms-3"
+                                                                for="flexCheckDefault5">
                                                                 Category 5
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault6">
-                                                            <label class="form-check-label" for="flexCheckDefault6">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="flexCheckDefault6">
+                                                            <label class="form-check-label ms-3"
+                                                                for="flexCheckDefault6">
                                                                 Category 6
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault7">
-                                                            <label class="form-check-label" for="flexCheckDefault7">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="flexCheckDefault7">
+                                                            <label class="form-check-label ms-3"
+                                                                for="flexCheckDefault7">
                                                                 Category 7
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault8">
-                                                            <label class="form-check-label" for="flexCheckDefault8">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="flexCheckDefault8">
+                                                            <label class="form-check-label ms-3"
+                                                                for="flexCheckDefault8">
                                                                 Category 8
                                                             </label>
                                                         </div>
@@ -850,31 +867,45 @@
                                                 <div class="my-4">
                                                     <h4 class="fw-bold">Price Range</h4>
                                                     <div class="my-5">
-                                                        <img src="assets/imgaes/bar-graph.png" class="w-auto" alt="">
+                                                        <img src="assets/imgaes/bar-graph.png" class="w-100" alt="">
                                                     </div>
                                                     <div class="mx-auto">
-                                                        <div class="d-flex justify-content-evenly">
-                                                            <div class="border rounder p-2 ps-4 my-auto">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="border rounded w-35 p-2 ps-4 my-auto me-4">
                                                                 <span class="text-gray mb-2">Minimum</span><br>
                                                                 <h5 class="fw-bold">$ 670.00</h5>
                                                             </div>
-                                                            <div class=" my-auto">
-                                                                <img src="assets/imgaes/line-sm.png" class="w-auto" alt="">
+                                                            <div class=" my-auto me-4">
+                                                                <img src="assets/imgaes/line-sm.png" class="w-auto"
+                                                                    alt="">
                                                             </div>
-                                                            <div class="border rounder p-2 ps-4 my-auto">
+                                                            <div class="border rounded w-35 p-2 ps-4 my-auto me-4">
                                                                 <span class="text-gray mb-2">Maximum</span><br>
                                                                 <h5 class="fw-bold">$ 2810.00</h5>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <style>
+
+                                                    .w-35 {
+                                                        width: 25%;
+                                                    }
+
+                                                    @media(max-width:576px) {
+                                                        .w-35 {
+                                                            width: 35%;
+                                                        }
+                                                    }
+                                                </style>
                                                 <hr>
                                             </div>
                                             <div class="my-5">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6">
                                                         <h4 class="fw-bold mb-3">Country</h4>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                        <select class="form-select p-3"
+                                                            aria-label="Default select example">
                                                             <option selected>Select</option>
                                                             <option value="1">United States</option>
                                                             <option value="2">Canada</option>
@@ -886,7 +917,8 @@
                                                     </div>
                                                     <div class="col-12 col-md-6">
                                                         <h4 class="fw-bold mb-3">City</h4>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                        <select class="form-select p-3"
+                                                            aria-label="Default select example">
                                                             <option selected>Select</option>
                                                             <option value="1">New York City, USA</option>
                                                             <option value="2">Tokyo, Japan</option>
@@ -915,60 +947,62 @@
                                                 <div class="row my-5">
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="language1">
-                                                            <label class="form-check-label" for="language1">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="language1">
+                                                            <label class="form-check-label ms-3" for="language1">
                                                                 English
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="language2">
-                                                            <label class="form-check-label" for="language2">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="language2">
+                                                            <label class="form-check-label ms-3" for="language2">
                                                                 Turkish
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="language3">
-                                                            <label class="form-check-label" for="language3">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="language3">
+                                                            <label class="form-check-label ms-3" for="language3">
                                                                 French
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="language4">
-                                                            <label class="form-check-label" for="language4">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="language4">
+                                                            <label class="form-check-label ms-3" for="language4">
                                                                 German
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="language5">
-                                                            <label class="form-check-label" for="language5">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="language5">
+                                                            <label class="form-check-label ms-3" for="language5">
                                                                 Dutch
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
                                                         <div class="form-check mb-4">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="language6">
-                                                            <label class="form-check-label" for="language6">
+                                                            <input class="form-check-input transform-2" type="checkbox"
+                                                                value="" id="language6">
+                                                            <label class="form-check-label ms-3" for="language6">
                                                                 Japanese
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-4 col-lg-3">
-                                                        <a href="#" class="text-black text-decoration-underline fw-bold">Show More</a>
+                                                        <a href="#"
+                                                            class="text-black text-decoration-underline fw-bold">Show
+                                                            More</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -979,16 +1013,20 @@
                                                     <div class="d-flex justify-content-between">
                                                         <h5>Show online profiles</h5>
                                                         <div class="form-check form-switch">
-                                                            <input class="form-check-input switch focus-none" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                            <input class="form-check-input switch focus-none"
+                                                                type="checkbox" id="flexSwitchCheckChecked" checked>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="modal-footer d-flex justify-content-between">
-                                            <a href="#" class="text-black text-decoration-underline fw-bold">Clear all</a>
-                                            <button type="button" class="btn bg-blue text-white ps-4 pe-4">Apply Filters</button>
-                                          </div>
+                                        <div class="modal-footer d-flex justify-content-between px-4">
+                                            <a href="#" class="text-black text-decoration-underline fw-bold">Clear
+                                                all</a>
+                                            <button type="button"
+                                                class="btn bg-blue text-white ps-5 pe-5 pt-3 pb-3">Apply
+                                                Filters</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

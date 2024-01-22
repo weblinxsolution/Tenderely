@@ -543,10 +543,15 @@
     <section class="my-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-9">
                     <h1 class="mb-2 mb-lg-0">Rental Product Title</h1>
+                    <p class="w-lg-75 text-gray mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer
+                    </p>
                 </div>
-                <div class="col-12 col-md-4 my-auto">
+                <div class="col-12 col-md-3 my-auto">
                     <div class="d-flex justify-content-end gap-3 mb-2 mb-lg-0">
                         <div class="d-flex fw-bold my-auto">
                             <div class="me-1">
@@ -563,45 +568,66 @@
                     </div>
                 </div>
             </div>
-            <p class="w-lg-75 text-gray mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown printer
-            </p>
-            <div class="w-95 d-none d-lg-block">
-                <div class="my-5 row">
-                    <div class="col-12 col-lg-6 p-0">
-                        <img src="assets/imgaes/col-6.png" class="w-auto img-fluid left-radius" alt="">
+        </div>
+    </section>
+    <!-- header end -->
+
+    <!-- image grid start -->
+    <section class="wrapper-2">
+        <div class="w-100 d-none d-lg-flex flex-wrap">
+            <div class="my-5 row">
+                <div class="col-12 col-lg-6 p-2 pe-0">
+                    <img src="assets/imgaes/col-3.png" class="w-100 left-radius h-100" alt="">
+                </div>
+                <div class="col-12 col-lg-6 p-2 d-flex flex-wrap">
+                    <div class="col-6 col-lg-6 pe-2">
+                        <img src="assets/imgaes/col-3-up.png" class="w-100 h-100" alt="">
                     </div>
-                    <div class="col-12 col-lg-6 p-0">
-                        <div class="row mx-0">
-                            <div class="col-6 col-lg-6 px-0">
-                                <img src="assets/imgaes/col-3.png" class="w-auto img-fluid" alt="">
-                            </div>
-                            <div class="col-6 col-lg-6 px-0">
-                                <img src="assets/imgaes/col-3-up.png" class="w-auto img-fluid top-right-radius" alt="">
-                            </div>
-                        </div>
-                        <div class="row mx-0">
-                            <div class="col-6 col-lg-6 px-0">
-                                <img src="assets/imgaes/col-3.png" class="w-auto img-fluid" alt="">
-                            </div>
-                            <div class="col-6 col-lg-6 px-0">
-                                <div class="position-relative">
-                                    <img src="assets/imgaes/col-3-down.png" class="w-auto img-fluid bottom-right-radius" alt="">
-                                    <div class="position-absolute btn-adj">
-                                        <button class="btn btn-outline-secondary bg-white hover-black">Show all
-                                            photos</button>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-6 col-lg-6 pe-2">
+                        <img src="assets/imgaes/col-3-up.png" class="w-100 h-100 top-right-radius" alt="">
+                    </div>
+                    <div class="col-6 col-lg-6 pe-2 mt-2">
+                        <img src="assets/imgaes/col-3.png" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-6 col-lg-6 pe-2 mt-2 position-relative">
+                        <img src="assets/imgaes/col-3-down.png" class="w-100 bottom-right-radius h-100" alt="">
+                        <div class="position-absolute btn-photo">
+                            <button class="btn bg-white border-dark fw-bold" style="border-width: 2px;">
+                                <img src="assets/imgaes/grid-icon.png" class="w-auto" alt=""> Show all photos
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- mobile -->
+        <div class="d-block d-lg-none">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/imgaes/col-6.png" class="w-auto h-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/imgaes/col-6.png" class="w-auto h-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/imgaes/col-6.png" class="w-auto h-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </section>
-    <!-- header end -->
-
+    <!-- image grid end -->
 
     <!-- job adviser start -->
     <section class="my-5">
@@ -655,7 +681,8 @@
                             industry. Lorem Ipsum has been the industry's standard dummy text ever
                             since the 1500s, It has survived not only five centuries, but also the
                             leap into electronic typesetting, remaining essentially unchanged. It
-                            was popularised in the 1960s with the <a href="">Read More</a>
+                            was popularised in the 1960s with the <a href="#"
+                                class="fw-bold text-decoration-underline">Read More</a>
                         </p>
 
                         <div class="my-4">
@@ -666,8 +693,8 @@
                         </div>
 
                         <div class="d-flex gap-2">
-                            <button class="btn text-white btn-lg ps-lg-5 pe-lg-5 bg-blue">Collapse</button>
-                            <button class="btn text-white btn-lg ps-lg-5 pe-lg-5 bg-black">Message</button>
+                            <button class="btn text-white btn-lg ps-5 pe-5 pt-3 pb-3 bg-blue">Collapse</button>
+                            <button class="btn text-white btn-lg ps-5 pe-5 pt-3 pb-3 bg-black">Message</button>
                         </div>
                     </div>
 
@@ -684,7 +711,8 @@
                                             <h4 class="fw-bold mb-3">Clean Interior & Exterior</h4>
                                             <p class="text-gray">Lorem Ipsum is simply dummy text of the printing and
                                                 <br>
-                                                typesetting industry.</p>
+                                                typesetting industry.
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="d-flex mt-4">
@@ -695,7 +723,8 @@
                                             <h4 class="fw-bold mb-3">Fuel Consumption</h4>
                                             <p class="text-gray">Lorem Ipsum is simply dummy text of the printing and
                                                 <br>
-                                                typesetting industry.</p>
+                                                typesetting industry.
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="d-flex mt-4">
@@ -706,7 +735,8 @@
                                             <h4 class="fw-bold mb-3">Car Condition</h4>
                                             <p class="text-gray">Lorem Ipsum is simply dummy text of the printing and
                                                 <br>
-                                                typesetting industry.</p>
+                                                typesetting industry.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -738,60 +768,53 @@
                 </div>
                 <div class="col-12 col-lg-5">
                     <div class="card shadow border-0 r-15">
-                        <h4 class="fw-bold p-4 text-center">Book your consultant</h4>
+                        <h4 class="fw-bold mt-3 text-center">Buy Product</h4>
                         <hr>
-                        <div class="card-body ps-4">
+                        <div class="card-body pb-0 pt-0">
                             <h5 class="fw-bold">Pricing Package</h5>
                         </div>
                         <hr>
                         <div class="card-body p-4">
                             <div class="row">
-                                <div class="col-12 col-lg-8 mb-2 fw-bold">
+                                <div class="col-12 col-lg-8 mb-2">
                                     Package
                                 </div>
-                                <div class="col-12 col-lg-4 text-gray">
-                                    Basic Package
+                                <div class="col-12 col-lg-4">
+                                    <small class="text-gray text-decoration-underline">Basic Package</small>
                                 </div>
                             </div>
                             <div class="row mt-4">
-                                <div class="col-12 col-lg-8 mb-2 fw-bold">
-                                    Delivery Time
+                                <div class="col-12 col-lg-8 mb-2">
+                                    Delievery Time
                                 </div>
                                 <div class="col-12 col-lg-4 text-gray">
-                                    4 Days
+                                    <small class="text-gray text-decoration-underline">4 Days</small>
                                 </div>
                             </div>
                         </div>
                         <hr>
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-12 col-lg-8 mb-2 fw-bold">
+                        <div class="card-body pt-0 pb-0 fs-14">
+                            <div class="row mb-3">
+                                <div class="col-12 col-lg-8 mb-2">
                                     Show Dates
                                 </div>
-                                <div class="col-12 col-lg-4 text-blue text-decoration-underline fw-bold">
-                                    View Dates
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-12 col-lg-8 mb-2 fw-bold">
-                                    Show Timings
-                                </div>
-                                <div class="col-12 col-lg-4 text-blue text-decoration-underline fw-bold">
-                                    View Time
+                                <div class="col-12 col-lg-4 text-blue">
+                                    <a href="#" class="text-blue text-decoration-underline fw-bold">View Dates</a>
                                 </div>
                             </div>
                         </div>
                         <hr>
-                        <div class="card-body p-4">
-                            <div class="row">
+                        <div class="card-body pt-0 pb-2">
+                            <div class="row mb-2">
                                 <div class="col-12 col-lg-6 mb-2">
-                                    <span class="d-flex align-items-end mb-0">
-                                        <h2 class="fw-bold mb-0">$ 450</h2> / per week
+                                    <span class="d-flex align-items-end mb-0 fw-bold">
+                                        <h3 class="mb-0">$ 450</h3> <small> / per week</small>
                                     </span>
                                 </div>
-                                <div class="col-12 col-lg-6 text-blue">
+                                <div class="col-12 col-lg-6 text-end text-blue my-auto">
                                     <a href="rent-a-product.html"
-                                        class="bg-blue text-white btn btn-lg ps-lg-4 pe-lg-4">Book Slot</a>
+                                        class="bg-blue text-white btn-thickness rounded fs-14">Book
+                                        Slot</a>
                                 </div>
                             </div>
                         </div>
@@ -947,7 +970,8 @@
                 </div>
                 <hr>
                 <div class="my-5">
-                    <a href="services-rental.html" class="btn btn-outline-secondary btn-lg border-rad ps-5 pe-5">Back</a>
+                    <a href="services-rental.html"
+                        class="btn btn-outline-secondary btn-lg border-rad ps-5 pe-5">Back</a>
                 </div>
             </div>
     </section>
