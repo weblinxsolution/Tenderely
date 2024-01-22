@@ -169,12 +169,12 @@
             <div class="my-4 tabs">
                 <nav>
                     <div class="nav nav-tabs nav-tabs-2 bg-light-brown" id="nav-tab" role="tablist">
-                        <button class="nav-link nav-link-2 text-gray hover-black w-50 active" id="nav-home-tab"
+                        <button class="nav-link nav-link-2 py-3 text-gray hover-black w-50 active" id="nav-home-tab"
                             data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
                             aria-controls="nav-home" aria-selected="true">
                             <h4>Timeline</h4>
                         </button>
-                        <button class="nav-link nav-link-2 text-gray hover-black w-50" id="nav-profile-tab"
+                        <button class="nav-link nav-link-2 py-3 text-gray hover-black w-50" id="nav-profile-tab"
                             data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
                             aria-controls="nav-profile" aria-selected="false">
                             <h4>Chat</h4>
@@ -217,20 +217,31 @@
                                 <ul class="list-group border-0 bg-light-brown">
                                     <li
                                         class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
-                                        <div>
-                                            <p class="fw-bold mb-0">1st Milestone</p>
-                                            <small class="text-gray">Date :20/07/2023</small>
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="assets/imgaes/milestone-btn.png" class="w-auto me-3" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-0">1st Milestone</p>
+                                                <small class="text-gray">Date :20/07/2023</small>
+                                            </div>
                                         </div>
                                         <div>
                                             <button class="bg-black text-white ps-5 pe-5 w-max pt-3 pb-3 rounded"
                                                 data-bs-toggle="modal" data-bs-target="#completed">Completed</button>
                                         </div>
                                     </li>
+                                    </style>
                                     <li
                                         class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
-                                        <div>
-                                            <p class="fw-bold mb-0">2nd Milestone</p>
-                                            <small class="text-gray">Date :20/07/2023</small>
+                                        <div class="d-flex">
+                                            <div class="w-max"> 
+                                                <img src="assets/imgaes/milestone-btn.png" class="w-auto me-3" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-0">2nd Milestone</p>
+                                                <small class="text-gray">Date :20/07/2023</small>
+                                            </div>
                                         </div>
                                         <div>
                                             <button class="bg-white ps-5 pe-5 pt-3 pb-3 rounded w-max"
@@ -239,12 +250,18 @@
                                     </li>
                                     <li
                                         class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
-                                        <div>
-                                            <p class="fw-bold mb-0">3rd Milestone</p>
-                                            <small class="text-gray">Date :20/07/2023</small>
+                                        <div class="d-flex">
+                                            <div class="w-max">
+                                                <img src="assets/imgaes/milestone-btn.png" class="w-auto me-3" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="fw-bold mb-0">3rd Milestone</p>
+                                                <small class="text-gray">Date :20/07/2023</small>
+                                            </div>
                                         </div>
                                         <div>
-                                            <button class="bg-light-gray border-0 ps-5 w-max pe-5 pt-3 pb-3 rounded">In
+                                            <button class="border-0 ps-5 w-max pe-5 pt-3 pb-3 rounded"
+                                                style="background-color: #D9D9D9;">In
                                                 complete</button>
                                         </div>
                                     </li>
@@ -268,7 +285,8 @@
                                         <button class="accordion-button box-shadow-none focus-none text-blue fw-bold"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                             aria-expanded="true" aria-controls="collapseOne">
-                                            <img src="assets/imgaes/life-buoy.png" class="w-auto" alt=""> Resolution
+                                            <img src="assets/imgaes/life-buoy.png" class="w-auto me-3" alt="">
+                                            Resolution
                                             Accepted
                                         </button>
                                     </h2>
@@ -291,7 +309,8 @@
                                             class="accordion-button box-shadow-none focus-none text-blue fw-bold collapsed"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            <img src="assets/imgaes/life-buoy.png" class="w-auto" alt=""> Resolution
+                                            <img src="assets/imgaes/life-buoy.png" class="w-auto me-3" alt="">
+                                            Resolution
                                             Accepted
                                         </button>
                                     </h2>
@@ -433,7 +452,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body container px-5">
                                     <div class="border r-15 p-3 pt-4 pb-4">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex gap-2">
@@ -523,7 +542,7 @@
                                             <h4 class="fw-bold">Your Project is Delivered</h4>
                                         </div>
                                         <div class="my-5">
-                                            <p>Was the communication from the service provider clear and timely?</p>
+                                            <p class="fw-700">Was the communication from the service provider clear and timely?</p>
                                             <div class="my-5 d-flex gap-3 justify-content-center align-items-center">
                                                 <div>
                                                     <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
@@ -532,16 +551,19 @@
                                                     <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                             </div>
-                                            <p>Did the service you received match the description provided by the
+                                            <p class="fw-700">Did the service you received match the description provided by the
                                                 service provider?</p>
                                             <div class="my-5 d-flex gap-3 justify-content-center align-items-center">
                                                 <div>
@@ -551,16 +573,19 @@
                                                     <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                             </div>
-                                            <p>Would you recommend this service to others?</p>
+                                            <p class="fw-700">Would you recommend this service to others?</p>
                                             <div class="my-5 d-flex gap-3 justify-content-center align-items-center">
                                                 <div>
                                                     <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
@@ -569,13 +594,16 @@
                                                     <img src="assets/imgaes/star-blue.png" class="star_img" alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                                 <div>
-                                                    <img src="assets/imgaes/star-transparent.png" class="star_img" alt="">
+                                                    <img src="assets/imgaes/star-transparent.png" class="star_img"
+                                                        alt="">
                                                 </div>
                                             </div>
                                         </div>

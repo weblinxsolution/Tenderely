@@ -131,8 +131,7 @@
                 </div>
                 <div>
                     <div>
-                        <button
-                            class="btn btn-lg btn-outline-secondary ps-5 pe-5 pt-3 pb-3 border-rad">
+                        <button class="btn btn-lg btn-outline-secondary ps-5 pe-5 pt-3 pb-3 border-rad">
                             <small>Back</small>
                         </button>
                     </div>
@@ -143,43 +142,63 @@
                     <div class="col-12 col-lg-8">
                         <div class="mb-4 tabs">
                             <nav>
-                                <div class="nav nav-tabs nav-tabs-2 justify-content-lg-between gap-lg-0 gap-3" id="nav-tab" role="tablist" style="display: flex;">
+                                <div class="nav nav-tabs nav-tabs-2 justify-content-lg-between gap-lg-0 gap-3"
+                                    id="nav-tab" role="tablist" style="display: flex;">
                                     <!-- 1 -->
-                                    <button class="nav-link nav-link-2 text-gray hover-black w-max active"
+                                    <button class="nav-link nav-link-2 text-gray py-3 hover-black w-max active"
                                         id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
                                         role="tab" aria-controls="nav-home" aria-selected="true">
                                         Payment methods
                                     </button>
                                     <!-- 2 -->
-                                    <button class="nav-link nav-link-2 text-gray hover-black w-max"
+                                    <button class="nav-link nav-link-2 text-gray py-3 hover-black w-max"
                                         id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false"
-                                        >
+                                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
                                         Your payments
                                     </button>
                                     <!-- 3 -->
-                                    <button class="nav-link nav-link-2 text-gray hover-black w-max"
+                                    <button class="nav-link nav-link-2 text-gray py-3 hover-black w-max"
                                         id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-premium"
-                                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false"
-                                        >
+                                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
                                         Credits & coupons
                                     </button>
                                     <!-- 4 -->
-                                    <button class="nav-link nav-link-2 text-gray hover-black w-max"
+                                    <button class="nav-link nav-link-2 text-gray py-3 hover-black w-max"
                                         id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-four"
-                                        type="button" role="tab" aria-controls="nav-four" aria-selected="false"
-                                        >
+                                        type="button" role="tab" aria-controls="nav-four" aria-selected="false">
                                         Transaction history
                                     </button>
                                     <!-- 5 -->
-                                    <button class="nav-link nav-link-2 text-gray hover-black w-max"
+                                    <button class="nav-link nav-link-2 text-gray py-3 hover-black w-max"
                                         id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-five"
-                                        type="button" role="tab" aria-controls="nav-five" aria-selected="false"
-                                        >
+                                        type="button" role="tab" aria-controls="nav-five" aria-selected="false">
                                         My Wallet
                                     </button>
                                 </div>
                             </nav>
+                            <style>
+                                .tabs .nav-tabs .active {
+                                    margin-bottom: 0px;
+                                }
+
+                                /* Additional styles for horizontal scrolling */
+                                .nav-tabs-2 {
+                                    overflow-y: hidden;
+                                    overflow-x: auto;
+                                    /* Enable horizontal scrolling */
+                                    white-space: nowrap;
+                                    -webkit-overflow-scrolling: touch;
+                                    /* Enable smooth scrolling on iOS devices */
+                                }
+
+                                /* Media query to apply styles only on small screens */
+                                @media (max-width: 576px) {
+                                    .nav-tabs-2 {
+                                        flex-wrap: nowrap;
+                                        /* Prevent wrapping of tabs to the next line on small screens */
+                                    }
+                                }
+                            </style>
                         </div>
                     </div>
                     <div class="tab-content mt-5" id="nav-tabContent">
@@ -195,8 +214,8 @@
                                                 our services.</small>
                                         </div>
                                         <div>
-                                            <button class="btn bg-black text-white p-2 px-3"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <button class="btn bg-black text-white p-2 px-4 py-3" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
                                                 <small>Add payment method</small>
                                             </button>
                                         </div>
@@ -245,8 +264,8 @@
                                         our services.</small>
                                 </div>
                                 <div>
-                                    <button class="btn bg-black text-white "
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button class="btn bg-black text-white px-4 py-3" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
                                         <small>Add payment method</small>
                                     </button>
                                 </div>
@@ -300,7 +319,7 @@
                             </div>
                             <div class="row my-5">
                                 <div class="col-12 col-lg-4">
-                                    <div class="p-3 r-15 border">
+                                    <div class="p-3 r-15 border mb-3">
                                         <div class="d-flex justify-content-between mb-5">
                                             <div class="fw-bold">Dec 31,2022</div>
                                             <div class="fw-bold text-blue">$ 780.00</div>
@@ -317,7 +336,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <div class="p-3 r-15 border">
+                                    <div class="p-3 r-15 border mb-3">
                                         <div class="d-flex justify-content-between mb-5">
                                             <div class="fw-bold">Dec 31,2022</div>
                                             <div class="fw-bold text-blue">$ 780.00</div>
@@ -334,7 +353,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <div class="p-3 r-15 border">
+                                    <div class="p-3 r-15 border mb-3">
                                         <div class="d-flex justify-content-between mb-5">
                                             <div class="fw-bold">Dec 31,2022</div>
                                             <div class="fw-bold text-blue">$ 780.00</div>
@@ -369,7 +388,7 @@
                             </div>
                             <div class="my-5 row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="fw-bold mb-3">Available Funds</p>
+                                    <p class="fw-bold mb-4">Available Funds</p>
                                     <div class="border r-15 p-4">
                                         <small class="text-gray">Current Balance</small>
                                         <h1 class="fw-bold mt-3">$ 120.00</h1>
@@ -385,7 +404,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <p class="fw-bold mb-3">Payment being cleared</p>
+                                    <p class="fw-bold mb-4">Payment being cleared</p>
                                     <div class="border r-15 p-4">
                                         <small class="text-gray">Current Balance</small>
                                         <h2 class="fw-bold mt-3">$ 120.00</h2>
@@ -398,15 +417,15 @@
                                 </div>
                             </div>
                             <div class="my-5 d-lg-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-between align-items-center gap-3">
-                                    <div>
+                                <div class="d-lg-flex justify-content-between align-items-center gap-3">
+                                    <div class="mb-3">
                                         <h4>Withdrawal :</h4>
                                     </div>
-                                    <div>
+                                    <div class="mb-3">
                                         <button class="btn border p-2"><img src="assets/imgaes/paypal.png"
                                                 class="w-auto me-2" alt=""> Pay Pal</button>
                                     </div>
-                                    <div>
+                                    <div class="mb-3">
                                         <button class="btn border"><img src="assets/imgaes/bank-transfer.png"
                                                 class="w-auto me-2" alt=""> Bank Transfer</button>
                                     </div>
@@ -440,88 +459,106 @@
                                     </div>
                                 </div>
                             </div>
-                            <table class="table">
-                                <thead class="table-light">
-                                    <tr>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Status</th>
-                                        <th scope="col">Amount</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>10/9/2022</th>
-                                        <td>New Project Title</td>
-                                        <td>
-                                            <button class="btn border pt-2 pb-2 ps-4 pe-4">
-                                                Recieved
-                                            </button>
-                                        </td>
-                                        <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th>10/9/2022</th>
-                                        <td>New Project Title</td>
-                                        <td>
-                                            <button class="btn border pt-2 pb-2 ps-4 pe-4">
-                                                Recieved
-                                            </button>
-                                        </td>
-                                        <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th>10/9/2022</th>
-                                        <td>New Project Title</td>
-                                        <td>
-                                            <button class="btn border pt-2 pb-2 ps-4 pe-4">
-                                                Recieved
-                                            </button>
-                                        </td>
-                                        <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th>10/9/2022</th>
-                                        <td>New Project Title</td>
-                                        <td>
-                                            <button class="btn border pt-2 pb-2 ps-4 pe-4">
-                                                Recieved
-                                            </button>
-                                        </td>
-                                        <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th>10/9/2022</th>
-                                        <td>New Project Title</td>
-                                        <td>
-                                            <button class="btn border pt-2 pb-2 ps-4 pe-4">
-                                                Recieved
-                                            </button>
-                                        </td>
-                                        <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th>10/9/2022</th>
-                                        <td>New Project Title</td>
-                                        <td>
-                                            <button class="btn border pt-2 pb-2 ps-4 pe-4">
-                                                Recieved
-                                            </button>
-                                        </td>
-                                        <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th>10/9/2022</th>
-                                        <td>New Project Title</td>
-                                        <td>
-                                            <button class="btn border pt-2 pb-2 ps-4 pe-4">
-                                                Recieved
-                                            </button>
-                                        </td>
-                                        <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="scrollable-1">
+                                <table class="table">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="scrollable">
+                                            <th>10/9/2022</th>
+                                            <td>New Project Title</td>
+                                            <td>
+                                                <button class="btn border pt-2 pb-2 ps-4 pe-4">
+                                                    Recieved
+                                                </button>
+                                            </td>
+                                            <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
+                                        </tr>
+                                        <tr class="scrollable">
+                                            <th>10/9/2022</th>
+                                            <td>New Project Title</td>
+                                            <td>
+                                                <button class="btn border pt-2 pb-2 ps-4 pe-4">
+                                                    Recieved
+                                                </button>
+                                            </td>
+                                            <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
+                                        </tr>
+                                        <tr class="scrollable">
+                                            <th>10/9/2022</th>
+                                            <td>New Project Title</td>
+                                            <td>
+                                                <button class="btn border pt-2 pb-2 ps-4 pe-4">
+                                                    Recieved
+                                                </button>
+                                            </td>
+                                            <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
+                                        </tr>
+                                        <tr class="scrollable">
+                                            <th>10/9/2022</th>
+                                            <td>New Project Title</td>
+                                            <td>
+                                                <button class="btn border pt-2 pb-2 ps-4 pe-4">
+                                                    Recieved
+                                                </button>
+                                            </td>
+                                            <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
+                                        </tr>
+                                        <tr class="scrollable">
+                                            <th>10/9/2022</th>
+                                            <td>New Project Title</td>
+                                            <td>
+                                                <button class="btn border pt-2 pb-2 ps-4 pe-4">
+                                                    Recieved
+                                                </button>
+                                            </td>
+                                            <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
+                                        </tr>
+                                        <tr class="scrollable">
+                                            <th>10/9/2022</th>
+                                            <td>New Project Title</td>
+                                            <td>
+                                                <button class="btn border pt-2 pb-2 ps-4 pe-4">
+                                                    Recieved
+                                                </button>
+                                            </td>
+                                            <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
+                                        </tr>
+                                        <tr class="scrollable">
+                                            <th>10/9/2022</th>
+                                            <td>New Project Title</td>
+                                            <td>
+                                                <button class="btn border pt-2 pb-2 ps-4 pe-4">
+                                                    Recieved
+                                                </button>
+                                            </td>
+                                            <td><span class="text-blue my-auto fw-bold">$ 180.00</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                                <style>
+                                    .scrollable-1 {
+                                        width: 100%;
+                                        overflow-x: auto;
+                                        white-space: nowrap;
+                                        -webkit-overflow-scrolling: touch;
+
+                                    }
+
+                                    @media (max-width: 576px) {
+                                        .scrollable-1 {
+                                            flex-wrap: nowrap;
+                                            /* Prevent wrapping of tabs to the next line on small screens */
+                                        }
+                                    }
+                                </style>
                         </div>
                         <!-- modal start -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"

@@ -242,11 +242,12 @@
                 <h4 class="mb-3 fw-bold">Select Time</h4>
                 <p>Lorem ipsum is the dummy text for printing & type setting purpose.</p>
                 <div class="row my-5">
-                    <div class="col col-lg-2">
+                    <div class="col col-lg-3">
                         <button class="btn border border-rad ps-5 pe-5 pt-3 pb-3">9:00 - 22:00</button>
                     </div>
                     <div class="col col-lg-2">
-                        <button class="btn box-shadow-none focus-none outline-none text-blue text-decoration-underline fw-bold d-flex align-items-center gap-2"><img src="assets/imgaes/pencil.png" class="w-auto" alt=""> <h5 class="fw-bold">Edit</h5></button>
+                        <button class="btn box-shadow-none focus-none outline-none text-blue text-decoration-underline fw-bold d-flex align-items-center gap-2" data-bs-toggle="modal"
+                        data-bs-target="#time"><img src="assets/imgaes/pencil.png" class="w-auto" alt=""> <h5 class="fw-bold">Edit</h5></button>
                     </div>
                 </div>
             </div>
@@ -257,14 +258,43 @@
                         <button class="btn btn-lg btn-outline-secondary ps-5 pe-5 pt-3 pb-3"><small>Back</small></button>
                     </div>
                     <div class="text-center mb-3 mb-lg-0">
-                        <button class="btn btn-lg bg-black text-white ps-5 pe-5 pt-3 pb-3" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <a href="service-provider-location.html" class="btn btn-lg bg-black text-white ps-5 pe-5 pt-3 pb-3">
                             <small>Next</small>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- back button end -->
+
+            <div class="modal fade" id="time" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Select Time</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container my-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <small>Close for all-day(24 hours)</small>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input transform-2" type="checkbox" id="flexSwitchCheckDefault">
+                                    </div>
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <img src="assets/imgaes/clock.png" class="w-auto" alt="">
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <a href="schedule-your-rental.html" class="bg-black rounded ps-5 pe-5 pt-3 pb-3 text-white"><small>Next</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal end -->
         </div>
     </section>
     <!-- main content end -->

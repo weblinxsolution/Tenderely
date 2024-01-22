@@ -154,7 +154,7 @@
                     <div class="border border-rad w-max p-4">
                         9:00 - 22:00
                     </div>
-                    <button class="btn text-blue fw-bold box-shadow-none focus-none"><img src="assets/imgaes/pencil.png" class="w-auto" alt=""> Edit</button>
+                    <button class="btn text-blue fw-bold box-shadow-none focus-none"  data-bs-toggle="modal" data-bs-target="#time"><img src="assets/imgaes/pencil.png" class="w-auto" alt=""> Edit</button>
                 </div>
             </div>
             <div class="my-lg-5 mt-3 steps_ grid-7-cols gap-2">
@@ -175,6 +175,37 @@
         </div>
     </section>
     <!-- main content end -->
+
+    <!-- modal start -->
+    <div class="modal fade" id="time" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Time</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container my-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <small>Close for all-day(24 hours)</small>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input transform-2" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <img src="assets/imgaes/clock.png" class="w-auto" alt="">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <a href="schedule-your-rental.html" class="bg-black rounded ps-5 pe-5 pt-3 pb-3 text-white"><small>Next</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
 
 </body>
 

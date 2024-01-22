@@ -34,6 +34,7 @@
 </head>
 
 <body>
+ 
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container">
@@ -206,7 +207,7 @@
                                                             <input type="email" class="border-0 form-control focus-none"
                                                                 placeholder="username@example.com">
                                                             <div class="my-auto">
-                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3 text-center"
+                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3"
                                                                     alt="">
                                                             </div>
                                                         </div>
@@ -550,7 +551,7 @@
             <div class="my-5">
                 <a href="services.html" class="btn btn-outline-secondary btn-lg border-rad ps-5 pe-5">Back</a>
             </div>
-            <div class="border-top-r">
+            <div class="bg-light-pink border-top-r">
                 <div class="card border-top-r rounded-5">
                     <div class="profile-box position-relative">
                         <div class="profile-cover">
@@ -577,13 +578,8 @@
 
                         .profile-image {
                             width: max-content;
-                            /* padding: 5px 5%; */
+                            padding: 5px 5%;
                             margin-top: -8%;
-                            background: white;
-                            padding: 10px;
-                            border-radius: 104px;
-                            clip-path: border-box;
-                            margin-left: 6%;
                         }
 
                         .profile-image img {
@@ -599,21 +595,25 @@
                             }
                         }
                     </style>
-                    <div class="my-5">
+                    <div class="mb-4 mt-3 my-lg-4">
                         <div class="wrapper">
                             <div class="d-lg-flex justify-content-between">
                                 <div>
                                     <div class="d-flex">
-                                        <h3 class="fw-bold me-2">Zayn vc. Solutions</h3>
+                                        <h3 class="fw-bold me-2">Saad Khaliq</h3>
+                                        <button class="btn btn-outline-secondary border-rad pt-0 pb-0 ps-4 pe-4">
+                                            Level 1
+                                        </button>
                                     </div>
-                                    <p>IT Services & IT Consulting </p>
-                                    <p>Dubai,UAE • <a href="#"
+                                    <p>Project Resource Manager </p>
+                                    <a href="#" class="text-blue text-decoration-underline fw-bold">CEE Solutions</a>
+                                    <p>Karachi, Pakistan • <a href="#"
                                             class="text-blue text-decoration-underline fw-bold">262,382 followers</a>
                                     </p>
                                 </div>
                                 <div>
-                                    <button class="btn bg-blue pt-0 pb-0 border-rad text-white fw-bold ps-3 pe-3">
-                                        <img src="assets/imgaes/plus-white.png" class="w-auto" alt=""> Follow
+                                    <button class="btn btn-outline-blue text-blue fw-bold">
+                                        <img src="assets/imgaes/plus.png" class="w-auto" alt=""> Connect
                                     </button>
                                 </div>
                             </div>
@@ -623,118 +623,143 @@
 
                 <div class="mb-4 tabs">
                     <nav class="bg-white my-3">
-                        <div class="border px-3 pt-4">
-                            <div class="nav nav-tabs nav-tabs-2" id="nav-tab" role="tablist" style="display: flex;">
-                                <button
-                                    class="nav-link nav-link-2 text-gray w-50 pt-2 pb-4 fs-20 w-lg-auto hover-black active flex-auto"
+                        <div class="nav-tabs-2-container">
+                            <div class="nav nav-tabs nav-tabs-2 gap-lg-0 gap-2 py-3" id="nav-tab" role="tablist">
+                                <button class="nav-link nav-link-2 fw-bold text-gray hover-black w-sm-33 active"
                                     id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
                                     role="tab" aria-controls="nav-home" aria-selected="true">
-                                    About</button>
-                                <button class="nav-link nav-link-2 text-gray w-50 pt-2 pb-4 fs-20 w-lg-auto hover-black flex-auto"
+                                    About
+                                </button>
+                                <button class="nav-link nav-link-2 fw-bold text-gray hover-black w-sm-33"
                                     id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                                    type="button" role="tab" aria-controls="nav-profile"
-                                    aria-selected="false">Posts</button>
-                                <button class="nav-link nav-link-2 text-gray w-50 pt-2 pb-4 fs-20 w-lg-auto hover-black flex-auto"
+                                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                    Posts
+                                </button>
+                                <button class="nav-link nav-link-2 fw-bold text-gray hover-black w-sm-33"
                                     id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-premium"
-                                    type="button" role="tab" aria-controls="nav-profile"
-                                    aria-selected="false">Consultant</button>
-                                <button class="nav-link nav-link-2 text-gray w-50 pt-2 pb-4 fs-20 w-lg-auto hover-black flex-auto"
+                                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                    Consultant
+                                </button>
+                                <button class="nav-link nav-link-2 fw-bold text-gray hover-black w-sm-33"
                                     id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-portfolio"
-                                    type="button" role="tab" aria-controls="nav-profile"
-                                    aria-selected="false">Portfolio</button>
+                                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                    Portfolio
+                                </button>
                             </div>
                         </div>
                     </nav>
-                    <style>
-                        .tabs .nav-tabs .active {
-                            margin-bottom: 0px;
-                        }
-
-                        .nav-tabs-2 {
-                            overflow-y: hidden;
-                            overflow-x: auto;
-                            /* Enable horizontal scrolling */
-                            white-space: nowrap;
-                            -webkit-overflow-scrolling: touch;
-                        }
-
-                        @media (max-width: 576px) {
-                            .nav-tabs-2 {
-                                flex-wrap: nowrap;
-                            }
-                        }
-                    </style>
                     <div class="bg-white rounded-5">
                         <div class="tab-content my-5" id="nav-tabContent">
                             <!-- tab 1 -->
                             <div class="tab-pane fade show active py-4" id="nav-home" role="tabpanel"
                                 aria-labelledby="nav-home-tab">
-                                <div class="border rounded-5 py-4">
-                                    <div class="wrapper">
-                                        <h4 class="fw-bold">About Me</h4>
-                                        <p class="fw-700">Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting
-                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                                            the
-                                            1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a
-                                            type specimen book. <br> <a href="#" class="text-blue">Read More</a>
-                                        </p>
-                                        <a href="#" class="text-gray text-decoration-underline fw-bold">See
-                                            Translation</a>
-                                    </div>
+                                <div class="wrapper">
+                                    <h4 class="fw-bold">About Me</h4>
+                                    <p class="fw-700">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has <br> <a href="#" class="text-blue">Read More</a></p>
+                                    <a href="#" class="text-gray text-decoration-underline fw-bold">See Translation</a>
                                 </div>
 
-                                <div class="border rounded-5 py-4 mt-3 p-4">
-                                    <h4 class="fw-bold mt-3">Products</h4>
-                                    <div class="my-5">
-                                        <div class="d-lg-flex">
-                                            <div class="me-3">
-                                                <img src="assets/imgaes/xpress.png" class="w-auto  img-fluid" alt="">
-                                            </div>
-                                            <div class="flex-col-adj my-1">
-                                                <div>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Xpress Financial
-                                                        Suite</h4>
-                                                    <p class="text-gray">Chat bot service</p>
-                                                </div>
-                                                <div class="text-gray">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry. Lorem Ipsum has been the industry's standard dummy text
-                                                    ever since <a href="#"
-                                                        class="text-blue text-decoration-underline fw-bold">Read
-                                                        More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="border rounded-5 py-4 mt-3 p-4">
-                                    <h4 class="fw-bold mt-3">Education</h4>
-                                    <div class="my-5">
-                                        <div class="my-4 d-flex">
+                                <div class="bg-white rounded-5 py-4">
+                                    <div class="wrapper">
+                                        <h4 class="fw-bold mb-5">Experience</h4>
+                                        <div class="d-flex">
                                             <div class="me-2">
-                                                <img src="assets/imgaes/silver-coin.png" class="w-auto" alt="">
+                                                <img src="assets/imgaes/emar.png" class="w-auto" alt="">
                                             </div>
-                                            <div class="mt-4">
-                                                <h4 class="fw-bold">Silver Coin Awarded</h4>
-                                                <h4>Best Software Company of USA</h4>
-                                                <h5 class="fw-bold text-gray">2014 - 2018</h5>
+                                            <div class="mt-lg-3 mt-0">
+                                                <h5 class="fw-bold mb-0">Property Advisor </h5>
+                                                <small class="fw-bold">Emaar Pakistan · Full-time</small> <br>
+                                                <div class="mt-3">
+                                                    <span class="text-gray">Jan 2021 - Present · 2 yrs 9 mos <br>
+                                                        Karāchi, Sindh, Pakistan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/graana.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="mt-lg-3 mt-0">
+                                                <h5 class="fw-bold mb-0">Assistant Manager </h5>
+                                                <small class="fw-bold">Grana.com · Full-time</small> <br>
+                                                <div class="mt-3">
+                                                    <span class="text-gray">Feb 2022 - Aug 2022 · 6 mos
+                                                        <br>
+                                                        Karāchi, Sindh, Pakistan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/vinncorp.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="mt-lg-3 mt-0">
+                                                <h5 class="fw-bold mb-0">Associate Manager </h5>
+                                                <small class="fw-bold">Vinncorp · Full-time</small> <br>
+                                                <div class="mt-3">
+                                                    <span class="text-gray">Jan 2021 - Feb 2022 · 1 yrs 1 mos
+                                                        <br>
+                                                        Karāchi, Sindh, Pakistan</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="border rounded-5 py-4 mt-3">
+
+                                <div class="bg-white rounded-5 py-4 my-4">
                                     <div class="wrapper">
-                                        <h4 class="fw-bold mb-4">Company size</h4>
-                                        <span class="text-gray">150 - 200 Employees</span>
+                                        <h4 class="fw-bold mb-5">Education</h4>
+                                        <div class="d-flex">
+                                            <div class="me-2">
+                                                <img src="assets/imgaes/greenwich.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="mt-lg-3 mt-0">
+                                                <h5 class="fw-bold mb-0">Greenwich University </h5>
+                                                <small class="fw-bold">Master, Bachelors in Management Science</small>
+                                                <br>
+                                                <div class="mt-3">
+                                                    <span class="text-gray">2014 - 2018</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="mt-5">
+                                <div class="bg-white border-top-r">
+                                    <div class="border rounded-5 py-4 my-4">
+                                        <div class="wrapper">
+                                            <h4 class="fw-bold mb-5">Talents</h4>
+                                            <div class="d-flex my-5">
+                                                <div class="me-2">
+                                                    <img src="assets/imgaes/vinncorp-sales.png" class="w-auto" alt="">
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h5 class="fw-bold mb-0">International Sales </h5>
+                                                    <small class="fw-bold">Sales Lead at Vinncorp</small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex my-5">
+                                                <div class="me-2">
+                                                    <img src="assets/imgaes/graana-project.png" class="w-auto" alt="">
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h5 class="fw-bold mb-0">Project Management </h5>
+                                                    <small class="fw-bold">Project Owner at Granna.com</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-3">
+                                        <a href="#" class="text-blue fw-bold"><img
+                                                src="assets/imgaes/flag-triangle-right.png" class="w-auto" alt="">
+                                            Report</a>
+                                    </div>
                                     <div class="my-4">
                                         <div class="d-lg-flex justify-content-between">
-                                            <h3 class="fw-bold">Companies you may know</h3>
+                                            <h3 class="fw-bold">People you may know</h3>
                                             <div class="mt-3 mt-lg-0 d-flex">
                                                 <button class="btn box-shadow-none focus-none">
                                                     <img src="assets/imgaes/arrow-left-circle.png" class="w-auto"
@@ -748,67 +773,63 @@
                                         </div>
                                     </div>
                                     <div class="my-4">
-                                        <div class="row gap-lg-0 gap-4">
+                                        <div class="row gap-lg-0 gap-3">
                                             <div class="col-12 col-lg-4 text-center">
                                                 <div class="card border rounded-5 py-4 p-3">
                                                     <div class="d-flex text-start">
                                                         <div class="me-2">
-                                                            <img src="assets/imgaes/cyber-code.png" class="w-auto"
+                                                            <img src="assets/imgaes/paff.png" class="w-auto" alt="">
+                                                        </div>
+                                                        <div class="my-auto">
+                                                            <h5 class="fw-bold mb-0">Paff Evara </h5>
+                                                            <small>Black, queer, speaker consultant, <br> @ Take up
+                                                                space</small><br>
+                                                            <div class="py-lg-4 pt-3">
+                                                                <button
+                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                        src="assets/imgaes/plus-white.png"
+                                                                        class="w-auto" alt=""> Follow</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 text-center">
+                                                <div class="card border rounded-5 py-4 p-3">
+                                                    <div class="d-flex text-start">
+                                                        <div class="me-2">
+                                                            <img src="assets/imgaes/shinnon.png" class="w-auto" alt="">
+                                                        </div>
+                                                        <div class="my-auto">
+                                                            <h5 class="fw-bold mb-0">Shinnon Diana</h5>
+                                                            <small>Multi- Head Sales Person ,
+                                                                <br> co-founder @ Graana.com</small><br>
+                                                            <div class="py-lg-4 pt-3">
+                                                                <button
+                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                        src="assets/imgaes/plus-white.png"
+                                                                        class="w-auto" alt=""> Follow</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 text-center">
+                                                <div class="card border rounded-5 py-4 p-3">
+                                                    <div class="d-flex text-start">
+                                                        <div class="me-2">
+                                                            <img src="assets/imgaes/shinnon-2.png" class="w-auto"
                                                                 alt="">
                                                         </div>
                                                         <div class="my-auto">
-                                                            <h5 class="fw-bold mb-0">Cyber Code</h5>
-                                                            <small>Software Development &
-                                                                <br> Cyber Security Company</small><br>
-                                                            <div class="py-4">
+                                                            <h5 class="fw-bold mb-0">Shinnon Diana</h5>
+                                                            <small>Multi- Head Sales Person ,
+                                                                <br> co-founder @ Graana.com</small><br>
+                                                            <div class="py-lg-4 pt-3">
                                                                 <button
-                                                                    class="btn border-rad bg-blue text-white d-flex align-items-center gap-1 fw-bold pt-0 pb-0 ps-3 pe-3"><img
-                                                                        src="assets/imgaes/plus-white.png" class=""
-                                                                        style="width: 20px; height: 20px;" alt="">
-                                                                    Follow</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-4 text-center">
-                                                <div class="card border rounded-5 py-4 p-3">
-                                                    <div class="d-flex text-start">
-                                                        <div class="me-2">
-                                                            <img src="assets/imgaes/zappiar.png" class="w-auto" alt="">
-                                                        </div>
-                                                        <div class="my-auto">
-                                                            <h5 class="fw-bold mb-0">Zappiar Solutions</h5>
-                                                            <small>IT Services & IT Consulting
-                                                                <br> Company</small><br>
-                                                            <div class="py-4">
-                                                                <button
-                                                                    class="btn border-rad bg-blue text-white d-flex align-items-center gap-1 fw-bold pt-0 pb-0 ps-3 pe-3"><img
-                                                                        src="assets/imgaes/plus-white.png" class=""
-                                                                        style="width: 20px; height: 20px;" alt="">
-                                                                    Follow</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-4 text-center">
-                                                <div class="card border rounded-5 py-4 p-3">
-                                                    <div class="d-flex text-start">
-                                                        <div class="me-2">
-                                                            <img src="assets/imgaes/telecom.png" class="w-auto" alt="">
-                                                        </div>
-                                                        <div class="my-auto">
-                                                            <h5 class="fw-bold mb-0">Telecom TLC</h5>
-                                                            <small>Telecommunication & Network
-
-                                                                <br> Company</small><br>
-                                                            <div class="py-4">
-                                                                <button
-                                                                    class="btn border-rad bg-blue text-white d-flex align-items-center gap-1 fw-bold pt-0 pb-0 ps-3 pe-3"><img
-                                                                        src="assets/imgaes/plus-white.png" class=""
-                                                                        style="width: 20px; height: 20px;" alt="">
-                                                                    Follow</button>
+                                                                    class="btn border-rad bg-blue text-white fw-bold pt-0 pb-0 ps-3 pe-3"><img
+                                                                        src="assets/imgaes/plus-white.png"
+                                                                        class="w-auto" alt=""> Follow</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -822,26 +843,27 @@
                             <!-- tab 2 -->
                             <div class="tab-pane fade py-4" id="nav-profile" role="tabpanel"
                                 aria-labelledby="nav-profile-tab">
-                                <div class="container">
+                                <div class="wrapper">
                                     <section class="mt-3">
                                         <div class="card my-4">
                                             <div class="card-body">
                                                 <h5 class="card-title">
+                                                    <!-- post 1 -->
                                                     <div class="d-lg-flex justify-content-between">
                                                         <div class="d-lg-flex justify-content-between">
                                                             <div class="me-3">
-                                                                <img src="assets/imgaes/zayn.png" class="w-auto"
-                                                                    alt="image">
+                                                                <img src="assets/imgaes/saad-khaliq-4.png"
+                                                                    class="w-auto" alt="image">
                                                             </div>
                                                             <div>
-                                                                <div class="d-flex justify-content-between">
-                                                                    <div class="fw-700 me-2 mt-2">Zayn vc Solutions
-                                                                    </div>
+                                                                <div class="d-lg-flex justify-content-between">
+                                                                    <div class="fw-700 me-2 mt-2">Saad Khaliq</div>
                                                                 </div>
-                                                                <p class="mb-1 mt-2">IT Service & IT Consulting</p>
+                                                                <p class="mb-1 mt-2">Project Resource Manager |
+                                                                    Technical Recruiter | HR Operations Head </p>
                                                             </div>
                                                         </div>
-                                                        <h5 class="text-gray">2 months ago</h5>
+                                                        <h5 class="text-gray mt-3 mt-lg-0">2 months ago</h5>
                                                     </div>
                                                     <hr>
                                                 </h5>
@@ -854,36 +876,46 @@
                                                     <span class="fw-700">See Translation</span>
                                                 </p>
                                             </div>
-                                            <img src="assets/imgaes/paklaunch.png" class="card-img-bottom" alt="image">
+                                            <img src="assets/imgaes/global-scale.png" class="card-img-bottom"
+                                                alt="image">
                                             <div class="card-body">
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                                        <div class="d-flex justify-content-between">
-                                                            <a href="" class="d-flex justify-content-between">
-                                                                <img src="assets/imgaes/Like.png"
-                                                                    class="w-auto h-75 my-auto" alt="">
-                                                                <p class="text-primary fw-500 mb-0 fs-10 my-auto">Like
-                                                                </p>
-                                                            </a>
-                                                            <a href=""
-                                                                class="d-flex justify-content-between text-black">
-                                                                <img src="assets/imgaes/Message.png"
-                                                                    class="w-auto h-75 my-auto" alt="">
-                                                                <p class="mb-1 fs-10 my-auto">Comment</p>
-                                                            </a>
-                                                            <a href=""
-                                                                class="d-flex justify-content-between text-black">
-                                                                <img src="assets/imgaes/Swap.png"
-                                                                    class="w-auto h-75 my-auto" alt="">
-                                                                <p class="mb-1 fs-10 my-auto">Repost</p>
-                                                            </a>
-                                                            <a href=""
-                                                                class="d-flex justify-content-between text-black">
-                                                                <img src="assets/imgaes/Send.png"
-                                                                    class="w-auto h-75 my-auto" alt="">
-                                                                <p class="mb-1 fs-10 my-auto">Send</p>
-                                                            </a>
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-3 col-md-2 mb-2 mx-0 mx-lg-3">
+                                                                <a href=""
+                                                                    class="d-flex flex-column align-items-center text-primary">
+                                                                    <img src="assets/imgaes/Like.png"
+                                                                        class="w-auto h-75 my-auto" alt="">
+                                                                    <p class="fw-500 fs-10 mb-0 my-auto">Like</p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-3 col-md-2 mb-2 mx-0 mx-lg-3">
+                                                                <a href=""
+                                                                    class="d-flex flex-column align-items-center text-black">
+                                                                    <img src="assets/imgaes/Message.png"
+                                                                        class="w-auto h-75 my-auto" alt="">
+                                                                    <p class="mb-1 fs-10 my-auto">Comment</p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-3 col-md-2 mb-2 mx-0 mx-lg-3">
+                                                                <a href=""
+                                                                    class="d-flex flex-column align-items-center text-black">
+                                                                    <img src="assets/imgaes/Swap.png"
+                                                                        class="w-auto h-75 my-auto" alt="">
+                                                                    <p class="mb-1 fs-10 my-auto">Repost</p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-3 col-md-2 mb-2 mx-0 mx-lg-3">
+                                                                <a href=""
+                                                                    class="d-flex flex-column align-items-center text-black">
+                                                                    <img src="assets/imgaes/Send.png"
+                                                                        class="w-auto h-75 my-auto" alt="">
+                                                                    <p class="mb-1 fs-10 my-auto">Send</p>
+                                                                </a>
+                                                            </div>
                                                         </div>
+
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                                         <div
@@ -906,18 +938,18 @@
                                                     <div class="d-lg-flex justify-content-between">
                                                         <div class="d-lg-flex justify-content-between">
                                                             <div class="me-3">
-                                                                <img src="assets/imgaes/zayn.png" class="w-auto"
-                                                                    alt="image">
+                                                                <img src="assets/imgaes/saad-khaliq-4.png"
+                                                                    class="w-auto" alt="image">
                                                             </div>
                                                             <div>
                                                                 <div class="d-flex justify-content-between">
-                                                                    <div class="fw-700 me-2 mt-2">Zayn vc Solutions
-                                                                    </div>
+                                                                    <div class="fw-700 me-2 mt-2">Saad Khaliq</div>
                                                                 </div>
-                                                                <p class="mb-1 mt-2">IT Service & IT Consulting</p>
+                                                                <p class="mb-1 mt-2">Project Resource Manager |
+                                                                    Technical Recruiter | HR Operations Head </p>
                                                             </div>
                                                         </div>
-                                                        <h5 class="text-gray">2 months ago</h5>
+                                                        <h5 class="text-gray mt-3 mt-lg-0">2 months ago</h5>
                                                     </div>
                                                     <hr>
                                                 </h5>
@@ -930,35 +962,43 @@
                                                     <span class="fw-700">See Translation</span>
                                                 </p>
                                             </div>
-                                            <img src="assets/imgaes/faisal.png" class="card-img-bottom" alt="image">
+                                            <img src="assets/imgaes/women.png" class="card-img-bottom" alt="image">
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                                        <div class="d-flex justify-content-between">
-                                                            <a href="" class="d-flex justify-content-between">
-                                                                <img src="assets/imgaes/Like.png"
-                                                                    class="w-auto h-75 my-auto" alt="">
-                                                                <p class="text-primary fs-10 fw-500 mb-0 my-auto">Like
-                                                                </p>
-                                                            </a>
-                                                            <a href=""
-                                                                class="d-flex justify-content-between text-black">
-                                                                <img src="assets/imgaes/Message.png"
-                                                                    class="w-auto h-75 my-auto" alt="">
-                                                                <p class="mb-1 fs-10 my-auto">Comment</p>
-                                                            </a>
-                                                            <a href=""
-                                                                class="d-flex justify-content-between text-black">
-                                                                <img src="assets/imgaes/Swap.png"
-                                                                    class="w-auto h-75 my-auto" alt="">
-                                                                <p class="mb-1 fs-10 my-auto">Repost</p>
-                                                            </a>
-                                                            <a href=""
-                                                                class="d-flex justify-content-between text-black">
-                                                                <img src="assets/imgaes/Send.png"
-                                                                    class="w-auto h-75 my-auto" alt="">
-                                                                <p class="mb-1 fs-10 my-auto">Send</p>
-                                                            </a>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-3 col-md-2 mb-2 mx-0 mx-lg-3">
+                                                                <a href=""
+                                                                    class="d-flex flex-column align-items-center text-primary">
+                                                                    <img src="assets/imgaes/Like.png"
+                                                                        class="w-auto h-75 my-auto" alt="">
+                                                                    <p class="fw-500 fs-10 mb-0 my-auto">Like</p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-3 col-md-2 mb-2 mx-0 mx-lg-3">
+                                                                <a href=""
+                                                                    class="d-flex flex-column align-items-center text-black">
+                                                                    <img src="assets/imgaes/Message.png"
+                                                                        class="w-auto h-75 my-auto" alt="">
+                                                                    <p class="mb-1 fs-10 my-auto">Comment</p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-3 col-md-2 mb-2 mx-0 mx-lg-3">
+                                                                <a href=""
+                                                                    class="d-flex flex-column align-items-center text-black">
+                                                                    <img src="assets/imgaes/Swap.png"
+                                                                        class="w-auto h-75 my-auto" alt="">
+                                                                    <p class="mb-1 fs-10 my-auto">Repost</p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-3 col-md-2 mb-2 mx-0 mx-lg-3">
+                                                                <a href=""
+                                                                    class="d-flex flex-column align-items-center text-black">
+                                                                    <img src="assets/imgaes/Send.png"
+                                                                        class="w-auto h-75 my-auto" alt="">
+                                                                    <p class="mb-1 fs-10 my-auto">Send</p>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -986,19 +1026,53 @@
                                 aria-labelledby="nav-profile-tab">
                                 <h4 class="fw-bold">Consultancy Service</h4>
                                 <div class="container">
-                                    <div class="rounded-5 shadow p-3 my-3">
+                                    <div class="rounded-5 mx-auto shadow p-3 my-3">
                                         <div class="d-lg-flex">
                                             <div class="me-3">
-                                                <img src="assets/imgaes/cyber-security.png" class="w-auto" alt="">
+                                                <img src="assets/imgaes/house.png" class="w-100 w-lg-auto" alt="">
                                             </div>
                                             <div class="flex-col-adj my-3">
                                                 <div>
                                                     <small class="text-gray">Service Title</small>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Cyber Security
-                                                        Solutions</h4>
-                                                    <small>Lorem Ipsum is simply dummy text of the printing and
-                                                        typesetting industry. Lorem Ipsum has been the industry's
-                                                        standard dummy text .</small>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">I will provide
+                                                        you Real state Agency </h4>
+                                                    <div class="my-4 my-lg-0">
+                                                        <small>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy text .</small>
+                                                    </div>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-between">
+                                                    <div class="text-start"><img src="assets/imgaes/black-star.png"
+                                                            class="w-auto" alt="">
+                                                        <strong class="fw-bold my-auto">5.0 (13)</strong>
+                                                    </div>
+                                                    <div class="mt-3 mt-lg-0 text-start">
+                                                        <div class="d-flex align-items-end">
+                                                            <h3 class="text-blue fw-bold mb-0">From $ 56.46 </h3>/ per
+                                                            month
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-5 shadow p-3 my-3">
+                                        <div class="d-lg-flex">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/women-handshaking.png" class="w-100 w-lg-auto"
+                                                    alt="">
+                                            </div>
+                                            <div class="flex-col-adj my-3">
+                                                <div>
+                                                    <small class="text-gray">Service Title</small>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">I will provide
+                                                        you Real state Agency </h4>
+                                                    <div class="my-3 my-lg-0">
+                                                        <small>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy text .</small>
+                                                    </div>
                                                 </div>
                                                 <div class="d-lg-flex justify-content-between">
                                                     <div><img src="assets/imgaes/black-star.png" class="w-auto" alt="">
@@ -1017,44 +1091,18 @@
                                     <div class="rounded-5 shadow p-3 my-3">
                                         <div class="d-lg-flex">
                                             <div class="me-3">
-                                                <img src="assets/imgaes/coding-bugs.png" class="w-auto" alt="">
+                                                <img src="assets/imgaes/lock-blue.png" class="w-lg-auto" alt="">
                                             </div>
                                             <div class="flex-col-adj my-3">
                                                 <div>
                                                     <small class="text-gray">Service Title</small>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Fix your coding
-                                                        bugs</h4>
-                                                    <small>Lorem Ipsum is simply dummy text of the printing and
-                                                        typesetting industry. Lorem Ipsum has been the industry's
-                                                        standard dummy text .</small>
-                                                </div>
-                                                <div class="d-lg-flex justify-content-between">
-                                                    <div><img src="assets/imgaes/black-star.png" class="w-auto" alt="">
-                                                        <strong class="fw-bold my-auto">5.0 (13)</strong>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">I will provide
+                                                        you Real state Agency </h4>
+                                                    <div class="my-3 my-lg-0">
+                                                        <small>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy text .</small>
                                                     </div>
-                                                    <div class="mt-3 mt-lg-0">
-                                                        <div class="d-flex align-items-end">
-                                                            <h3 class="text-blue fw-bold mb-0">From $ 56.46 </h3>/ per
-                                                            month
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="rounded-5 shadow p-3 my-3">
-                                        <div class="d-lg-flex">
-                                            <div class="me-3">
-                                                <img src="assets/imgaes/IOS.png" class="w-auto" alt="">
-                                            </div>
-                                            <div class="flex-col-adj my-3">
-                                                <div>
-                                                    <small class="text-gray">Service Title</small>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">iOS + Android
-                                                        Mobile apps design</h4>
-                                                    <small>Lorem Ipsum is simply dummy text of the printing and
-                                                        typesetting industry. Lorem Ipsum has been the industry's
-                                                        standard dummy text .</small>
                                                 </div>
                                                 <div class="d-lg-flex justify-content-between">
                                                     <div><img src="assets/imgaes/black-star.png" class="w-auto" alt="">
@@ -1131,7 +1179,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-lg-6">
-                                                    <div class="mt-lg-5 mb-4">
+                                                    <div class="mt-5 mb-4">
                                                         <div class="d-flex">
                                                             <div class="me-2">
                                                                 <img src="assets/imgaes/person-2.png"
@@ -1204,16 +1252,15 @@
                                 aria-labelledby="nav-profile-tab">
 
                                 <h4 class="fw-bold">Consultancy Service</h4>
-                                <div class="container">
+                                <div class="wrapper">
                                     <div class="rounded-5 shadow p-3 my-3">
                                         <div class="d-lg-flex">
-                                            <div class="me-3 text-center">
-                                                <img src="assets/imgaes/roof.png" class="w-auto" alt="">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/project-name.png" class="w-auto" alt="">
                                             </div>
                                             <div class="flex-col-adj my-3">
                                                 <div>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Rent a Pent House
-                                                        for ! Month</h4>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Project Name</h4>
                                                     <p class="text-gray">Lorem Ipsum is simply dummy text of the
                                                         printing and
                                                         typesetting industry. Lorem Ipsum has been the industry's
@@ -1237,13 +1284,41 @@
                                     </div>
                                     <div class="rounded-5 shadow p-3 my-3">
                                         <div class="d-lg-flex">
-                                            <div class="me-3 text-center">
-                                                <img src="assets/imgaes/laptop.png" class="w-auto" alt="">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/project-name.png" class="w-auto" alt="">
                                             </div>
                                             <div class="flex-col-adj my-3">
                                                 <div>
-                                                    <h4 class="fw-bold text-decoration-underline my-3">Rent a Dell
-                                                        Laptop core i7 windows 11</h4>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Project Name</h4>
+                                                    <p class="text-gray">Lorem Ipsum is simply dummy text of the
+                                                        printing and
+                                                        typesetting industry. Lorem Ipsum has been the industry's
+                                                        standard dummy text ever since the 1500s, when an unknown
+                                                        printer took a galley of type and scrambled it to make a type
+                                                        specimen book.</p>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-between">
+                                                    <div>
+                                                        <a href="#"
+                                                            class="text-blue text-decoration-underline fw-bold">Dubai,UAE
+                                                        </a>
+                                                    </div>
+                                                    <div class="mt-3 mt-lg-0">
+                                                        <a href="#" class="text-gray text-decoration-underline">See
+                                                            Translation</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-5 shadow p-3 my-3">
+                                        <div class="d-lg-flex">
+                                            <div class="me-3">
+                                                <img src="assets/imgaes/project-name.png" class="w-auto" alt="">
+                                            </div>
+                                            <div class="flex-col-adj my-3">
+                                                <div>
+                                                    <h4 class="fw-bold text-decoration-underline my-3">Project Name</h4>
                                                     <p class="text-gray">Lorem Ipsum is simply dummy text of the
                                                         printing and
                                                         typesetting industry. Lorem Ipsum has been the industry's

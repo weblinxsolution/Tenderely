@@ -546,8 +546,9 @@
             </div>
             <div class="grid-2 gap-3 d-lg-flex justify-content-between">
                 <div>
-                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black" style="border: 1px solid gray;" type="button"
-                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black"
+                        style="border: 1px solid gray;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Post <img src="assets/imgaes/dropdown-arrow.png" class="w-auto" alt="">
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -557,8 +558,9 @@
                     </ul>
                 </div>
                 <div>
-                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black" style="border: 1px solid gray;" type="button"
-                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black"
+                        style="border: 1px solid gray;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Persons <img src="assets/imgaes/dropdown-arrow.png" class="w-auto" alt="">
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -568,8 +570,9 @@
                     </ul>
                 </div>
                 <div>
-                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black" style="border: 1px solid gray;" type="button"
-                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black"
+                        style="border: 1px solid gray;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Company <img src="assets/imgaes/dropdown-arrow.png" class="w-auto" alt="">
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -579,8 +582,9 @@
                     </ul>
                 </div>
                 <div>
-                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black" style="border: 1px solid gray;" type="button"
-                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black"
+                        style="border: 1px solid gray;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Events <img src="assets/imgaes/dropdown-arrow.png" class="w-auto" alt="">
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -590,15 +594,16 @@
                     </ul>
                 </div>
                 <div>
-                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black" style="border: 1px solid gray;" data-bs-toggle="modal" data-bs-target="#filter"><img
-                            src="assets/imgaes/filter.png" class="w-auto" alt="">
+                    <button class="rounded-4 bg-white dropdown-toggle w-100 ps-4 pe-4 pt-3 pb-3 fw-bold text-black"
+                        style="border: 1px solid gray;" data-bs-toggle="modal" data-bs-target="#filter"><img src="assets/imgaes/filter.png" class="w-auto" alt="">
                         Filters
                     </button>
                 </div>
 
                 <!-- modal start -->
+                <!-- Modal -->
                 <div class="modal fade" id="filter" tabindex="-1" aria-labelledby="filterLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="filterLabel">Filters</h5>
@@ -695,12 +700,41 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr>
+                                <div class="my-5">
+                                    <hr>
+                                    <div class="my-4">
+                                        <h4 class="fw-bold">Price Range</h4>
+                                        <div class="my-5">
+                                            <img src="assets/imgaes/bar-graph.png" class="w-100" alt="">
+                                        </div>
+                                        <div class="mx-auto">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border rounded-2 w-50 fs-14 w-lg-25 p-2 ps-4 my-auto">
+                                                    <span class="text-gray fs-14 mb-2">Minimum</span><br>
+                                                    <h5 class="fw-bold fs-14">$ 670.00</h5>
+                                                </div>
+                                                <div class="ms-3 my-auto">
+                                                    <img src="assets/imgaes/line-sm.png" class="w-auto" alt="">
+                                                </div>
+                                                <div class="border rounded-2 w-50 fs-14 w-lg-25 p-2 ps-4 my-auto ms-3">
+                                                    <span class="text-gray mb-2 fs-14">Maximum</span><br>
+                                                    <h5 class="fw-bold fs-14">$ 2810.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <style>
+                                            .fs-14 {
+                                                font-size: 14px !important;
+                                            }
+                                        </style>
+                                    </div>
+                                    <hr>
+                                </div>
                                 <div class="my-5">
                                     <div class="row">
                                         <div class="col-12 col-md-6 mb-3">
                                             <h4 class="fw-bold mb-3">Country</h4>
-                                            <select class="form-select text-start p-3" aria-label="Default select example">
+                                            <select class="form-select p-3" aria-label="Default select example">
                                                 <option selected>Select</option>
                                                 <option value="1">United States</option>
                                                 <option value="2">Canada</option>
@@ -712,7 +746,7 @@
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <h4 class="fw-bold mb-3">City</h4>
-                                            <select class="form-select text-start p-3" aria-label="Default select example">
+                                            <select class="form-select p-3" aria-label="Default select example">
                                                 <option selected>Select</option>
                                                 <option value="1">New York City, USA</option>
                                                 <option value="2">Tokyo, Japan</option>
@@ -731,7 +765,7 @@
                                             <h4 class="fw-bold">Select Date</h4>
                                         </div>
                                         <div class="my-auto fw-bold">
-                                            <button class="text-blue fw-bold border-0 bg-white box-shadow-none focus-none">Show Calender</button>
+                                            <a class="text-blue text-decoration-underline">Show Calender</a>
                                         </div>
                                     </div>
                                     <hr>
@@ -741,8 +775,7 @@
                                     <div class="row my-5">
                                         <div class="col-6 col-md-4 col-lg-3">
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input transform-2" type="checkbox" value=""
-                                                    id="language1">
+                                                <input class="form-check-input transform-2" type="checkbox" value="" id="language1">
                                                 <label class="form-check-label ms-3" for="language1">
                                                     English
                                                 </label>
@@ -750,8 +783,7 @@
                                         </div>
                                         <div class="col-6 col-md-4 col-lg-3">
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input transform-2" type="checkbox" value=""
-                                                    id="language2">
+                                                <input class="form-check-input transform-2" type="checkbox" value="" id="language2">
                                                 <label class="form-check-label ms-3" for="language2">
                                                     Turkish
                                                 </label>
@@ -759,8 +791,7 @@
                                         </div>
                                         <div class="col-6 col-md-4 col-lg-3">
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input transform-2" type="checkbox" value=""
-                                                    id="language3">
+                                                <input class="form-check-input transform-2" type="checkbox" value="" id="language3">
                                                 <label class="form-check-label ms-3" for="language3">
                                                     French
                                                 </label>
@@ -768,8 +799,7 @@
                                         </div>
                                         <div class="col-6 col-md-4 col-lg-3">
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input transform-2" type="checkbox" value=""
-                                                    id="language4">
+                                                <input class="form-check-input transform-2" type="checkbox" value="" id="language4">
                                                 <label class="form-check-label ms-3" for="language4">
                                                     German
                                                 </label>
@@ -777,31 +807,44 @@
                                         </div>
                                         <div class="col-6 col-md-4 col-lg-3">
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input transform-2" type="checkbox" value=""
-                                                    id="language5">
+                                                <input class="form-check-input transform-2" type="checkbox" value="" id="language5">
                                                 <label class="form-check-label ms-3" for="language5">
-                                                    Dutch
+                                                    Dutch<!-- Modal -->
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-4 col-lg-3">
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input transform-2" type="checkbox" value=""
-                                                    id="language6">
+                                                <input class="form-check-input transform-2" type="checkbox" value="" id="language6">
                                                 <label class="form-check-label ms-3" for="language6">
                                                     Japanese
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-4 col-lg-3">
-                                            <button class="text-black text-decoration-underline fw-bold bg-white border-0 box-shadow-none focus-none">Show More</button>
+                                            <a href="#" class="text-black text-decoration-underline fw-bold">Show
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr>
+                                    <div class="mt-5">
+                                        <h4 class="fw-bold mb-5">Availability</h4>
+                                        <div class="d-flex justify-content-between">
+                                            <h5>Show online profiles</h5>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input switch focus-none" type="checkbox"
+                                                    id="flexSwitchCheckChecked" checked>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer d-flex justify-content-between px-4">
-                                <button class="text-black text-decoration-underline fw-bold bg-white border-0 box-shadow-none focus-none">Clear all</button>
-                                <button type="button" class="btn bg-blue text-white text-end ps-5 pe-5 pt-3 pb-3">Apply
+                            <div class="modal-footer d-flex justify-content-between">
+                                <a href="#" class="text-black text-decoration-underline fw-bold">Clear
+                                    all</a>
+                                <button type="button" class="btn bg-blue text-white ps-5 pe-5 pt-3 pb-3">Apply
                                     Filters</button>
                             </div>
                         </div>
@@ -824,36 +867,36 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="my-3">
                             <div class="mb-3">
-                                <img src="assets/imgaes/flutter-dev.png" class="w-100" alt="">
+                                <img src="assets/imgaes/light-pink-image.png" class="w-100" alt="">
                             </div>
-                            <p class="fw-bold text-black mb-0">Looking for Flutter Deve..</p>
+                            <p class="fw-bold text-black mb-0">Rental Product title</p>
                             <small>Karachi, Pk</small>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="my-3">
                             <div class="mb-3">
-                                <img src="assets/imgaes/accountant.png" class="w-100" alt="">
+                                <img src="assets/imgaes/light-pink-image.png" class="w-100" alt="">
                             </div>
-                            <p class="fw-bold text-black mb-0">Hiring Accounts Manager</p>
+                            <p class="fw-bold text-black mb-0">Rental Product title</p>
                             <small>Lahore, Pk</small>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="my-3">
                             <div class="mb-3">
-                                <img src="assets/imgaes/accountant-2.png" class="w-100" alt="">
+                                <img src="assets/imgaes/light-pink-image.png" class="w-100" alt="">
                             </div>
-                            <p class="fw-bold text-black mb-0">Hiring Accounts Manager</p>
+                            <p class="fw-bold text-black mb-0">Rental Product title</p>
                             <small>Lahore, Pk</small>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="my-3">
                             <div class="mb-3">
-                                <img src="assets/imgaes/accountant-2.png" class="w-100" alt="">
+                                <img src="assets/imgaes/light-pink-image.png" class="w-100" alt="">
                             </div>
-                            <p class="fw-bold text-black mb-0">Hiring Accounts Manager</p>
+                            <p class="fw-bold text-black mb-0">Rental Product title</p>
                             <small>Lahore, Pk</small>
                         </div>
                     </div>
@@ -865,7 +908,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="my-3">
                             <div class="mb-3">
-                                <img src="assets/imgaes/technology.png" class="w-100" alt="">
+                                <img src="assets/imgaes/light-pink-image.png" class="w-100" alt="">
                             </div>
                             <p class="fw-bold text-black mb-0">H n H Technologies</p>
                             <small>Karachi, Pk</small>
@@ -874,7 +917,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="my-3">
                             <div class="mb-3">
-                                <img src="assets/imgaes/active-clouds.png" class="w-100" alt="">
+                                <img src="assets/imgaes/light-pink-image.png" class="w-100" alt="">
                             </div>
                             <p class="fw-bold text-black mb-0">Active Clouds Solutions</p>
                             <small>Lahore, Pk</small>
@@ -883,7 +926,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="my-3">
                             <div class="mb-3">
-                                <img src="assets/imgaes/cript-solutions.png" class="w-100" alt="">
+                                <img src="assets/imgaes/light-pink-image.png" class="w-100" alt="">
                             </div>
                             <p class="fw-bold text-black mb-0">Ccript Solutions</p>
                             <small>Lahore, Pk</small>
@@ -892,7 +935,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="my-3">
                             <div class="mb-3">
-                                <img src="assets/imgaes/rouge.png" class="w-100" alt="">
+                                <img src="assets/imgaes/light-pink-image.png" class="w-100" alt="">
                             </div>
                             <p class="fw-bold text-black mb-0">Genetics Innovations</p>
                             <small>Dubai, UAE</small>
